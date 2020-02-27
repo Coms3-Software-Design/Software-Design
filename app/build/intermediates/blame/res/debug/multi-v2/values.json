@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Beast/AndroidStudioProjects/Market_Place/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Beast/AndroidStudioProjects/Software-Design/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
                     "source": "/Beast/.gradle/caches/transforms-2/files-2.1/019045dec5e38f76b552841946c88194/constraintlayout-1.1.3/res/values/values.xml",
@@ -42,7 +42,7 @@
                     }
                 },
                 {
-                    "source": "/Beast/AndroidStudioProjects/Market_Place/app/src/main/res/values/styles.xml",
+                    "source": "/Beast/AndroidStudioProjects/Software-Design/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "4",
@@ -58,6 +58,23 @@
                         "endLines": "418",
                         "endColumns": "12",
                         "endOffsets": "24968"
+                    }
+                },
+                {
+                    "source": "/Beast/AndroidStudioProjects/Software-Design/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "49",
+                        "endOffsets": "61"
+                    },
+                    "to": {
+                        "startLines": "405",
+                        "startColumns": "4",
+                        "startOffsets": "24038",
+                        "endColumns": "49",
+                        "endOffsets": "24083"
                     }
                 },
                 {
@@ -80,40 +97,6 @@
                     }
                 },
                 {
-                    "source": "/Beast/AndroidStudioProjects/Market_Place/app/src/main/res/values/colors.xml",
-                    "from": {
-                        "startLines": "4,2,3",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "153,55,102",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "194,97,148"
-                    },
-                    "to": {
-                        "startLines": "152,153,154",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "7643,7689,7736",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "7684,7731,7782"
-                    }
-                },
-                {
-                    "source": "/Beast/AndroidStudioProjects/Market_Place/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "16",
-                        "endColumns": "49",
-                        "endOffsets": "61"
-                    },
-                    "to": {
-                        "startLines": "405",
-                        "startColumns": "4",
-                        "startOffsets": "24038",
-                        "endColumns": "49",
-                        "endOffsets": "24083"
-                    }
-                },
-                {
                     "source": "/Beast/.gradle/caches/transforms-2/files-2.1/962661a2d0e39df4c213a94473258f8a/jetified-appcompat-resources-1.1.0/res/values/values.xml",
                     "from": {
                         "startLines": "2,29,36,47,74",
@@ -130,6 +113,23 @@
                         "endLines": "2067,2074,2085,3128,3133",
                         "endColumns": "24,24,24,24,24",
                         "endOffsets": "136496,136881,137478,198836,199106"
+                    }
+                },
+                {
+                    "source": "/Beast/AndroidStudioProjects/Software-Design/app/src/main/res/values/colors.xml",
+                    "from": {
+                        "startLines": "4,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "153,55,102",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "194,97,148"
+                    },
+                    "to": {
+                        "startLines": "152,153,154",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "7643,7689,7736",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "7684,7731,7782"
                     }
                 }
             ]
