@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Beast/AndroidStudioProjects/Software-Design/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ms/values-ms.xml",
+            "outputFile": "/Beast/AndroidStudioProjects/Software-Design/Shameel/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ms/values-ms.xml",
             "map": [
                 {
                     "source": "/Beast/.gradle/caches/transforms-2/files-2.1/65288fada49b0b6c64631011b3fa4627/core-1.1.0/res/values-ms/values-ms.xml",

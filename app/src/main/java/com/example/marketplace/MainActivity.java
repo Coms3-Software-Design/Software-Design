@@ -3,6 +3,7 @@ package com.example.marketplace;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.Layout;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
                 t.setText("Shameel");
 
                 Toast.makeText(MainActivity.this,"Hey man you are here",Toast.LENGTH_LONG).show();
+                View l = findViewById(R.id.back);
+                l.setBackground(getDrawable(R.drawable.kali));
             }
         });
     }

@@ -661,6 +661,7 @@ drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable kali
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -681,7 +682,6 @@ id FUNCTION
 id META
 id SHIFT
 id SYM
-id Text1
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
 id accessibility_custom_action_1
@@ -738,6 +738,7 @@ id add
 id alertTitle
 id always
 id async
+id back
 id barrier
 id beginning
 id blocking
