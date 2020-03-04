@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Beast/AndroidStudioProjects/Software-Design/Shameel/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
+            "outputFile": "/home/vmuser/StudioProjects/Software-Design/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "/Beast/.gradle/caches/transforms-2/files-2.1/cb99e77638f7aea73fdfbb0798f74a2b/appcompat-1.1.0/res/values-port/values-port.xml",
+                    "source": "/home/vmuser/.gradle/caches/transforms-2/files-2.1/cb99e77638f7aea73fdfbb0798f74a2b/appcompat-1.1.0/res/values-port/values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
