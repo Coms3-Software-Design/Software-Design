@@ -1,18 +1,26 @@
 package com.example.marketplace;
 
+import java.util.Date;
+
 public class User {
 
-    private String name, surname, userName, password, dateOfBirth, gender, dateCreated;
+    private String name;
+    private String surname;
+    private String userName;
+    private String password;
+    private String dateOfBirth;
+    private String gender;
     private StringBuilder bio;
     private double balance;
     private int contactDetails, userID;
+    private Date dateCreated;
 
 
     /*
     * Below is the User's constractor
     * */
-    User(String name,String surname,String userName,String password,String dateOfBirth,String gender,String dateCreated,
-            StringBuilder bio , double balance , int contactDetails,int userID){
+    User(String name, String surname, String userName, String password, String dateOfBirth, String gender, Date dateCreated,
+         StringBuilder bio , double balance , int contactDetails, int userID){
 
         this.userID = userID;
         this.name = name;
@@ -31,6 +39,10 @@ public class User {
     /*
     * Getters and setters below
     */
+
+    public Date getDateCreated() {
+        return dateCreated;
+    }
 
     public int getUserID() {
         return userID;
@@ -86,14 +98,6 @@ public class User {
 
     public void setGender(String gender) {
         this.gender = gender;
-    }
-
-    public String getDateCreated() {
-        return dateCreated;
-    }
-
-    public void setDateCreated(String dateCreated) {
-        this.dateCreated = dateCreated;
     }
 
     public StringBuilder getBio() {
