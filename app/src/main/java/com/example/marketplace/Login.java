@@ -1,13 +1,18 @@
 package com.example.marketplace;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import static android.graphics.Color.rgb;
+import static android.graphics.Color.toArgb;
 
 public class Login extends AppCompatActivity {
     EditText Student_No,Password;
@@ -18,6 +23,7 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public void Sign_Up_Login(View view){
         TextView textView  = (TextView)findViewById(R.id.register_ID);
         startActivity(new Intent(Login.this, Register.class));

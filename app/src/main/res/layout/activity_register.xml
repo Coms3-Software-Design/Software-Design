@@ -1,134 +1,190 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
     tools:context=".Register">
 
+
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        >
+        android:layout_gravity="center"
+
+        android:layout_margin="25dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+
+
+            android:layout_marginTop="80dp"
+            android:background="@color/colourLayout"
+            android:ems="10"
+            android:hint="UserNme" />
+
+        <EditText
+            android:id="@+id/etUserID"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@color/colourLayout"
+            android:digits="0123456789"
+            android:ems="10"
+            android:hint="Student Number"
+            android:inputType="number"
+            android:maxLength="13" />
+
+        <EditText
+            android:id="@+id/etFname"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@color/colourLayout"
+            android:ems="10"
+            android:hint="Full Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etLname"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@color/colourLayout"
+            android:ems="10"
+            android:hint="Last Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@color/colourLayout"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@color/colourLayout"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:digits="0123456789"
+            android:inputType="number"
+            android:maxLength="10"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@color/colourLayout"
+            android:ems="10">
+
+            <RadioButton
+                android:id="@+id/rMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:text="Male"
+                android:checked="true"
+                />
+
+            <RadioButton
+                android:id="@+id/rFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:text="Female"
+                />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvDOB"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@color/colourLayout"
+            android:clickable="true"
+            android:ems="10"
+            android:text="Click to set date of birht"
+            android:textAlignment="center"
+            android:textColor="#03c2fc"
+            />
+
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="269dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="#66CDAA"
+            android:clickable="true"
+            android:text="Sign Up" />
     </LinearLayout>
 
-    <EditText
-        android:id="@+id/etFname_Reg"
-        android:layout_width="wrap_content"
-        android:layout_height="41dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginBottom="524dp"
-        android:background="@color/colourLayout"
-        android:ems="10"
-        android:hint="Full Name"
-        android:inputType="textPersonName" />
 
-    <EditText
-        android:id="@+id/etLname_Reg"
-        android:layout_width="wrap_content"
-        android:layout_height="41dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginBottom="444dp"
-        android:background="@color/colourLayout"
-        android:ems="10"
-        android:hint="Last Name"
-        android:inputType="textPersonName" />
-
-    <EditText
-        android:id="@+id/etPhone_Reg"
-        android:layout_width="wrap_content"
-        android:layout_height="41dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginBottom="359dp"
-        android:background="@color/colourLayout"
-        android:ems="10"
-        android:hint="Phone Number"
-        android:inputType="textPersonName" />
-
-    <EditText
-        android:id="@+id/etStdNo_Reg"
-        android:layout_width="wrap_content"
-        android:layout_height="41dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginBottom="276dp"
-        android:background="@color/colourLayout"
-        android:ems="10"
-        android:hint="Student Number"
-        android:inputType="textPersonName" />
-
-    <EditText
-        android:id="@+id/etPassword_Reg"
-        android:layout_width="wrap_content"
-        android:layout_height="41dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginBottom="185dp"
-        android:background="@color/colourLayout"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword" />
-
-    <Button
-        android:id="@+id/Register"
-        android:layout_width="269dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="72dp"
-        android:layout_marginLeft="72dp"
-        android:layout_marginEnd="70dp"
-        android:layout_marginRight="70dp"
-        android:layout_marginBottom="48dp"
-        android:background="#66CDAA"
-        android:clickable="true"
-        android:onClick="Sign_up_reg"
-        android:text="Sign Up" />
-
-</RelativeLayout>
+</androidx.core.widget.NestedScrollView>

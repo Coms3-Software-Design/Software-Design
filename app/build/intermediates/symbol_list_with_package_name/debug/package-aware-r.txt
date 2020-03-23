@@ -682,7 +682,6 @@ id ALT
 id CTRL
 id FUNCTION
 id META
-id Register
 id SHIFT
 id SYM
 id accessibility_action_clickable_span
@@ -746,6 +745,7 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btnRegister
 id buttonPanel
 id center_vertical
 id chains
@@ -765,13 +765,14 @@ id direct
 id disableHome
 id edit_query
 id end
-id etFname_Reg
-id etLname_Reg
+id etFname
+id etLname
+id etPassword
 id etPassword_Login
-id etPassword_Reg
-id etPhone_Reg
-id etStdNo_Reg
+id etPhone
 id etStudentNo_Login
+id etUserID
+id etUserName
 id expand_activities_button
 id expanded_menu
 id forever
@@ -809,7 +810,10 @@ id parentPanel
 id percent
 id progress_circular
 id progress_horizontal
+id rFemale
+id rMale
 id radio
+id radioGroup
 id register_ID
 id right
 id right_icon
@@ -865,6 +869,7 @@ id titleDividerNoCustom
 id title_template
 id top
 id topPanel
+id tvDOB
 id unchecked
 id uniform
 id up
