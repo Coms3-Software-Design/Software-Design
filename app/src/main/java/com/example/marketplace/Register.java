@@ -48,15 +48,14 @@ public class Register extends AppCompatActivity implements DatePickerDialog.OnDa
         btnRegister = (Button) findViewById(R.id.btnRegister);
         radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
         dateCreated = dateOB.getTime(); // this sets the current date before we change it to the date of birth
-
-
+        dateOfBirth = dateOB.getTime(); // The current date will be the default DOB if the user doesn't enter their date of birth
 
         /*
          * The onclick listener below is for a text
          * Which upon being clicked it brings up a date to be picked which is your date of birth
          * After choosing your the app shows a toast of your selected date of birth
          */
-        checkSelectedRadioButton();
+
 
         DOBtext.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -120,12 +119,15 @@ public class Register extends AppCompatActivity implements DatePickerDialog.OnDa
                     Password.setError("Enter Your Password");
                     return;
                 }
-                checkSelectedRadioButton();
-                User newUser = new User(Integer.parseInt(userID), name , lname , uName , pass , Integer.parseInt(ContactNum) , dateOfBirth , dateCreated,gender,null , 0);
+
+                checkSelectedRadioButton(); // Gender Check
+
+                // Below we create our current user object which is passed to the register method to go get registered
+                User newUser = new User(Integer.parseInt(userID), name , lname , uName , pass , Integer.parseInt(ContactNum) , DateFormat.getDateInstance().format(dateOfBirth.getTime()) , DateFormat.getDateInstance().format(dateCreated.getTime()),gender,null , 0);
+
+
                 Register(Register.this , newUser);
-//                Toast.makeText(Register.this,"Registration Sucessful On Demo Mode", Toast.LENGTH_LONG).show();
-//                startActivity(new Intent(Register.this  , Login.class));
-//                finish();
+
 
             }
         });
@@ -146,22 +148,12 @@ public class Register extends AppCompatActivity implements DatePickerDialog.OnDa
     public void checkSelectedRadioButton(){
         int radioButtonID = radioGroup.getCheckedRadioButtonId();
         checkedRadioButton = (RadioButton) findViewById(radioButtonID);
-        gender = (checkedRadioButton.getText() == "Male")? "Male":"Female";
+        if(checkedRadioButton.getText() == "Female") gender = "FeMale";
+        else gender = "Male";
 
     }
 
-    private void Register(final Context c, final User newUser){
-
-
-//        $userID = mysqli_real_escape_string($link,$_REQUEST["userid"]);
-//        $name = mysqli_real_escape_string($link,$_REQUEST["name"]);
-//        $surname = mysqli_real_escape_string($link,$_REQUEST["surname"]);
-//        $userName = mysqli_real_escape_string($link,$_REQUEST["username"]);
-//        $pass = mysqli_real_escape_string($link,$_REQUEST["password"]);
-//        $contactNum = mysqli_real_escape_string($link,$_REQUEST["contactnum"]);
-//        $D_O_B = mysqli_real_escape_string($link,$_REQUEST["dob"]);
-//        $dc = mysqli_real_escape_string($link,$_REQUEST["datecreated"]);
-//        $gender = mysqli_real_escape_string($link,$_REQUEST["gender"]);
+    private void Register(final Context c, User newUser){
 
         ContentValues cv = new ContentValues();
         cv.put("userid",newUser.getUserID());
@@ -170,34 +162,27 @@ public class Register extends AppCompatActivity implements DatePickerDialog.OnDa
         cv.put("username" , newUser.getUserName());
         cv.put("password" , newUser.getPassword());
         cv.put("contactnum" , newUser.getContactDetails());
-        cv.put("dob",newUser.getDateOfBirth().toString());
-        cv.put("datecreated" , newUser.getDateCreated().toString());
+        cv.put("dob",newUser.getDateOfBirth().toString().trim());
+        cv.put("datecreated" , newUser.getDateCreated().toString().trim());
         cv.put("gender",newUser.getGender());
 
-        System.out.println(newUser.getUserID() + newUser.getName()+newUser.getSurname()+newUser.getPassword()+newUser.getContactDetails()+newUser.getDateOfBirth().toString()+newUser.getDateCreated().toString()+newUser.getGender());
 
-        @SuppressLint("StaticFieldLeak") AsyncHTTPPost asyncHTTPPost = new AsyncHTTPPost("http://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/MpRegister.php", cv) {
+        @SuppressLint("StaticFieldLeak") AsyncHTTPPost asyncHTTPPost = new AsyncHTTPPost("http://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/MPRegister.php", cv) {
+
             @Override
             protected void onPostExecute(String output) {
+
                 if(output.equals("1")){
                     Intent intent = new Intent();
                     Toast.makeText(c, "Registration successful", Toast.LENGTH_SHORT).show();
-
                     startActivity(new Intent(Register.this  , Login.class));
                     Register.this.finish();
 
                 } else
-                    System.out.println(output);
-                    Toast.makeText(c, "Registration Failed", Toast.LENGTH_SHORT).show();
-
-
+                    Toast.makeText(c, output+ " Registration Failed", Toast.LENGTH_SHORT).show();
             }
         };
         asyncHTTPPost.execute();
-
-
-
-
     }
 
 }

@@ -8,18 +8,18 @@ public class User {
     private String surname;
     private String userName;
     private String password;
-    private Date dateOfBirth;
+    private String dateOfBirth;
     private String gender;
     private StringBuilder bio;
     private double balance;
     private int contactDetails, userID;
-    private Date dateCreated;
+    private String dateCreated;
 
 
     /*
     * Below is the User's constractor
     * */
-    User(int userID, String name, String surname, String userName, String password, int contactDetails, Date dateOfBirth,  Date dateCreated,String gender,
+    User(int userID, String name, String surname, String userName, String password, int contactDetails, String dateOfBirth,  String dateCreated,String gender,
          StringBuilder bio , double balance ){
 
         this.userID = userID;
@@ -40,7 +40,7 @@ public class User {
     * Getters and setters below
     */
 
-    public Date getDateCreated() {
+    public String getDateCreated() {
         return dateCreated;
     }
 
@@ -84,11 +84,11 @@ public class User {
         this.password = password;
     }
 
-    public Date getDateOfBirth() {
+    public String getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(Date dateOfBirth) {
+    public void setDateOfBirth(String dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
