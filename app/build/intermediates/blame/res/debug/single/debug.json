@@ -84,6 +84,10 @@
         "source": "/Beast/AndroidStudioProjects/Software-Design/Software-Design/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
+        "merged": "/Beast/AndroidStudioProjects/Software-Design/Software-Design/app/build/intermediates/res/merged/debug/layout_activity_forgot_password.xml.flat",
+        "source": "/Beast/AndroidStudioProjects/Software-Design/Software-Design/app/src/main/res/layout/activity_forgot_password.xml"
+    },
+    {
         "merged": "/Beast/AndroidStudioProjects/Software-Design/Software-Design/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_background.png.flat",
         "source": "/Beast/AndroidStudioProjects/Software-Design/Software-Design/app/src/main/res/mipmap-mdpi/ic_launcher_background.png"
     },

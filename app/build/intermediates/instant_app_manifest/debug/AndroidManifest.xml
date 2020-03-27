@@ -21,6 +21,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.marketplace.ForgotPassword" />
         <activity android:name="com.example.marketplace.Homepage" />
         <activity android:name="com.example.marketplace.Register" />
         <activity

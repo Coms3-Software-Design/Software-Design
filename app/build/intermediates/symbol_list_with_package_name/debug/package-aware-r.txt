@@ -746,6 +746,7 @@ id beginning
 id blocking
 id bottom
 id btnRegister
+id btnSignIn
 id buttonPanel
 id center_vertical
 id chains
@@ -870,6 +871,7 @@ id title_template
 id top
 id topPanel
 id tvDOB
+id tvForgotPass
 id unchecked
 id uniform
 id up
@@ -917,6 +919,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_forgot_password
 layout activity_homepage
 layout activity_login
 layout activity_register

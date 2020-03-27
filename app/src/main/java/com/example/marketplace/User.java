@@ -12,14 +12,14 @@ public class User {
     private String gender;
     private StringBuilder bio;
     private double balance;
-    private int contactDetails, userID;
+    private String contactDetails, userID;
     private String dateCreated;
 
 
     /*
     * Below is the User's constractor
     * */
-    User(int userID, String name, String surname, String userName, String password, int contactDetails, String dateOfBirth,  String dateCreated,String gender,
+    User(String userID, String name, String surname, String userName, String password, String contactDetails, String dateOfBirth,  String dateCreated,String gender,
          StringBuilder bio , double balance ){
 
         this.userID = userID;
@@ -44,11 +44,11 @@ public class User {
         return dateCreated;
     }
 
-    public int getUserID() {
+    public String getUserID() {
         return userID;
     }
 
-    public void setUserID(int userID) {
+    public void setUserID(String userID) {
         this.userID = userID;
     }
 
@@ -116,11 +116,11 @@ public class User {
         this.balance = balance;
     }
 
-    public int getContactDetails() {
+    public String getContactDetails() {
         return contactDetails;
     }
 
-    public void setContactDetails(int contactDetails) {
+    public void setContactDetails(String contactDetails) {
         this.contactDetails = contactDetails;
     }
 
