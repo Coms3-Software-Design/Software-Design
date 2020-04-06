@@ -15,7 +15,9 @@ public class User {
     private String contactDetails, userID;
     private String dateCreated;
 
-
+    // TODO: Getters and setters
+    // TODO: OCnt sdlkfj sa
+    // TODO: Assigned to shabaan
     /*
     * Below is the User's constractor
     * */
