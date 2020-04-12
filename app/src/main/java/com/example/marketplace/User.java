@@ -1,5 +1,6 @@
 package com.example.marketplace;
 
+import java.sql.Blob;
 import java.util.Date;
 
 public class User {
@@ -10,18 +11,18 @@ public class User {
     private String password;
     private String dateOfBirth;
     private String gender;
-    private StringBuilder bio;
+    private String bio;
     private double balance;
     private String contactDetails, userID;
     private String dateCreated;
-
+    private Blob Profilepic;
 
 
     /*
     * Below is the User's constractor
     * */
     User(String userID, String name, String surname, String userName, String password, String contactDetails, String dateOfBirth,  String dateCreated,String gender,
-         StringBuilder bio , double balance ){
+         String bio , double balance , Blob Profilepic){
 
         this.userID = userID;
         this.name = name;
@@ -34,6 +35,7 @@ public class User {
         this.bio = bio;
         this.balance = balance;
         this.contactDetails = contactDetails;
+        this.Profilepic = Profilepic;
 
     }
 
@@ -101,11 +103,11 @@ public class User {
         this.gender = gender;
     }
 
-    public StringBuilder getBio() {
+    public String getBio() {
         return bio;
     }
 
-    public void setBio(StringBuilder bio) {
+    public void setBio(String bio) {
         this.bio = bio;
     }
 

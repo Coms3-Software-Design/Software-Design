@@ -123,7 +123,7 @@ public class Register extends AppCompatActivity implements DatePickerDialog.OnDa
                 checkSelectedRadioButton(); // Gender Check
 
                 // Below we create our current user object which is passed to the register method to go get registered
-                User newUser = new User(userID, name , lname , uName , pass , ContactNum , DateFormat.getDateInstance().format(dateOfBirth.getTime()) , DateFormat.getDateInstance().format(dateCreated.getTime()),gender,null , 0);
+                User newUser = new User(userID, name , lname , uName , pass , ContactNum , DateFormat.getDateInstance().format(dateOfBirth.getTime()) , DateFormat.getDateInstance().format(dateCreated.getTime()),gender,null , 0,null);
 
 
                 Register(Register.this , newUser);

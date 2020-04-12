@@ -6,77 +6,68 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Login">
+    tools:context=".Login"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    android:background="@drawable/stonesandwater">
 
     <EditText
         android:id="@+id/etStudentNo_Login"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center|center_vertical"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="50dp"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100sp"
+        android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp"
-        android:background="@color/colourLayout"
         android:ems="10"
         android:hint="Username"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:padding="15dp" />
 
     <EditText
         android:id="@+id/etPassword_Login"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center|center_vertical"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="10dp"
-        android:background="@color/colourLayout"
+        android:layout_margin="10dp"
         android:ems="10"
         android:hint="Password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:padding="15dp" />
+
+    <TextView
+        android:id="@+id/tvForgotPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_vertical"
+
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:padding="15dp"
+        android:text="forgot password!"
+        android:textColor="#2ef5ff" />
 
     <Button
         android:id="@+id/btnSignIn"
         android:layout_width="269dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center|center_vertical"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="10dp"
+        android:layout_margin="10dp"
         android:background="#66CDAA"
         android:text="Sign In" />
 
-    <TextView
-        android:id="@+id/tvForgotPass"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="269dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center|center_vertical"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="10dp"
-        android:clickable="true"
-        android:text="forgot password!"
-        android:textColor="#2ef5ff" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center|center_vertical"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="10dp"
-        android:text="New user?" />
+        android:layout_margin="10dp"
+        android:background="#66CDAA"
+        android:text="Sign up" />
 
-    <TextView
-        android:id="@+id/register_ID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center|center_vertical"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="10dp"
-        android:clickable="true"
-        android:onClick="Sign_Up_Login"
-        android:text="Click here to Register" />
+
+
 
 </LinearLayout>

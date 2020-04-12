@@ -7,7 +7,7 @@
     android:gravity="bottom"
     android:padding="16dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
-    >
+    android:layout_marginTop="10dp">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -15,15 +15,21 @@
         android:src="@mipmap/ic_launcher"/>
 
     <TextView
+        android:id="@+id/tvUserName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="8dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="2dp"
         android:text="UserName Here"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 
     <TextView
+        android:id="@+id/tvBalance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Anything else we might need here"/>
+        android:textSize="15dp"
+        android:text="Anything else we might need here"
+        android:padding="2dp"/>
 
 </LinearLayout>

@@ -9,6 +9,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -16,11 +17,18 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.sql.Blob;
+import java.util.Date;
+
 import static android.graphics.Color.rgb;
 
 public class Login extends AppCompatActivity {
     EditText userName,Password;
-    Button signIn;
+    Button signIn , signUP;
     TextView tvForgotPass;
     int loginAttempts = 3; // made it a global variable for ease of access
 
@@ -32,6 +40,7 @@ public class Login extends AppCompatActivity {
         Password = (EditText)findViewById(R.id.etPassword_Login);
         tvForgotPass = (TextView) findViewById(R.id.tvForgotPass);
         signIn = (Button) findViewById(R.id.btnSignIn);
+        signUP = (Button) findViewById(R.id.btnSignUp);
 
         // TODO : Use shared preferences to give the user the ability to login in next session without typing in their credentials
         // TODO : Create The forgot password so that a user can reset their password
@@ -64,6 +73,13 @@ public class Login extends AppCompatActivity {
             }
         });
 
+        signUP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Login.this, Register.class));
+            }
+        });
+
 
         tvForgotPass.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,19 +96,57 @@ public class Login extends AppCompatActivity {
             @Override
             public void onPostExecute(String output) {
 
-                if(output.equals("exists")){
-                    Toast.makeText(Login.this , "Sign in succefull", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(c , Homepage.class));
-                    finish();
+                if(output.equals("!exists")){
+                    loginAttempts--;
+                    Toast.makeText(Login.this , "Sign in failed please try again, you have "+loginAttempts+ " more attempts", Toast.LENGTH_SHORT).show();
+                    if(loginAttempts == 0){
+                        signIn.setBackgroundColor(0);
+                        signIn.setClickable(false);
+                        Toast.makeText(c,"You can no longer sign in during this session, please reset password or try logging in late",Toast.LENGTH_LONG).show();
+                    }
                 }
                 else {
-                        loginAttempts--;
-                        Toast.makeText(Login.this , "Sign in failed please try again, you have "+loginAttempts+ " more attempts", Toast.LENGTH_SHORT).show();
-                        if(loginAttempts == 0){
-                            signIn.setBackgroundColor(0);
-                            signIn.setClickable(false);
-                            Toast.makeText(c,"You can no longer sign in during this session, please reset password or try logging in late",Toast.LENGTH_LONG).show();
-                        }
+
+
+                   // [{"UserID":"1596357","Name":"shameel nkosi","Surname":"nkosi","UserName":"G","ContactNum":"2255889966","Balance":"0","Bio":null,"D_O_B":"06 Apr 2020","Date_Created":"06 Apr 2020","Gender":"Male","Profile_pic":null}]
+                    try {
+                        // Only userID and balance is an integer
+
+
+                        final JSONObject userJO = new JSONArray(output).getJSONObject(0); // JO in userJO for JSONObject
+                        String userID =Integer.toString( userJO.getInt("UserID"));
+                        int Balance = userJO.getInt("Balance");
+                        String Name = userJO.getString("Name");
+                        String Surname = userJO.getString("Surname");
+                        String UserName = userJO.getString("UserName");
+                        String Password = userJO.getString("Password");
+                        String ContactNum = userJO.getString("ContactNum");
+//                        StringBuilder Bio = (StringBuilder) userJO.get("Bio");
+                        String D_O_B = userJO.getString("D_O_B");
+                        String Date_Created = userJO.getString("Date_Created");
+                        String Gender = userJO.getString("Gender");
+//                        Blob Profile_Pic = (Blob) userJO.get("Profile_pic");
+
+                      //  User user = new User(userID,Name,Surname,UserName,Password,ContactNum, D_O_B,Date_Created,Gender,null,Balance,Profile_Pic);
+
+
+
+
+
+
+
+                        Toast.makeText(Login.this , "Sign as "+ userJO.getString("Name"), Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(c , Homepage.class);
+                       intent.putExtra("userName",UserName);
+                        startActivity(intent);
+                        finish();
+
+                    }catch (JSONException e){
+                        e.printStackTrace();
+
+                    };
+
+
                 }
 
             }
@@ -101,12 +155,6 @@ public class Login extends AppCompatActivity {
         asyncHTTPPost.execute();
     }
 
-
-    @RequiresApi(api = Build.VERSION_CODES.O)
-    public void Sign_Up_Login(View view){
-        TextView textView  = (TextView)findViewById(R.id.register_ID);
-        startActivity(new Intent(Login.this, Register.class));
-    }
 
 
 }

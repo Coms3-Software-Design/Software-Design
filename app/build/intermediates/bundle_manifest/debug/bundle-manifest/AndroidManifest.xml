@@ -22,11 +22,13 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.example.marketplace.Homepage"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name="com.example.marketplace.ForgotPassword"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.example.marketplace.ForgotPassword" />
         <activity
             android:name="com.example.marketplace.Register"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name="com.example.marketplace.SplashScreen"
             android:theme="@style/Theme.AppCompat.NoActionBar" >
@@ -36,7 +38,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.marketplace.Login" >
+        <activity
+            android:name="com.example.marketplace.Login"
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
