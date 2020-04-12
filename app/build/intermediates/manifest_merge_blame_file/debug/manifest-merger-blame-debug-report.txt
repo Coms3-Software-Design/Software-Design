@@ -19,7 +19,7 @@
 14        android:allowBackup="true"
 14-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-15-->[androidx.core:core:1.1.0] /root/.gradle/caches/transforms-2/files-2.1/65288fada49b0b6c64631011b3fa4627/core-1.1.0/AndroidManifest.xml:24:18-86
+15-->[androidx.core:core:1.3.0-beta01] /root/.gradle/caches/transforms-2/files-2.1/66ad84ad0de85caab52b03c981f489c6/core-1.3.0-beta01/AndroidManifest.xml:24:18-86
 16        android:debuggable="true"
 17        android:icon="@mipmap/ic_launcher"
 17-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:9:9-43
@@ -32,57 +32,63 @@
 21        android:testOnly="true"
 22        android:theme="@style/AppTheme" >
 22-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:13:9-40
-23        <activity android:name="com.example.marketplace.Homepage" />
-23-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:14:9-46
-23-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:14:19-43
-24        <activity android:name="com.example.marketplace.ForgotPassword" />
-24-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:15:9-52
-24-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:15:19-49
-25        <activity android:name="com.example.marketplace.Register" />
-25-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:16:9-46
-25-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:16:19-43
-26        <activity
-26-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:17:9-25:20
-27            android:name="com.example.marketplace.SplashScreen"
-27-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:18:13-41
-28            android:theme="@style/Theme.AppCompat.NoActionBar" >
-28-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:19:13-63
-29            <intent-filter>
-29-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:20:13-24:29
-30                <action android:name="android.intent.action.MAIN" />
-30-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:21:17-69
-30-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:21:25-66
-31
-32                <category android:name="android.intent.category.LAUNCHER" />
-32-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:23:17-77
-32-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:23:27-74
-33            </intent-filter>
-34        </activity>
-35        <activity android:name="com.example.marketplace.Login" >
-35-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:26:9-32:20
-35-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:26:19-40
-36            <intent-filter>
-36-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:27:13-31:29
-37                <action android:name="android.intent.action.MAIN" />
-37-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:21:17-69
-37-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:21:25-66
-38
-39                <category android:name="android.intent.category.DEFAULT" />
-39-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:30:17-76
-39-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:30:27-73
-40            </intent-filter>
-41        </activity>
+23        <activity
+23-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:14:9-89
+24            android:name="com.example.marketplace.Homepage"
+24-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:14:19-43
+25            android:theme="@style/AppTheme.NoActionBar" />
+25-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:14:44-87
+26        <activity android:name="com.example.marketplace.ForgotPassword" />
+26-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:15:9-52
+26-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:15:19-49
+27        <activity
+27-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:16:9-89
+28            android:name="com.example.marketplace.Register"
+28-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:16:19-43
+29            android:theme="@style/AppTheme.NoActionBar" />
+29-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:16:44-87
+30        <activity
+30-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:17:9-25:20
+31            android:name="com.example.marketplace.SplashScreen"
+31-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:18:13-41
+32            android:theme="@style/Theme.AppCompat.NoActionBar" >
+32-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:19:13-63
+33            <intent-filter>
+33-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:20:13-24:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:21:17-69
+34-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:21:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:23:17-77
+36-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:23:27-74
+37            </intent-filter>
+38        </activity>
+39        <activity android:name="com.example.marketplace.Login" >
+39-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:26:9-32:20
+39-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:26:19-40
+40            <intent-filter>
+40-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:27:13-31:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:21:17-69
+41-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:21:25-66
 42
-43        <provider
-43-->[androidx.lifecycle:lifecycle-process:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/3de180aabf0029720ee398f7321403bf/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
-44            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-44-->[androidx.lifecycle:lifecycle-process:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/3de180aabf0029720ee398f7321403bf/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
-45            android:authorities="com.example.marketplace.lifecycle-process"
-45-->[androidx.lifecycle:lifecycle-process:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/3de180aabf0029720ee398f7321403bf/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
-46            android:exported="false"
-46-->[androidx.lifecycle:lifecycle-process:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/3de180aabf0029720ee398f7321403bf/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
-47            android:multiprocess="true" />
-47-->[androidx.lifecycle:lifecycle-process:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/3de180aabf0029720ee398f7321403bf/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
-48    </application>
-49
-50</manifest>
+43                <category android:name="android.intent.category.DEFAULT" />
+43-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:30:17-76
+43-->/root/StudioProjects/Software-Design/app/src/main/AndroidManifest.xml:30:27-73
+44            </intent-filter>
+45        </activity>
+46
+47        <provider
+47-->[androidx.lifecycle:lifecycle-process:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/3de180aabf0029720ee398f7321403bf/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+48            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+48-->[androidx.lifecycle:lifecycle-process:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/3de180aabf0029720ee398f7321403bf/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+49            android:authorities="com.example.marketplace.lifecycle-process"
+49-->[androidx.lifecycle:lifecycle-process:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/3de180aabf0029720ee398f7321403bf/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+50            android:exported="false"
+50-->[androidx.lifecycle:lifecycle-process:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/3de180aabf0029720ee398f7321403bf/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+51            android:multiprocess="true" />
+51-->[androidx.lifecycle:lifecycle-process:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/3de180aabf0029720ee398f7321403bf/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+52    </application>
+53
+54</manifest>

@@ -4,7 +4,7 @@
             "outputFile": "/root/StudioProjects/Software-Design/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/root/.gradle/caches/transforms-2/files-2.1/65288fada49b0b6c64631011b3fa4627/core-1.1.0/res/values-v16/values-v16.xml",
+                    "source": "/root/.gradle/caches/transforms-2/files-2.1/66ad84ad0de85caab52b03c981f489c6/core-1.3.0-beta01/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/root/.gradle/caches/transforms-2/files-2.1/cb99e77638f7aea73fdfbb0798f74a2b/appcompat-1.1.0/res/values-v16/values-v16.xml",
+                    "source": "/root/.gradle/caches/transforms-2/files-2.1/925e42fd10b74b76496111b9b4f75adb/appcompat-1.2.0-beta01/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

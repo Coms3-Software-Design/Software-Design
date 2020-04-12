@@ -21,9 +21,13 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.marketplace.Homepage" />
+        <activity
+            android:name="com.example.marketplace.Homepage"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="com.example.marketplace.ForgotPassword" />
-        <activity android:name="com.example.marketplace.Register" />
+        <activity
+            android:name="com.example.marketplace.Register"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.example.marketplace.SplashScreen"
             android:theme="@style/Theme.AppCompat.NoActionBar" >
