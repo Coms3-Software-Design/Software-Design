@@ -24,12 +24,12 @@
         "source": "/root/StudioProjects/Software-Design/app/src/main/res/layout/temp1.xml"
     },
     {
-        "merged": "/root/StudioProjects/Software-Design/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_foreground.png.flat",
-        "source": "/root/StudioProjects/Software-Design/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
-    },
-    {
         "merged": "/root/StudioProjects/Software-Design/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "/root/StudioProjects/Software-Design/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/root/StudioProjects/Software-Design/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/root/StudioProjects/Software-Design/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "/root/StudioProjects/Software-Design/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",

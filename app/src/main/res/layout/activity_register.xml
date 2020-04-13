@@ -8,12 +8,13 @@
     android:layout_gravity="center"
     tools:context=".Register"
     android:background="@drawable/red"
+    android:orientation="vertical"
     android:paddingTop="10dp"
     >
 
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_gravity="center"
