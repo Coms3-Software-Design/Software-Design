@@ -72,12 +72,12 @@
         "source": "/root/StudioProjects/Software-Design/app/src/main/res/drawable-v24/blurrybackground1.jpg"
     },
     {
-        "merged": "/root/StudioProjects/Software-Design/app/build/intermediates/res/merged/debug/layout_temp6.xml.flat",
-        "source": "/root/StudioProjects/Software-Design/app/src/main/res/layout/temp6.xml"
-    },
-    {
         "merged": "/root/StudioProjects/Software-Design/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_background.png.flat",
         "source": "/root/StudioProjects/Software-Design/app/src/main/res/mipmap-hdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/root/StudioProjects/Software-Design/app/build/intermediates/res/merged/debug/layout_temp6.xml.flat",
+        "source": "/root/StudioProjects/Software-Design/app/src/main/res/layout/temp6.xml"
     },
     {
         "merged": "/root/StudioProjects/Software-Design/app/build/intermediates/res/merged/debug/drawable-v24_red.jpg.flat",
