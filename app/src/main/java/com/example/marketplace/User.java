@@ -36,7 +36,7 @@ public class User {
         this.balance = balance;
         this.contactDetails = contactDetails;
         this.Profilepic = Profilepic;
-
+ // still need to figure out how to put a picture into the data base
     }
 
     /*
