@@ -14,6 +14,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,6 +31,7 @@ public class Login extends AppCompatActivity {
     EditText userName,Password;
     Button signIn , signUP;
     TextView tvForgotPass;
+
     int loginAttempts = 3; // made it a global variable for ease of access
 
     @Override
@@ -125,15 +127,10 @@ public class Login extends AppCompatActivity {
                         String D_O_B = userJO.getString("D_O_B");
                         String Date_Created = userJO.getString("Date_Created");
                         String Gender = userJO.getString("Gender");
-//                        Blob Profile_Pic = (Blob) userJO.get("Profile_pic");
+//                      Blob Profile_Pic = (Blob) userJO.get("Profile_pic");
+
 
                       //  User user = new User(userID,Name,Surname,UserName,Password,ContactNum, D_O_B,Date_Created,Gender,null,Balance,Profile_Pic);
-
-
-
-
-
-
 
                         Toast.makeText(Login.this , "Sign as "+ userJO.getString("Name"), Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(c , Homepage.class);
@@ -144,7 +141,7 @@ public class Login extends AppCompatActivity {
                     }catch (JSONException e){
                         e.printStackTrace();
 
-                    };
+                    }
 
 
                 }

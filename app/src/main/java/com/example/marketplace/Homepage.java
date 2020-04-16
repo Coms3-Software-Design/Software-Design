@@ -140,13 +140,13 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
                         String D_O_B = userJO.getString("D_O_B");
                         String Date_Created = userJO.getString("Date_Created");
                         String Gender = userJO.getString("Gender");
-//                        Blob Profile_Pic = (Blob) userJO.get("Profile_pic");
+                        String Profile_Pic = userJO.getString("Profile_pic");
 
 
-                        setUser(new User(userID,Name,Surname,UserName,Password,ContactNum, D_O_B,Date_Created,Gender, Bio,Balance,null));
+                        setUser(new User(userID,Name,Surname,UserName,Password,ContactNum, D_O_B,Date_Created,Gender, Bio,Balance,Profile_Pic));
                     }catch (JSONException e){
                         e.printStackTrace();
-                    };
+                    }
             }
         };
 

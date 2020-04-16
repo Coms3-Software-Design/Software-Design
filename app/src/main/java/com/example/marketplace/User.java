@@ -1,7 +1,6 @@
 package com.example.marketplace;
 
 import java.sql.Blob;
-import java.util.Date;
 
 public class User {
 
@@ -15,14 +14,14 @@ public class User {
     private double balance;
     private String contactDetails, userID;
     private String dateCreated;
-    private Blob Profilepic;
+    private String proPicURL;
 
 
     /*
     * Below is the User's constractor
     * */
     User(String userID, String name, String surname, String userName, String password, String contactDetails, String dateOfBirth,  String dateCreated,String gender,
-         String bio , double balance , Blob Profilepic){
+         String bio , double balance , String Profilepic){
 
         this.userID = userID;
         this.name = name;
@@ -35,7 +34,7 @@ public class User {
         this.bio = bio;
         this.balance = balance;
         this.contactDetails = contactDetails;
-        this.Profilepic = Profilepic;
+        this.proPicURL = Profilepic;
  // still need to figure out how to put a picture into the data base
     }
 
