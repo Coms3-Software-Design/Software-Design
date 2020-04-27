@@ -13,7 +13,7 @@ import androidx.fragment.app.Fragment;
 import com.example.marketplace.R;
 
 public class GoodsFragment extends Fragment {
-    LinearLayout l ;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
