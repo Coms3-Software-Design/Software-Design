@@ -7,11 +7,13 @@ env:
     - ANDROID_TARGET=android-22
     - ANDROID_ABI=armeabi-v7a
 android:
+  update_sdk: true
   components:
     # Uncomment the lines below if you want to
     # use the latest revision of Android SDK Tools
     - tools
     - platform-tools
+    - sys-img-${ANDROID_ABI}-${ANDROID_TARGET}
 
     # The BuildTools version used by your project
     - build-tools-29.0.3
@@ -40,8 +42,9 @@ script:
   - emulator -avd test -no-audio -no-window &
   - android-wait-for-emulator
   - adb shell input keyevent 82 &
+  - adb shell setprop dalvik.vm.dexopt-flags v=n,o=v
   - ./gradlew connectedCheck
-  
+  - bash <(curl -s https://codecov.io/bash) 
 after_success:
   - bash <(curl -s https://codecov.io/bash)  
   
@@ -54,3 +57,16 @@ after_success:
 #     - $HOME/.gradle/caches/
 #     - $HOME/.gradle/wrapper/
 #     - $HOME/.android/build-cache
+
+
+deploy:
+  - provider: script
+    skip_cleanup: true
+    script: echo -e "machine github.com\n  login $CI_USER_TOKEN" >> ~/.netrc && git push origin "v${SDK_VERSION}"
+    on:
+      branch: master
+  - provider: script
+    skip_cleanup: true
+    script: ./gradlew install bintrayUpload
+    on:
+      branch: master
