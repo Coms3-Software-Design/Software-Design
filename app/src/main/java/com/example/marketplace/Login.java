@@ -123,14 +123,14 @@ public class Login extends AppCompatActivity {
                         String UserName = userJO.getString("UserName");
                         String Password = userJO.getString("Password");
                         String ContactNum = userJO.getString("ContactNum");
-//                        StringBuilder Bio = (StringBuilder) userJO.get("Bio");
+                        String Bio =  userJO.getString("Bio");
                         String D_O_B = userJO.getString("D_O_B");
                         String Date_Created = userJO.getString("Date_Created");
                         String Gender = userJO.getString("Gender");
-//                      Blob Profile_Pic = (Blob) userJO.get("Profile_pic");
+                        String Profile_Pic =  userJO.getString("Profile_pic");
 
 
-                      //  User user = new User(userID,Name,Surname,UserName,Password,ContactNum, D_O_B,Date_Created,Gender,null,Balance,Profile_Pic);
+                        User user = new User(userID,Name,Surname,UserName,Password,ContactNum, D_O_B,Date_Created,Gender,Bio,Balance,Profile_Pic);
 
                         Toast.makeText(Login.this , "Sign as "+ userJO.getString("Name"), Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(c , Homepage.class);
