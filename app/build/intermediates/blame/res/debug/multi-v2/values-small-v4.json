@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/root/StudioProjects/Software-Design/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-small-v4/values-small-v4.xml",
+            "outputFile": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-small-v4/values-small-v4.xml",
             "map": [
                 {
                     "source": "/root/.gradle/caches/transforms-2/files-2.1/a2f4b86b6be619c18ed48583bcd1203e/material-1.1.0/res/values-small-v4/values-small-v4.xml",
