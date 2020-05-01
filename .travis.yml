@@ -13,7 +13,7 @@ android:
     # use the latest revision of Android SDK Tools
     - tools
     - platform-tools
-    - sys-img-${ANDROID_ABI}-${ANDROID_TARGET}
+   
 
     # The BuildTools version used by your project
     - build-tools-29.0.3
@@ -37,16 +37,15 @@ android:
 # Emulator Management: Create, Start and Wait
 #before_script:
 script:
-  - ./gradlew build jacocoTestReport assembleAndroidTest
+  #- ./gradlew build jacocoTestReport assembleAndroidTest
   - echo no | android create avd --force -n test -t android-22 --abi armeabi-v7a -c 100M
   - emulator -avd test -no-audio -no-window &
   - android-wait-for-emulator
   - adb shell input keyevent 82 &
-  - adb shell setprop dalvik.vm.dexopt-flags v=n,o=v
-  - ./gradlew connectedCheck
-  - bash <(curl -s https://codecov.io/bash) 
-after_success:
-  - bash <(curl -s https://codecov.io/bash)  
+  #- ./gradlew connectedCheck
+ 
+# after_success:
+#   - bash <(curl -s https://codecov.io/bash)  
   
 # # Avoiding cache  
 #   before_cache:
@@ -59,14 +58,14 @@ after_success:
 #     - $HOME/.android/build-cache
 
 
-deploy:
-  - provider: script
-    skip_cleanup: true
-    script: echo -e "machine github.com\n  login $CI_USER_TOKEN" >> ~/.netrc && git push origin "v${SDK_VERSION}"
-    on:
-      branch: master
-  - provider: script
-    skip_cleanup: true
-    script: ./gradlew install bintrayUpload
-    on:
-      branch: master
+# deploy:
+#   - provider: script
+#     skip_cleanup: true
+#     script: echo -e "machine github.com\n  login $CI_USER_TOKEN" >> ~/.netrc && git push origin "v${SDK_VERSION}"
+#     on:
+#       branch: master
+#   - provider: script
+#     skip_cleanup: true
+#     script: ./gradlew install bintrayUpload
+#     on:
+#       branch: master
