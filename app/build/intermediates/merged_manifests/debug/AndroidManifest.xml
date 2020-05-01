@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.marketplace.debug"
+    package="com.example.marketplace"
     android:versionCode="1"
     android:versionName="1.0-debug" >
 
@@ -52,7 +52,7 @@
 
         <provider
             android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-            android:authorities="com.example.marketplace.debug.lifecycle-process"
+            android:authorities="com.example.marketplace.lifecycle-process"
             android:exported="false"
             android:multiprocess="true" />
     </application>

@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.example.marketplace.debug"
+3    package="com.example.marketplace"
 4    android:versionCode="1"
 5    android:versionName="1.0-debug" >
 6
@@ -95,7 +95,7 @@
 53-->[androidx.lifecycle:lifecycle-process:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/bf4f013fe5bb364fe25c656e5b7996d1/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
 54            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
 54-->[androidx.lifecycle:lifecycle-process:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/bf4f013fe5bb364fe25c656e5b7996d1/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
-55            android:authorities="com.example.marketplace.debug.lifecycle-process"
+55            android:authorities="com.example.marketplace.lifecycle-process"
 55-->[androidx.lifecycle:lifecycle-process:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/bf4f013fe5bb364fe25c656e5b7996d1/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
 56            android:exported="false"
 56-->[androidx.lifecycle:lifecycle-process:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/bf4f013fe5bb364fe25c656e5b7996d1/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
