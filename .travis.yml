@@ -89,8 +89,8 @@ android:
   - sys-img-x86-android-29
   - sys-img-armeabi-v7a-android-23
 script:
-  - ./gradlew build jacocoTestReport assembleAndroidTest
-  - echo no | android create avd --force -n test -t android-22 --abi armeabi-v7a -c 100M
+ # - ./gradlew build jacocoTestReport assembleAndroidTest
+  - echo no | android create avd --force -n test -t android-23 --abi armeabi-v7a -c 100M
   - emulator -avd test -no-skin -no-audio -no-window &
   - android-wait-for-emulator
   - adb shell setprop dalvik.vm.dexopt-flags v=n,o=v
