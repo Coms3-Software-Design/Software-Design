@@ -4,7 +4,7 @@
             "outputFile": "/root/StudioProjects/Software-Design/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
-                    "source": "/root/.gradle/caches/transforms-2/files-2.1/d866db2828bc273c5618845e25979cc5/appcompat-1.2.0-beta01/res/values-ldltr-v21/values-ldltr-v21.xml",
+                    "source": "/root/.gradle/caches/transforms-2/files-2.1/da37d9f7ce6daa6f8ff753458b0db6d3/appcompat-1.2.0-beta01/res/values-ldltr-v21/values-ldltr-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

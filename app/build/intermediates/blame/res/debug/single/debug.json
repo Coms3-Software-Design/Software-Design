@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/root/StudioProjects/Software-Design/app/build/intermediates/res/merged/debug/drawable-v24_stonesandwater.jpg.flat",
-        "source": "/root/StudioProjects/Software-Design/app/src/main/res/drawable-v24/stonesandwater.jpg"
-    },
-    {
         "merged": "/root/StudioProjects/Software-Design/app/build/intermediates/res/merged/debug/drawable_edit.jpg.flat",
         "source": "/root/StudioProjects/Software-Design/app/src/main/res/drawable/edit.jpg"
+    },
+    {
+        "merged": "/root/StudioProjects/Software-Design/app/build/intermediates/res/merged/debug/drawable-v24_stonesandwater.jpg.flat",
+        "source": "/root/StudioProjects/Software-Design/app/src/main/res/drawable-v24/stonesandwater.jpg"
     },
     {
         "merged": "/root/StudioProjects/Software-Design/app/build/intermediates/res/merged/debug/anim_frombottom.xml.flat",
@@ -28,12 +28,12 @@
         "source": "/root/StudioProjects/Software-Design/app/src/main/res/layout/temp1.xml"
     },
     {
-        "merged": "/root/StudioProjects/Software-Design/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_foreground.png.flat",
-        "source": "/root/StudioProjects/Software-Design/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
-    },
-    {
         "merged": "/root/StudioProjects/Software-Design/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "/root/StudioProjects/Software-Design/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/root/StudioProjects/Software-Design/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/root/StudioProjects/Software-Design/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "/root/StudioProjects/Software-Design/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
