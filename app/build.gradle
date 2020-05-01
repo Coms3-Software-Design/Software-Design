@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 //apply plugin: 'groovy'
 
 
-apply plugin: 'jacoco'
+apply plugin: 'jacoco-android'
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
