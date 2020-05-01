@@ -46,26 +46,4 @@ script:
  
  after_success:
    - bash <(curl -s https://codecov.io/bash)  
-  
-# # Avoiding cache  
-#   before_cache:
-#   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
-#   - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
-# cache:
-#   directories:
-#     - $HOME/.gradle/caches/
-#     - $HOME/.gradle/wrapper/
-#     - $HOME/.android/build-cache
 
-
-# deploy:
-#   - provider: script
-#     skip_cleanup: true
-#     script: echo -e "machine github.com\n  login $CI_USER_TOKEN" >> ~/.netrc && git push origin "v${SDK_VERSION}"
-#     on:
-#       branch: master
-#   - provider: script
-#     skip_cleanup: true
-#     script: ./gradlew install bintrayUpload
-#     on:
-#       branch: master
