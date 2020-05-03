@@ -1,8 +1,11 @@
 package com.example.marketplace;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import java.sql.Blob;
 
-public class User {
+public class User implements Parcelable {
 
     private String name;
     private String surname;
@@ -41,6 +44,33 @@ public class User {
     /*
     * Getters and setters below
     */
+
+    protected User(Parcel in) {
+        name = in.readString();
+        surname = in.readString();
+        userName = in.readString();
+        password = in.readString();
+        dateOfBirth = in.readString();
+        gender = in.readString();
+        bio = in.readString();
+        balance = in.readDouble();
+        contactDetails = in.readString();
+        userID = in.readString();
+        dateCreated = in.readString();
+        proPicURL = in.readString();
+    }
+
+    public static final Creator<User> CREATOR = new Creator<User>() {
+        @Override
+        public User createFromParcel(Parcel in) {
+            return new User(in);
+        }
+
+        @Override
+        public User[] newArray(int size) {
+            return new User[size];
+        }
+    };
 
     public String getDateCreated() {
         return dateCreated;
@@ -124,6 +154,27 @@ public class User {
 
     public void setContactDetails(String contactDetails) {
         this.contactDetails = contactDetails;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(name);
+        dest.writeString(surname);
+        dest.writeString(userName);
+        dest.writeString(password);
+        dest.writeString(dateOfBirth);
+        dest.writeString(gender);
+        dest.writeString(bio);
+        dest.writeDouble(balance);
+        dest.writeString(contactDetails);
+        dest.writeString(userID);
+        dest.writeString(dateCreated);
+        dest.writeString(proPicURL);
     }
 
     /*

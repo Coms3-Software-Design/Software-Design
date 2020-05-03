@@ -1,36 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="176dp"
+    android:layout_height="170dp"
     android:background="@color/colorAccent"
     android:gravity="bottom"
     android:padding="16dp"
+    android:id="@+id/lk"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
     android:layout_marginTop="10dp">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/ivpic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_gravity="end"
-        android:src="@mipmap/ic_launcher"/>
+        android:layout_marginStart="121dp"
+        android:layout_marginLeft="121dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@id/tvUse"
+        android:layout_toRightOf="@id/tvUse"
+        android:src="@mipmap/ic_launcher" />
 
     <TextView
-        android:id="@+id/tvUserName"
+        android:id="@+id/tvUse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
         android:padding="2dp"
         android:text="UserName Here"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/tvBalance"
+        android:id="@+id/tvBal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="15dp"
+        android:layout_below="@id/tvUse"
+        android:layout_marginTop="15dp"
+        android:padding="2dp"
         android:text="Anything else we might need here"
-        android:padding="2dp"/>
+        android:textSize="15dp" />
 
-</LinearLayout>
+</RelativeLayout>

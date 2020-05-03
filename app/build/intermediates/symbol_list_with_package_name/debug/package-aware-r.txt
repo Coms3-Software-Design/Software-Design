@@ -1519,10 +1519,11 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btnChangeGender
+id btnChangePass
 id btnRegister
 id btnSignIn
 id btnSignUp
-id btnUpdate
 id buttonPanel
 id cancel_action
 id cancel_button
@@ -1590,6 +1591,7 @@ id fixed
 id forever
 id fragment_container
 id fragment_container_view_tag
+id g
 id ghost_view
 id ghost_view_holder
 id gone
@@ -1607,6 +1609,7 @@ id invisible
 id italic
 id item_touch_helper_previous_elevation
 id ivPropic
+id ivpic
 id labeled
 id largeLabel
 id left
@@ -1614,6 +1617,7 @@ id line1
 id line3
 id listMode
 id list_item
+id lk
 id masked
 id media_actions
 id message
@@ -1766,11 +1770,11 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
-id tvBalance
+id tvBal
 id tvCopyRight
 id tvDOB
 id tvForgotPass
-id tvUserName
+id tvUse
 id unchecked
 id uniform
 id unlabeled
