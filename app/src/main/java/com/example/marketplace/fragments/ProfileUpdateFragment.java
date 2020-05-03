@@ -59,15 +59,20 @@ public class ProfileUpdateFragment extends AppCompatDialogFragment {
     private final int IMG_REQUEST = 1;
     private Bitmap bitmap;
     private ImageView imgView;
-    private String uploadUrl = "http://lamp.ms.wits.ac.za/~s1814731/upload.php";
+    private String uploadUrl = "http://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/uploads/upload.php";
+    private String imgURLPrefix = "http://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/uploads/";
     private Context context;
     private Button changePass , changeGender;
     private User user;
 
-    @Override
-    public Dialog onCreateDialog(Bundle savedInstanceState){
+    public void setUser(User user){
+        this.user = user;
+    }
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+    @Override
+    public Dialog onCreateDialog(final Bundle savedInstanceState){
+
+        final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         LayoutInflater inflater = getActivity().getLayoutInflater();
         final View v =  inflater.inflate(R.layout.fragment_profile_update,null);
         context = v.getContext();
@@ -82,11 +87,19 @@ public class ProfileUpdateFragment extends AppCompatDialogFragment {
         changeGender = v.findViewById(R.id.btnChangeGender);
         genderGroup = v.findViewById(R.id.radioGroup);
 
+        imgView.setImageResource(R.drawable.ic_edit_profile);
+
+
+        Toast.makeText(context,"Click on the image to change your profile pic",Toast.LENGTH_LONG).show();
+
 
         changeGender.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 genderGroup.setVisibility(View.VISIBLE);
+                int radioButtonID = genderGroup.getCheckedRadioButtonId();
+                RadioButton R = (RadioButton) v.findViewById(radioButtonID);
+                R.setChecked(false);
             }
         });
 
@@ -98,27 +111,24 @@ public class ProfileUpdateFragment extends AppCompatDialogFragment {
             }
         });
 
-//        Bio.setText(user.getBio());
-//        fName.setText(user.getName());
-//        lName.setText(user.getSurname());
-//        pNumber.setText(user.getContactDetails());
-//
-//        int radioButtonID = genderGroup.getCheckedRadioButtonId();
-//        RadioButton R = (RadioButton) v.findViewById(radioButtonID);
-//        if(R.getText() == "Female" && user.getGender().equals("FeMale")){
-//
-//        }
-//        else{
-//            R.setChecked(false);
-//        }
+        imgView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                selectImage();
+            }
+        });
+        user.setBio("Shameel");
+        Bio.setText(user.getBio());
+        if(Bio.getText().toString().equals("null")){
+            Bio.setText("");
+            Bio.setHint("Please Enter Bio");
+        }
 
+        fName.setText(user.getName());
+        lName.setText(user.getSurname());
+        pNumber.setText(user.getContactDetails());
 
-
-
-
-
-        //imgView.setImageURI(Uri.parse());
-        setIMG("http://lamp.ms.wits.ac.za/~s1814731/Sami.jpg");
+        setIMG(imgURLPrefix.concat(user.getProPicURL()));
 
 
         builder.setView(v)
@@ -131,7 +141,7 @@ public class ProfileUpdateFragment extends AppCompatDialogFragment {
         }).setPositiveButton("update", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-
+                uploadImage();
             }
         });
 
@@ -140,20 +150,9 @@ public class ProfileUpdateFragment extends AppCompatDialogFragment {
 
     private void setIMG(String uri) {
 
-        Picasso.with(context).load(uri).placeholder(R.drawable.ic_edit_profile)
+        Picasso.get().load(uri).placeholder(R.drawable.ic_edit_profile)
                 .error(R.drawable.ic_edit_profile)
-                .into(imgView,new com.squareup.picasso.Callback(){
-
-                    @Override
-                    public void onSuccess() {
-
-                    }
-
-                    @Override
-                    public void onError() {
-
-                    }
-                });
+                .into(imgView);
     }
 
 
@@ -175,8 +174,9 @@ public class ProfileUpdateFragment extends AppCompatDialogFragment {
             try {
                // bitmap = MediaStore.Images.Media.getBitmap(getContentResolver() , path);
                 bitmap = MediaStore.Images.Media.getBitmap(context.getContentResolver(),path);
-                imgView.setImageBitmap(bitmap);
 
+                imgView.setImageBitmap(bitmap);
+               // setIMG(imgURLPrefix.concat(user.getProPicURL()));
             } catch (IOException e) {
                 e.printStackTrace();
                 System.out.println("fialed" );
@@ -194,9 +194,7 @@ public class ProfileUpdateFragment extends AppCompatDialogFragment {
                     String Responce = jsonObject.getString("response");
                     Toast.makeText(context,Responce,Toast.LENGTH_SHORT).show();
                     imgView.setImageResource(0);
-                    imgView.setVisibility(View.GONE);
-                   // Name.setText("");
-                    //Name.setVisibility(View.GONE);
+//                    imgView.setVisibility(View.GONE);
 
 
                 } catch (JSONException e) {
@@ -216,8 +214,8 @@ public class ProfileUpdateFragment extends AppCompatDialogFragment {
             @Override
             protected Map<String, String > getParams() throws AuthFailureError {
                 Map<String,String> params = new HashMap<>();
-             //   params.put("name",Name.getText().toString().trim());
-             //   params.put("image",imageToString(bitmap));
+                params.put("name",user.getUserID().trim());
+                params.put("image",imageToString(bitmap));
 
                 return params;
             }

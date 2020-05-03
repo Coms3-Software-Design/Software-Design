@@ -8,6 +8,7 @@ import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
@@ -18,6 +19,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.bumptech.glide.Glide;
 import com.example.marketplace.fragments.GoodsFragment;
 import com.example.marketplace.fragments.ProfileUpdateFragment;
 import com.example.marketplace.fragments.ServicesFragment;
@@ -36,7 +38,10 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
     private TextView tvUserName , tvBalance;
     private ImageView prPic;
     private NavigationView navigationView;
+    private ProfileUpdateFragment p;
     private Toolbar toolbar;
+    private String imgURLPrefix = "http://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/uploads/";
+
 
 
     @Override
@@ -47,14 +52,13 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
 
         user = getIntent().getParcelableExtra("user");
         Initialise(user);
-
+        //refresh();
         /*
          * we changed the action bar to a toolbar which is easier to work with
          * we then have to tell android studio by specifying the support action bar
          */
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
 
         navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -80,20 +84,9 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
 
     private void setIMG(String uri) {
 
-        Picasso.with(Homepage.this).load(uri).placeholder(R.drawable.ic_edit_profile)
+        Picasso.get().load(uri).placeholder(R.drawable.ic_edit_profile)
                 .error(R.drawable.ic_edit_profile)
-                .into(prPic,new com.squareup.picasso.Callback(){
-
-                    @Override
-                    public void onSuccess() {
-
-                    }
-
-                    @Override
-                    public void onError() {
-
-                    }
-                });
+                .into(prPic);
     }
 
 
@@ -112,7 +105,8 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new ServicesFragment()).commit();
                 break;
             case R.id.nav_editProfile:
-                editProfile();
+                editProfile(user);
+                Initialise(user);
                 //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new ProfileUpdateFragment()).commit();
                 break;
             case R.id.nav_transactionHistory:
@@ -136,18 +130,19 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
         tvUserName = findViewById(R.id.tvUse);
         tvBalance = findViewById(R.id.tvBal);
         prPic = findViewById(R.id.ivpic);
-
-
         tvUserName.setText(s.getUserName());
         tvBalance.setText("Balance: R"+s.getBalance());
-      setIMG("http://lamp.ms.wits.ac.za/~s1814731/Sami.jpg");
-
+        //Glide.with(this).load(imgURLPrefix.concat(user.getProPicURL())).into(prPic);
+       // setIMG(imgURLPrefix.concat(user.getProPicURL()));
+        Picasso.get().load(imgURLPrefix.concat(user.getProPicURL())).into(prPic);
     }
 
-    public void editProfile(){
-        ProfileUpdateFragment p = new ProfileUpdateFragment();
+    public void editProfile(User u){
+      //  Toast.makeText(this,imgURLPrefix.concat(user.getProPicURL()),Toast.LENGTH_SHORT).show();
+        p = new ProfileUpdateFragment();
+        p.setUser(u);
         p.show(getSupportFragmentManager(),"Profile Edit");
-    }
+         }
 
 
     public void Initialise( final User user){
@@ -159,7 +154,34 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
             @Override
             public void onPostExecute(String output) {
                     // [{"UserID":"1596357","Name":"shameel nkosi","Surname":"nkosi","UserName":"G","ContactNum":"2255889966","Balance":"0","Bio":null,"D_O_B":"06 Apr 2020","Date_Created":"06 Apr 2020","Gender":"Male","Profile_pic":null}]
-                setUser(user);
+                try {
+                    // Only userID and balance is an integer
+
+
+                    final JSONObject userJO = new JSONArray(output).getJSONObject(0); // JO in userJO for JSONObject
+                    String userID =Integer.toString( userJO.getInt("UserID"));
+                    int Balance = userJO.getInt("Balance");
+                    String Name = userJO.getString("Name");
+                    String Surname = userJO.getString("Surname");
+                    String UserName = userJO.getString("UserName");
+                    String Password = userJO.getString("Password");
+                    String ContactNum = userJO.getString("ContactNum");
+                    String Bio =  userJO.getString("Bio");
+                    String D_O_B = userJO.getString("D_O_B");
+                    String Date_Created = userJO.getString("Date_Created");
+                    String Gender = userJO.getString("Gender");
+                    String Profile_Pic =  userJO.getString("Profile_pic");
+
+
+
+                    setUser(new User(userID,Name,Surname,UserName,Password,ContactNum, D_O_B,Date_Created,Gender,Bio,Balance,Profile_Pic));
+
+                }catch (JSONException e){
+                    e.printStackTrace();
+
+                }
+
+
             }
         };
 
@@ -181,9 +203,9 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
 
         }
         else {
-
-            // normal back press action
             super.onBackPressed();
         }
     }
+
+
 }

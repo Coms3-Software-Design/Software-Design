@@ -92,15 +92,23 @@
 51        </activity>
 52
 53        <provider
-53-->[androidx.lifecycle:lifecycle-process:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/bf4f013fe5bb364fe25c656e5b7996d1/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
-54            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-54-->[androidx.lifecycle:lifecycle-process:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/bf4f013fe5bb364fe25c656e5b7996d1/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
-55            android:authorities="com.example.marketplace.lifecycle-process"
-55-->[androidx.lifecycle:lifecycle-process:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/bf4f013fe5bb364fe25c656e5b7996d1/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
-56            android:exported="false"
-56-->[androidx.lifecycle:lifecycle-process:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/bf4f013fe5bb364fe25c656e5b7996d1/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
-57            android:multiprocess="true" />
-57-->[androidx.lifecycle:lifecycle-process:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/bf4f013fe5bb364fe25c656e5b7996d1/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
-58    </application>
-59
-60</manifest>
+53-->[com.squareup.picasso:picasso:2.71828] /root/.gradle/caches/transforms-2/files-2.1/a5b73f70a464316a17b160aaee841195/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+54            android:name="com.squareup.picasso.PicassoProvider"
+54-->[com.squareup.picasso:picasso:2.71828] /root/.gradle/caches/transforms-2/files-2.1/a5b73f70a464316a17b160aaee841195/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+55            android:authorities="com.example.marketplace.com.squareup.picasso"
+55-->[com.squareup.picasso:picasso:2.71828] /root/.gradle/caches/transforms-2/files-2.1/a5b73f70a464316a17b160aaee841195/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+56            android:exported="false" />
+56-->[com.squareup.picasso:picasso:2.71828] /root/.gradle/caches/transforms-2/files-2.1/a5b73f70a464316a17b160aaee841195/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+57        <provider
+57-->[androidx.lifecycle:lifecycle-process:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/bf4f013fe5bb364fe25c656e5b7996d1/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+58            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+58-->[androidx.lifecycle:lifecycle-process:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/bf4f013fe5bb364fe25c656e5b7996d1/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+59            android:authorities="com.example.marketplace.lifecycle-process"
+59-->[androidx.lifecycle:lifecycle-process:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/bf4f013fe5bb364fe25c656e5b7996d1/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+60            android:exported="false"
+60-->[androidx.lifecycle:lifecycle-process:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/bf4f013fe5bb364fe25c656e5b7996d1/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+61            android:multiprocess="true" />
+61-->[androidx.lifecycle:lifecycle-process:2.2.0] /root/.gradle/caches/transforms-2/files-2.1/bf4f013fe5bb364fe25c656e5b7996d1/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+62    </application>
+63
+64</manifest>

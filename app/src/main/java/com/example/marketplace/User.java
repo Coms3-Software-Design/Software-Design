@@ -156,6 +156,14 @@ public class User implements Parcelable {
         this.contactDetails = contactDetails;
     }
 
+    public String getProPicURL() {
+        return proPicURL;
+    }
+
+    public void setProPicURL(String proPicURL) {
+        this.proPicURL = proPicURL;
+    }
+
     @Override
     public int describeContents() {
         return 0;
