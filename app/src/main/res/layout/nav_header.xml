@@ -20,6 +20,7 @@
         android:layout_marginRight="5dp"
         android:layout_toEndOf="@id/tvUse"
         android:layout_toRightOf="@id/tvUse"
+        android:clickable="true"
         android:src="@mipmap/ic_launcher" />
 
     <TextView

@@ -19,7 +19,6 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import com.bumptech.glide.Glide;
 import com.example.marketplace.fragments.GoodsFragment;
 import com.example.marketplace.fragments.ProfileUpdateFragment;
 import com.example.marketplace.fragments.ServicesFragment;
@@ -38,7 +37,7 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
     private TextView tvUserName , tvBalance;
     private ImageView prPic;
     private NavigationView navigationView;
-    private ProfileUpdateFragment p;
+    private ProfileUpdateFragment profile;
     private Toolbar toolbar;
     private String imgURLPrefix = "http://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/uploads/";
 
@@ -52,7 +51,7 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
 
         user = getIntent().getParcelableExtra("user");
         Initialise(user);
-        //refresh();
+
         /*
          * we changed the action bar to a toolbar which is easier to work with
          * we then have to tell android studio by specifying the support action bar
@@ -70,6 +69,7 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
         toggle.syncState(); // this will make the toggle to rotate when we open our drawer
 
 
+
         /*
          * below we start activity with the Goods fragment open
          * We also start the activity with the Goods selected from navigation drawer
@@ -85,8 +85,8 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
     private void setIMG(String uri) {
 
         Picasso.get().load(uri).placeholder(R.drawable.ic_edit_profile)
-                .error(R.drawable.ic_edit_profile)
-                .into(prPic);
+                .error(R.drawable.ic_edit_profile).into(prPic);
+
     }
 
 
@@ -96,6 +96,7 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
      */
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
         switch (item.getItemId())
         {
             case R.id.nav_goods:
@@ -120,6 +121,7 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
                 finish();
                 break;
 
+
         }
 
         drawer.closeDrawer(GravityCompat.START);
@@ -132,16 +134,15 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
         prPic = findViewById(R.id.ivpic);
         tvUserName.setText(s.getUserName());
         tvBalance.setText("Balance: R"+s.getBalance());
-        //Glide.with(this).load(imgURLPrefix.concat(user.getProPicURL())).into(prPic);
-       // setIMG(imgURLPrefix.concat(user.getProPicURL()));
-        Picasso.get().load(imgURLPrefix.concat(user.getProPicURL())).into(prPic);
+        setIMG(imgURLPrefix.concat(user.getUserID()).concat(".jpg").concat("?=" + System.currentTimeMillis()));
+
     }
 
     public void editProfile(User u){
-      //  Toast.makeText(this,imgURLPrefix.concat(user.getProPicURL()),Toast.LENGTH_SHORT).show();
-        p = new ProfileUpdateFragment();
-        p.setUser(u);
-        p.show(getSupportFragmentManager(),"Profile Edit");
+
+        profile = new ProfileUpdateFragment();
+        profile.setUser(u);
+        profile.show(getSupportFragmentManager(),"Profile Edit");
          }
 
 
@@ -203,9 +204,12 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
 
         }
         else {
+            startActivity(new Intent(this, Login.class));
+            finish();
             super.onBackPressed();
         }
     }
+
 
 
 }

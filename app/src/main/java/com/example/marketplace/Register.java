@@ -24,14 +24,14 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class Register extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
-    Button btnRegister;
-    EditText UserID,Name,Last_Name,Password,PhoneNumber, userName;
-    RadioGroup radioGroup;
-    RadioButton checkedRadioButton = null; // we will assign this to a checked radio button but initially it's null
-    TextView DOBtext;
-    Calendar dateOB = Calendar.getInstance();
-    Date dateOfBirth , dateCreated;
-    String gender;
+    private Button btnRegister;
+    private EditText UserID,Name,Last_Name,Password,PhoneNumber, userName;
+    private RadioGroup radioGroup;
+    private RadioButton checkedRadioButton = null; // we will assign this to a checked radio button but initially it's null
+    private TextView DOBtext;
+    private Calendar dateOB = Calendar.getInstance();
+    private  Date dateOfBirth , dateCreated;
+    private String gender;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

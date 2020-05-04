@@ -28,9 +28,9 @@ import java.util.Date;
 import static android.graphics.Color.rgb;
 
 public class Login extends AppCompatActivity {
-    EditText userName,Password;
-    Button signIn , signUP;
-    TextView tvForgotPass;
+    private EditText userName,Password;
+    private Button signIn , signUP;
+    private TextView tvForgotPass;
 
     int loginAttempts = 3; // made it a global variable for ease of access
 
@@ -91,7 +91,7 @@ public class Login extends AppCompatActivity {
         });
     }
 
-    public void Sign_In(final Context c , ContentValues cv){
+    private void Sign_In(final Context c , ContentValues cv){
 
             @SuppressLint("StaticFieldLeak") AsyncHTTPPost asyncHTTPPost = new AsyncHTTPPost("http://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/MPLogin.php" , cv) {
 
