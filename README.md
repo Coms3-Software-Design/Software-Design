@@ -6,14 +6,14 @@
 
 
 
-### WE START WITH THE DIAGRAMS THAT DESCRIBE THE SYSTEM WE BUILDING
-#### Development View:
+## WE START WITH THE DIAGRAMS THAT DESCRIBE THE SYSTEM WE BUILDING
+### Development View:
 ##### Component Diagram:
 * This Digram show how the components of the system a linked to each other
 * The customer needs to be authenticated who in turn also interacts with his account. The Custumor can again interact with the Ordering system which interacts with 2 other components, the cart component and the Payment Component of the system 
 ![](Images/component.png)
 
-#### Logical View:
+### Logical View:
 ##### The State diagram: 
 * Which shows what states we have and how one moves from one state to the other. This is almost similar to the Process flow diagram which follows after this one. Unlike Takealot.com You need to first sign in to the system before you can start viewing the products, and that is the initial state of our system. If you do not have an account then you need to create one. But the state diagram is quite self explanatory.
 ![](Images/state.png)
@@ -25,7 +25,7 @@
   3.The Pink box classes; these are our main classes, We have a user which can have 0 or many products, and each product can be bought by 0 or 1 other user
   ![](Images/class.png)
 
-#### Physica View:
+### Physica View:
 ##### The Deployment Diagram
 * This speaks to how the system works in the top level view. Speaks to how the System is deployed.
 * In this instance We deploy it as a mobile app. Which we later might also deploy as a website.
@@ -36,14 +36,14 @@
 ![](Images/Deployment.jpeg)
 
 
-#### Process View:
+### Process View:
 ##### The Activity Diagram:
 * Here we Describe step by step how does each  end user gets from loging in to successfully buying their product or selling a product. 
 * We also go through how each user can and update their profile, change credentials and even upload a profile picture.
 
 ![](Images/ProcessFLow.jpeg)
 
-#### Scenarios:
+### Scenarios:
 
 ##### The USE CASE Diagram
 * Below we show how a person is a user and what priveleges they have within the system.
