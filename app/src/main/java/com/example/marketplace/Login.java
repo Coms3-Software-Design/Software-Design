@@ -31,6 +31,7 @@ public class Login extends AppCompatActivity {
     private EditText userName,Password;
     private Button signIn , signUP;
     private TextView tvForgotPass;
+    private String password;
 
     int loginAttempts = 3; // made it a global variable for ease of access
 
@@ -52,7 +53,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String usrname = userName.getText().toString();
-                String password = Password.getText().toString();
+                password = Password.getText().toString();
 
 
                 // The 2 below if statements independant of each other only check for errors from input
@@ -121,7 +122,8 @@ public class Login extends AppCompatActivity {
                         String Name = userJO.getString("Name");
                         String Surname = userJO.getString("Surname");
                         String UserName = userJO.getString("UserName");
-                        String Password = userJO.getString("Password");
+                        //String Password = userJO.getString("Password");
+                        String Password = password;
                         String ContactNum = userJO.getString("ContactNum");
                         String Bio =  userJO.getString("Bio");
                         String D_O_B = userJO.getString("D_O_B");

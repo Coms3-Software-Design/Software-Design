@@ -1,8 +1,10 @@
 package com.example.marketplace.fragments;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.ContentResolver;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -32,6 +34,7 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.example.marketplace.AsyncHTTPPost;
 import com.example.marketplace.Homepage;
 import com.example.marketplace.Login;
 import com.example.marketplace.MySingleton;
@@ -63,6 +66,7 @@ public class ProfileUpdateFragment extends AppCompatDialogFragment {
     private Context context;
     private Button changePass, changeGender;
     private User user;
+    private Boolean editpass = false;
 
     public void setUser(User user) {
         this.user = user;
@@ -88,16 +92,19 @@ public class ProfileUpdateFragment extends AppCompatDialogFragment {
 
 
 
+
+
         Toast.makeText(context, "Click on the image to change your profile pic", Toast.LENGTH_LONG).show();
 
 
         changeGender.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                genderGroup.setVisibility(View.VISIBLE);
-                int radioButtonID = genderGroup.getCheckedRadioButtonId();
-                RadioButton R = (RadioButton) v.findViewById(radioButtonID);
-                R.setChecked(false);
+//                genderGroup.setVisibility(View.VISIBLE);
+//                int radioButtonID = genderGroup.getCheckedRadioButtonId();
+//                RadioButton R = (RadioButton) v.findViewById(radioButtonID);
+//                R.setChecked(false);
+                Toast.makeText(context,"This feature still needs implementation",Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -106,7 +113,7 @@ public class ProfileUpdateFragment extends AppCompatDialogFragment {
             public void onClick(View v) {
                 nPass.setVisibility(View.VISIBLE);
                 oPass.setVisibility(View.VISIBLE);
-                setIMG(imgURLPrefix.concat(user.getUserID()).concat(".jpg"));
+                editpass = true;
             }
         });
 
@@ -129,26 +136,118 @@ public class ProfileUpdateFragment extends AppCompatDialogFragment {
 
         setIMG(imgURLPrefix.concat(user.getUserID()).concat(".jpg").concat("?=" + System.currentTimeMillis()));
 
-
         builder.setView(v)
                 .setTitle("Profile Edit")
-                .setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+                .setNegativeButton("cancel", null)
+                .setPositiveButton("update",null);
+
+        final AlertDialog mAlertDialog = builder.create();
+
+        mAlertDialog.setOnShowListener(new DialogInterface.OnShowListener() {
+
+            @Override
+            public void onShow(DialogInterface dialog) {
+
+                Button b = mAlertDialog.getButton(AlertDialog.BUTTON_POSITIVE);
+                b.setOnClickListener(new View.OnClickListener() {
+
                     @Override
-                    public void onClick(DialogInterface dialog, int which) {
+                    public void onClick(View view) {
+                        // TODO Do something
+                        uploadImage();
+                        updateDetails();
+
+
 
                     }
-                }).setPositiveButton("update", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                uploadImage();
-                Intent intent = new Intent(context , Homepage.class);
-                intent.putExtra("user",user);
-                startActivity(intent);
-
+                });
             }
         });
+        return  mAlertDialog;
 
-        return builder.create();
+
+    }
+
+    private void updateDetails() {
+        String bio = Bio.getText().toString().trim();
+        String name = fName.getText().toString().trim();
+        String sName = lName.getText().toString().trim();
+        String pNum = pNumber.getText().toString().trim();
+        String passwrd = user.getPassword();
+
+
+        // Below we check if the customer has errors from any input
+
+        if(bio.isEmpty()){
+            Bio.setError("Tell us a little bit about yourself");
+            return;
+        }
+
+        if(name.equals("")){
+            fName.setError("Your name cannot be left blank");
+            return;
+        }
+
+        if(sName.equals("")){
+            lName.setError("Your last name cannot be left blank");
+            return;
+        }
+
+        if(pNum.equals("") || pNum.length()!=10){
+            pNumber.setError("Please Enter a 10 digit phone number");
+            return;
+        }
+
+        // Below We Check if the user wants to change their password then work accordingly
+        if(editpass){
+            String oldPass = oPass.getText().toString();
+            String newPass = nPass.getText().toString();
+
+            // we ensure that the user puts in a valid password for authentication and then we can update afterwards
+            if(oldPass.equals("") || !oldPass.equals(user.getPassword())){
+                oPass.setError("Please Enter a Password Matching your current pass");
+                return;
+            }
+            if(newPass.equals("")){
+                nPass.setError("Please Enter a new Password");
+                return;
+            }
+            passwrd = newPass;
+
+        }
+
+       // Toast.makeText(context,bio+name+sName+pNum+passwrd,Toast.LENGTH_LONG).show();
+        user.setPassword(passwrd);
+        user.setBio(bio);
+        user.setName(name);
+        user.setSurname(sName);
+        user.setContactDetails(pNum);
+
+        ContentValues cv = new ContentValues();
+        cv.put("userID",user.getUserID());
+        cv.put("name",name);
+        cv.put("surname",sName);
+        cv.put("pNum",pNum);
+        cv.put("bio",bio);
+        cv.put("password",passwrd);
+
+        @SuppressLint("StaticFieldLeak")AsyncHTTPPost asyncHTTPPost = new AsyncHTTPPost("http://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/MPUpdateProfile.php" , cv) {
+
+            @Override
+            protected void onPostExecute(String output) {
+                if(output.equals("ok")){
+                    Toast.makeText(context,"update Successfull",Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(context , Homepage.class);
+                    intent.putExtra("user",user);
+                    startActivity(intent);
+                }
+                else {
+                    Toast.makeText(context, "Your Number could be similar to someone elses make sure you have the right number",Toast.LENGTH_LONG).show();
+
+                }
+            }
+        };
+        asyncHTTPPost.execute();
     }
 
     private void setIMG(String uri) {
@@ -195,10 +294,8 @@ public class ProfileUpdateFragment extends AppCompatDialogFragment {
                 try {
                     JSONObject jsonObject = new JSONObject(response);
                     String Responce = jsonObject.getString("response");
-                    Toast.makeText(context, Responce, Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(context, Responce, Toast.LENGTH_SHORT).show();
                     imgView.setImageResource(0);
-//                    imgView.setVisibility(View.GONE);
-
 
                 } catch (JSONException e) {
                     e.printStackTrace();
