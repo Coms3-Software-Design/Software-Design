@@ -41,7 +41,7 @@
 * Here we Describe step by step how does each  end user gets from loging in to successfully buying their product or selling a product. 
 * We also go through how each user can and update their profile, change credentials and even upload a profile picture.
 
-![](Images/ProcessFLow.jpeg)
+![](Images/flow.jpeg)
 
 ### Scenarios:
 
