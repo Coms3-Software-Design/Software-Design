@@ -1618,6 +1618,7 @@ id line3
 id listMode
 id list_item
 id lk
+id loForgotPass
 id loSplash
 id masked
 id media_actions
