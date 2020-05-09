@@ -27,9 +27,7 @@ public class SplashScreenTest{
 
     @Test
     public void onCreate(){
-        View view = sActivity.findViewById(R.id.loSplash);
         View view1 = sActivity.findViewById(R.id.tvCopyRight);
-        assertNotNull(view);
         assertNotNull(view1);
     }
 
