@@ -1,6 +1,7 @@
 package com.example.marketplace;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,9 +40,10 @@ public class ProductsReclerViewAdapter extends RecyclerView.Adapter<ProductsRecl
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.tvProdName.setText(mProducts.get(position).getProductName());
-        holder.tvProdPrice.setText((int) mProducts.get(position).getPricePerItem());
-        Picasso.get().load(mProducts.get(position).getProductPicture()).placeholder(R.drawable.techdefault)
-                .error(R.drawable.catdefault)
+        //int price = Integer.toString(mProducts.get(position).getPricePerItem());
+        holder.tvProdPrice.setText(String.valueOf(mProducts.get(position).getPricePerItem()));
+        Picasso.get().load(mProducts.get(position).getProductPicture()).placeholder(R.drawable.tech2)
+                .error(R.drawable.tech2)
                 .into(holder.imgProd);
 
         holder.viewProdCard.setOnClickListener(new View.OnClickListener() {

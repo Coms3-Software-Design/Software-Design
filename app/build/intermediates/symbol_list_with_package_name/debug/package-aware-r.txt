@@ -1443,6 +1443,7 @@ drawable red
 drawable splash
 drawable st
 drawable stonesandwater
+drawable tech2
 drawable techdefault
 drawable test_custom_background
 drawable tooltip_frame_dark

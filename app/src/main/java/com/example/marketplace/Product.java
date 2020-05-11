@@ -8,9 +8,10 @@ public class Product {
     private String productName , category, productBrand;
     private String productDescription;
     private String productPicture;
+    private String productsURL = "https://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/products/";
 
     Product(int productID , int userID, int currentQuantity, int soldQuantity, double pricePerItem,
-            String productName , String category, String productBrand, String productDescription, String productPicture){
+            String productName , String category, String productBrand, String productDescription){
         this.productID = productID;
         this.userID = userID;
         this.currentQuantity = currentQuantity;
@@ -20,7 +21,7 @@ public class Product {
         this.category = category;
         this.productBrand = productBrand;
         this.productDescription = productDescription;
-        this.productPicture = productPicture;
+        this.productPicture = productsURL.concat(String.valueOf(productID)).concat(".jpg").concat("?=" + System.currentTimeMillis());
 
     }
 
