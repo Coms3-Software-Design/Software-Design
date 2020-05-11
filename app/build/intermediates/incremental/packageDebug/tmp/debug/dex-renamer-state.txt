@@ -1,7 +1,7 @@
-#Mon May 04 12:39:19 SAST 2020
-base.0=/root/StudioProjects/Proj/Software-Design/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
+#Mon May 11 04:00:50 CAT 2020
+base.0=C\:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=/root/StudioProjects/Proj/Software-Design/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
+base.1=C\:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex

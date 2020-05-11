@@ -1,262 +1,270 @@
 [
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/drawable_ic_edit_profile.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/drawable/ic_edit_profile.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_splash.jpg.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\drawable-v24\\splash.jpg"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_activity_register.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/activity_register.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/drawable_ic_goods.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/drawable/ic_goods.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_temp6.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/temp6.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_temp2.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/temp2.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\layout_temp9.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\layout\\temp9.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/drawable_edit.jpg.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/drawable/edit.jpg"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\layout_frament_services.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\layout\\frament_services.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_background.png.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/mipmap-mdpi/ic_launcher_background.png"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/drawable-v24_red.jpg.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/drawable-v24/red.jpg"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\layout_temp2.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\layout\\temp2.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/drawable_ic_sign_out.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/drawable/ic_sign_out.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_kali.jpg.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\drawable-v24\\kali.jpg"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_background.png.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/mipmap-xxxhdpi/ic_launcher_background.png"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_frament_services.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/frament_services.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_temp5.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/temp5.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_edit_profile.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\drawable\\ic_edit_profile.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/anim_frombottom.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/anim/frombottom.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\layout_temp5.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\layout\\temp5.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_activity_forgot_password.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/activity_forgot_password.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_profile_update.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\layout\\fragment_profile_update.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/drawable-v24_background2.jpg.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/drawable-v24/background2.jpg"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_nev_dr.jpg.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\drawable-v24\\nev_dr.jpg"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/drawable_ic_create_item.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/drawable/ic_create_item.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\layout_nav_header.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\layout\\nav_header.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_background.png.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/mipmap-xxhdpi/ic_launcher_background.png"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\anim_fromside.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\anim\\fromside.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_temp3.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/temp3.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/menu_drawer_menu.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/menu/drawer_menu.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\layout\\activity_register.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_foreground.png.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\layout_temp8.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\layout\\temp8.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_temp9.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/temp9.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/drawable-v24_stonesandwater.jpg.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/drawable-v24/stonesandwater.jpg"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_fragment_profile_update.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/fragment_profile_update.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_blurrybackground1.jpg.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\drawable-v24\\blurrybackground1.jpg"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/anim_fromanside.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/anim/fromanside.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_sign_out.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\drawable\\ic_sign_out.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\layout_temp4.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\layout\\temp4.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_background.png.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/mipmap-hdpi/ic_launcher_background.png"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient_background.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\drawable\\gradient_background.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_temp4.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/temp4.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\layout_temp1.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\layout\\temp1.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/drawable-v24_kali.jpg.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/drawable-v24/kali.jpg"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_create_item.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\drawable\\ic_create_item.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edit.jpg.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\drawable\\edit.jpg"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/drawable-v24_st.png.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/drawable-v24/st.png"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\menu_drawer_menu.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\menu\\drawer_menu.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/anim_fromtop.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/anim/fromtop.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_background2.jpg.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\drawable-v24\\background2.jpg"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_fragment_goods.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/fragment_goods.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\layout_temp7.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\layout\\temp7.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_homepage.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\layout\\activity_homepage.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/drawable_ic_transaction_history.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/drawable/ic_transaction_history.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/drawable-v24_blurrybackground1.jpg.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/drawable-v24/blurrybackground1.jpg"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_st.png.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\drawable-v24\\st.png"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/drawable-v24_blurrybackground.jpg.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/drawable-v24/blurrybackground.jpg"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/drawable-v24_background1.jpg.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/drawable-v24/background1.jpg"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_splash_screen.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_temp8.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/temp8.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_goods.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\drawable\\ic_goods.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_temp0.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/temp0.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\layout_temp3.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\layout\\temp3.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_foreground.png.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_service.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\drawable\\ic_service.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background_gradient.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\drawable\\background_gradient.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_activity_splash_screen.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/activity_splash_screen.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\anim_fromanside.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\anim\\fromanside.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\layout_temp0.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\layout\\temp0.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/drawable-v24_nev_dr.jpg.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/drawable-v24/nev_dr.jpg"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_background1.jpg.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\drawable-v24\\background1.jpg"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_activity_login.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/activity_login.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\anim_fromtop.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\anim\\fromtop.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_nav_header.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/nav_header.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_temp1.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/temp1.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_forgot_password.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\layout\\activity_forgot_password.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_temp7.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/temp7.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_activity_homepage.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/activity_homepage.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_stonesandwater.jpg.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\drawable-v24\\stonesandwater.jpg"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_background.png.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/mipmap-xhdpi/ic_launcher_background.png"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_red.jpg.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\drawable-v24\\red.jpg"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\layout_temp6.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\layout\\temp6.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_goods.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\layout\\fragment_goods.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/drawable-v24_splash.jpg.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/drawable-v24/splash.jpg"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/anim_fromside.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/anim/fromside.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_transaction_history.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\drawable\\ic_transaction_history.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/drawable_ic_service.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/drawable/ic_service.xml"
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\anim_frombottom.xml.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\anim\\frombottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_blurrybackground.jpg.flat",
+        "source": "C:\\Users\\FORRTY\\StudioProjects\\Software-Design\\app\\src\\main\\res\\drawable-v24\\blurrybackground.jpg"
     }
 ]

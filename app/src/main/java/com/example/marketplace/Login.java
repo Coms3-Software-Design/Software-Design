@@ -29,8 +29,8 @@ import static android.graphics.Color.rgb;
 
 public class Login extends AppCompatActivity {
     private EditText userName,Password;
-    private Button signIn , signUP;
-    private TextView tvForgotPass;
+    private Button signIn ;
+    private TextView tvForgotPass ,signUP;
     private String password;
 
     int loginAttempts = 3; // made it a global variable for ease of access
@@ -43,7 +43,7 @@ public class Login extends AppCompatActivity {
         Password = (EditText)findViewById(R.id.etPassword_Login);
         tvForgotPass = (TextView) findViewById(R.id.tvForgotPass);
         signIn = (Button) findViewById(R.id.btnSignIn);
-        signUP = (Button) findViewById(R.id.btnSignUp);
+        signUP = (TextView) findViewById(R.id.tvSignUp);
 
         // TODO : Use shared preferences to give the user the ability to login in next session without typing in their credentials
         // TODO : Create The forgot password so that a user can reset their password
@@ -94,7 +94,7 @@ public class Login extends AppCompatActivity {
 
     private void Sign_In(final Context c , ContentValues cv){
 
-            @SuppressLint("StaticFieldLeak") AsyncHTTPPost asyncHTTPPost = new AsyncHTTPPost("http://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/MPLogin.php" , cv) {
+            @SuppressLint("StaticFieldLeak") AsyncHTTPPost asyncHTTPPost = new AsyncHTTPPost("https://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/MPLogin.php" , cv) {
 
             @Override
             public void onPostExecute(String output) {
@@ -103,7 +103,7 @@ public class Login extends AppCompatActivity {
                     loginAttempts--;
                     Toast.makeText(Login.this , "Sign in failed please try again, you have "+loginAttempts+ " more attempts", Toast.LENGTH_SHORT).show();
                     if(loginAttempts == 0){
-                        signIn.setBackgroundColor(0);
+                        signIn.setAlpha(.5f);
                         signIn.setClickable(false);
                         Toast.makeText(c,"You can no longer sign in during this session, please reset password or try logging in late",Toast.LENGTH_LONG).show();
                     }

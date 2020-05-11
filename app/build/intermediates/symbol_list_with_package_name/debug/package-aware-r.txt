@@ -787,6 +787,7 @@ color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
+color black_60_transparent
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -851,6 +852,10 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color gradient_background_start
+color gradient_backround_end
+color gradient_end_color
+color gradient_start_color
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color material_blue_grey_800
@@ -953,6 +958,7 @@ color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected
 color tooltip_background_dark
 color tooltip_background_light
+color white_90_transparent
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -1378,6 +1384,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable background1
 drawable background2
+drawable background_gradient
 drawable blurrybackground
 drawable blurrybackground1
 drawable btn_checkbox_checked_mtrl
@@ -1395,6 +1402,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable edit
+drawable gradient_background
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
 drawable ic_create_item
@@ -1523,7 +1531,6 @@ id btnChangeGender
 id btnChangePass
 id btnRegister
 id btnSignIn
-id btnSignUp
 id buttonPanel
 id cancel_action
 id cancel_button
@@ -1774,6 +1781,7 @@ id tvBal
 id tvCopyRight
 id tvDOB
 id tvForgotPass
+id tvSignUp
 id tvUse
 id unchecked
 id uniform

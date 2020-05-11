@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     tools:context=".Register"
-    android:background="@drawable/red"
+    android:background="@drawable/background_gradient"
     android:orientation="vertical"
     android:paddingTop="10dp"
     >
@@ -23,108 +23,243 @@
         android:orientation="vertical">
 
 
-        <EditText
-            android:id="@+id/etUserName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
-            android:ems="10"
-            android:hint="UserName"
-            android:padding="5dp"
-            android:paddingTop="30dp" />
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/etStudentNo_Login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_gravity="center|center_vertical"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <EditText
-            android:id="@+id/etUserID"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
-            android:digits="0123456789"
-            android:ems="10"
-            android:hint="Student Number"
-            android:inputType="number"
-            android:maxLength="13"
-            android:padding="5dp" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|center_vertical"
+                android:layout_margin="13dp"
+                app:cardBackgroundColor="@color/colourLayout"
+                app:cardCornerRadius="18dp"
+                app:elevation="5dp">
 
-        <EditText
-            android:id="@+id/etFname"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
-            android:ems="10"
-            android:hint="Full Name"
-            android:inputType="textPersonName"
-            android:padding="5dp" />
-
-        <EditText
-            android:id="@+id/etLname"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
-            android:ems="10"
-            android:hint="Last Name"
-            android:inputType="textPersonName"
-            android:padding="5dp" />
-
-        <EditText
-            android:id="@+id/etPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
-            android:ems="10"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:padding="5dp" />
+                <EditText
+                    android:id="@+id/etUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center|center_vertical"
+                    android:backgroundTint="#FFFFFF"
+                    android:foregroundTint="#000000"
+                    android:hint="Username"
+                    android:textColor="@color/gradient_background_start"
+                    android:textColorHint="@color/gradient_background_start"
+                    android:inputType="textPersonName"
+                    android:padding="20dp" />
 
 
-        <EditText
-            android:id="@+id/etPhone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
+            </androidx.cardview.widget.CardView>
 
-            android:digits="0123456789"
-            android:ems="10"
-            android:hint="Phone Number"
-            android:inputType="number"
-            android:maxLength="10"
-            android:padding="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="10sp"
+            app:layout_constraintBottom_toTopOf="@+id/etStudentNo_Login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_gravity="center|center_vertical"
+
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|center_vertical"
+                android:layout_margin="13dp"
+                app:cardCornerRadius="18dp"
+                app:cardBackgroundColor="@color/colourLayout"
+                app:elevation="5dp">
+
+                <EditText
+                    android:id="@+id/etUserID"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center|center_vertical"
+                    android:backgroundTint="#FFFFFF"
+                    android:foregroundTint="#000000"
+                    android:hint="Student Number"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:maxLength="10"
+                    android:ems="10"
+                    android:padding="20dp"
+                    android:textColor="@color/gradient_background_start"
+                    android:textColorHint="@color/gradient_background_start" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="10sp"
+            app:layout_constraintBottom_toTopOf="@+id/etStudentNo_Login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_gravity="center|center_vertical"
+
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|center_vertical"
+                android:layout_margin="13dp"
+                app:cardCornerRadius="18dp"
+                app:cardBackgroundColor="@color/colourLayout"
+                app:elevation="5dp">
+
+                <EditText
+                    android:id="@+id/etFname"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center|center_vertical"
+                    android:backgroundTint="#FFFFFF"
+                    android:foregroundTint="#000000"
+                    android:hint="Full Name"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:padding="20dp"
+                    android:textColor="@color/gradient_background_start"
+                    android:textColorHint="@color/gradient_background_start" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="10sp"
+            app:layout_constraintBottom_toTopOf="@+id/etStudentNo_Login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_gravity="center|center_vertical"
+
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|center_vertical"
+                android:layout_margin="13dp"
+                app:cardCornerRadius="18dp"
+                app:cardBackgroundColor="@color/colourLayout"
+                app:elevation="5dp">
+
+                <EditText
+                    android:id="@+id/etLname"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center|center_vertical"
+                    android:backgroundTint="#FFFFFF"
+                    android:foregroundTint="#000000"
+                    android:hint="Last Name"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:padding="20dp"
+                    android:textColor="@color/gradient_background_start"
+                    android:textColorHint="@color/gradient_background_start" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="10sp"
+            app:layout_constraintBottom_toTopOf="@+id/etStudentNo_Login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_gravity="center|center_vertical"
+
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|center_vertical"
+                android:layout_margin="13dp"
+                app:cardCornerRadius="18dp"
+                app:cardBackgroundColor="@color/colourLayout"
+                app:elevation="5dp">
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center|center_vertical"
+                    android:backgroundTint="#FFFFFF"
+                    android:foregroundTint="#000000"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:padding="20dp"
+                    android:textColor="@color/gradient_background_start"
+                    android:textColorHint="@color/gradient_background_start" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="10sp"
+            app:layout_constraintBottom_toTopOf="@+id/etStudentNo_Login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_gravity="center|center_vertical"
+
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|center_vertical"
+                android:layout_margin="13dp"
+                app:cardCornerRadius="18dp"
+                app:cardBackgroundColor="@color/colourLayout"
+                app:elevation="5dp">
+
+                <EditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center|center_vertical"
+                    android:backgroundTint="#FFFFFF"
+                    android:foregroundTint="#000000"
+                    android:digits="0123456789"
+                    android:hint="Phone Number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:ems="10"
+                    android:padding="20dp"
+                    android:textColor="@color/gradient_background_start"
+                    android:textColorHint="@color/gradient_background_start" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
 
         <RadioGroup
             android:id="@+id/radioGroup"
@@ -176,24 +311,25 @@
             android:padding="5dp"
             android:text="Click to set date of birth"
             android:textAlignment="center"
-            android:textColor="#03c2fc" />
+            android:textColor="@color/colourLayout" />
+
+
 
 
         <Button
             android:id="@+id/btnRegister"
-            android:layout_width="269dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="center"
-            android:layout_margin="20dp"
-            android:background="#66CDAA"
-            android:clickable="true"
-            android:padding="5dp"
-            android:text="Sign Up" />
+            android:layout_width="264dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center|center_vertical"
+            android:layout_marginStart="71dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="71dp"
+            android:background="@drawable/gradient_background"
+            android:text="Sign Up"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvForgotPass" />
     </LinearLayout>
 
 
