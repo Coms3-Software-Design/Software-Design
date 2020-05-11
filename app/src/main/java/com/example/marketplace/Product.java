@@ -6,11 +6,11 @@ public class Product {
     private  int productID , userID, currentQuantity, soldQuantity;
     private double pricePerItem;
     private String productName , category, productBrand;
-    private StringBuilder productDescription;
-    private Image productPicture;
+    private String productDescription;
+    private String productPicture;
 
     Product(int productID , int userID, int currentQuantity, int soldQuantity, double pricePerItem,
-            String productName , String category, String productBrand, StringBuilder productDescription, Image productPicture){
+            String productName , String category, String productBrand, String productDescription, String productPicture){
         this.productID = productID;
         this.userID = userID;
         this.currentQuantity = currentQuantity;
@@ -91,19 +91,19 @@ public class Product {
         this.productBrand = productBrand;
     }
 
-    public StringBuilder getProductDescription() {
+    public String getProductDescription() {
         return productDescription;
     }
 
-    public void setProductDescription(StringBuilder productDescription) {
+    public void setProductDescription(String productDescription) {
         this.productDescription = productDescription;
     }
 
-    public Image getProductPicture() {
+    public String getProductPicture() {
         return productPicture;
     }
 
-    public void setProductPicture(Image productPicture) {
+    public void setProductPicture(String productPicture) {
         this.productPicture = productPicture;
     }
 }

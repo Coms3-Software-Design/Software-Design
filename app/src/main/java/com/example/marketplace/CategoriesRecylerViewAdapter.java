@@ -1,6 +1,7 @@
 package com.example.marketplace;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +16,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-public class CategoriesRecylerViewAdapter extends RecyclerView.Adapter<CategoriesRecylerViewAdapter.MyViewHolder> {
+public class CategoriesRecylerViewAdapter extends RecyclerView.Adapter<CategoriesRecylerViewAdapter.MyViewHolder>{
 
     private Context mContext;
     private List<Category> mCategories;
@@ -38,7 +39,7 @@ public class CategoriesRecylerViewAdapter extends RecyclerView.Adapter<Categorie
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull MyViewHolder holder,final int position) {
 
         holder.tvCatName.setText(mCategories.get(position).getTitle());
         Picasso.get().load(mCategories.get(position).getImage()).placeholder(R.drawable.catdefault)
@@ -47,7 +48,10 @@ public class CategoriesRecylerViewAdapter extends RecyclerView.Adapter<Categorie
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                 
+                Intent intent = new Intent(mContext , goodAndService.class);
+                intent.putExtra("Category",mCategories.get(position).getTitle());
+                intent.putExtra("type","Goods");
+                mContext.startActivity(intent);
             }
         });
 
@@ -68,8 +72,6 @@ public class CategoriesRecylerViewAdapter extends RecyclerView.Adapter<Categorie
             tvCatName = (TextView) itemView.findViewById(R.id.tvCategoryName );
             imgCat = (ImageView) itemView.findViewById(R.id.ivCategoryImage);
             cardView = (CardView) itemView.findViewById(R.id.viewCatCard);
-
-
 
         }
     }

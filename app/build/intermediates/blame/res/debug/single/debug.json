@@ -40,6 +40,10 @@
         "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/mipmap-mdpi/ic_launcher_background.png"
     },
     {
+        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/drawable_techdefault.jpg.flat",
+        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/drawable/techdefault.jpg"
+    },
+    {
         "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/drawable-v24_red.jpg.flat",
         "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/drawable-v24/red.jpg"
     },
