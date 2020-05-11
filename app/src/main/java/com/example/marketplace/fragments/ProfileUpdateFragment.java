@@ -157,8 +157,6 @@ public class ProfileUpdateFragment extends AppCompatDialogFragment {
                         uploadImage();
                         updateDetails();
 
-
-
                     }
                 });
             }

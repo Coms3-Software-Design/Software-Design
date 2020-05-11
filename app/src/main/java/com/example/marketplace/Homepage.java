@@ -150,7 +150,7 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
 
         ContentValues cv = new ContentValues();
         cv.put("username",user.getUserName());
-        @SuppressLint("StaticFieldLeak") AsyncHTTPPost asyncHTTPPost = new AsyncHTTPPost("http://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/MPUser.php" , cv) {
+        @SuppressLint("StaticFieldLeak") AsyncHTTPPost asyncHTTPPost = new AsyncHTTPPost("https://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/MPUser.php" , cv) {
 
             @Override
             public void onPostExecute(String output) {

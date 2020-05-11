@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.com/Coms3-Software-Design/Software-Design.svg?branch=master)](https://travis-ci.com/Coms3-Software-Design/Software-Design)
-[![codecov](https://codecov.io/gh/Coms3-Software-Design/Software-Design/branch/master/graph/badge.svg)](https://codecov.io/gh/Coms3-Software-Design/Software-Design)
+[![Build Status](https://travis-ci.com/Coms3-Software-Design/Software-Design.svg?branch=Beast)](https://travis-ci.com/Coms3-Software-Design/Software-Design)
+[![codecov](https://codecov.io/gh/Coms3-Software-Design/Software-Design/branch/Beast/graph/badge.svg)](https://codecov.io/gh/Coms3-Software-Design/Software-Design)
 
 
 

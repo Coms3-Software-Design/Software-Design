@@ -6,7 +6,7 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
 
-   // useLibrary 'org.apache.http.legacy'
+    // useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
         applicationId "com.example.marketplace"
@@ -24,7 +24,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         debug {
-           // applicationIdSuffix '.debug'
+            // applicationIdSuffix '.debug'
             versionNameSuffix '-debug'
             testCoverageEnabled true
         }
@@ -43,7 +43,6 @@ tasks.withType(Test) {
 }
 
 
-
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.1.0'
@@ -54,8 +53,10 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui:2.2.2'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
     testImplementation 'junit:junit:4.13'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+//    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+//    androidTestImplementation 'com.android.support.test.rules.1.0.2'
+//    androidTestImplementation 'com.android.support.test:runner:1.0.2'
     implementation 'androidx.appcompat:appcompat:1.2.0-beta01'
     implementation 'androidx.cardview:cardview:1.0.0'
     //noinspection GradleCompatible
@@ -63,6 +64,14 @@ dependencies {
     implementation 'com.android.volley:volley:1.1.0'
     implementation 'com.squareup.picasso:picasso:2.71828'
     //implementation 'com.github.bumptech.glide:glide:4.11.0'
-   // annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    // annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test:rules:1.1.1'
+    androidTestImplementation 'androidx.test:runner:1.1.1'
+    implementation 'androidx.recyclerview:recyclerview:1.2.0-alpha03'
+    implementation 'androidx.cardview:cardview:1.0.0'
 
 }
