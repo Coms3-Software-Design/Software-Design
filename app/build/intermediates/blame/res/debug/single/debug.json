@@ -4,12 +4,12 @@
         "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/drawable/ic_edit_profile.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png"
-    },
-    {
         "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_activity_register.xml.flat",
         "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/activity_register.xml"
+    },
+    {
+        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/drawable_ic_goods.xml.flat",
@@ -18,10 +18,6 @@
     {
         "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_temp6.xml.flat",
         "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/temp6.xml"
-    },
-    {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_temp2.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/temp2.xml"
     },
     {
         "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
@@ -56,12 +52,20 @@
         "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/mipmap-xxxhdpi/ic_launcher_background.png"
     },
     {
+        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_prod_cardview.xml.flat",
+        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/prod_cardview.xml"
+    },
+    {
         "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_frament_services.xml.flat",
         "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/frament_services.xml"
     },
     {
         "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_temp5.xml.flat",
         "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/temp5.xml"
+    },
+    {
+        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/drawable_catdefault.png.flat",
+        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/drawable/catdefault.png"
     },
     {
         "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/anim_frombottom.xml.flat",
@@ -92,6 +96,10 @@
         "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/temp3.xml"
     },
     {
+        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_catcardview.xml.flat",
+        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/catcardview.xml"
+    },
+    {
         "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/menu_drawer_menu.xml.flat",
         "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/menu/drawer_menu.xml"
     },
@@ -102,6 +110,10 @@
     {
         "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
         "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_goodsandservice.xml.flat",
+        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/goodsandservice.xml"
     },
     {
         "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_temp9.xml.flat",
@@ -184,10 +196,6 @@
         "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/temp8.xml"
     },
     {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_temp0.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/temp0.xml"
-    },
-    {
         "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
@@ -218,10 +226,6 @@
     {
         "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_nav_header.xml.flat",
         "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/nav_header.xml"
-    },
-    {
-        "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/layout_temp1.xml.flat",
-        "source": "/root/StudioProjects/Proj/Software-Design/app/src/main/res/layout/temp1.xml"
     },
     {
         "merged": "/root/StudioProjects/Proj/Software-Design/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",

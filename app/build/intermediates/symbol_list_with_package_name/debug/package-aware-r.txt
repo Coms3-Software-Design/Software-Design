@@ -1388,6 +1388,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable catdefault
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1608,6 +1609,7 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
+id ivCategoryImage
 id ivPropic
 id ivpic
 id labeled
@@ -1745,7 +1747,6 @@ id tag_screen_reader_focusable
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
-id testF
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id text
@@ -1773,6 +1774,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id tvBal
+id tvCategoryName
 id tvCopyRight
 id tvDOB
 id tvForgotPass
@@ -1782,6 +1784,8 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id vRecyclerView
+id viewCatCard
 id view_offset_helper
 id visible
 id visible_removing_fragment_view_tag
@@ -1854,6 +1858,7 @@ layout activity_homepage
 layout activity_login
 layout activity_register
 layout activity_splash_screen
+layout catcardview
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1873,6 +1878,7 @@ layout design_text_input_start_icon
 layout fragment_goods
 layout fragment_profile_update
 layout frament_services
+layout goodsandservice
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -1917,13 +1923,11 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout prod_cardview
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
-layout temp0
-layout temp1
-layout temp2
 layout temp3
 layout temp4
 layout temp5

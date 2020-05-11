@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:2:1-37:12
-INJECTED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:2:1-37:12
-INJECTED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:2:1-37:12
-INJECTED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:2:1-37:12
+ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:2:1-46:12
 MERGED from [androidx.navigation:navigation-ui:2.2.2] /root/.gradle/caches/transforms-2/files-2.1/b64df3bfe0cfe57333d58328812b7a9f/navigation-ui-2.2.2/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.1.0] /root/.gradle/caches/transforms-2/files-2.1/f600e0f8da0d5e910752566eeb178ed7/material-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.2.0-beta01] /root/.gradle/caches/transforms-2/files-2.1/d65710ea7e9e885f3c6441c5359b1d23/appcompat-1.2.0-beta01/AndroidManifest.xml:17:1-24:12
@@ -14,6 +14,8 @@ MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /root/.gradle/caches
 MERGED from [androidx.cardview:cardview:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/eddcc33004058c8cadf37070c1eafa18/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.volley:volley:1.1.0] /root/.gradle/caches/transforms-2/files-2.1/c48035c8d9f2c9b43a4be0f3563ac4aa/jetified-volley-1.1.0/AndroidManifest.xml:2:1-11:12
 MERGED from [com.squareup.picasso:picasso:2.71828] /root/.gradle/caches/transforms-2/files-2.1/a5b73f70a464316a17b160aaee841195/jetified-picasso-2.71828/AndroidManifest.xml:2:1-14:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/b9528969ff37fc714ee0ec9e3e5f44d9/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.2.0-alpha03] /root/.gradle/caches/transforms-2/files-2.1/d538073e769e685fc98400f924f6dfbb/recyclerview-1.2.0-alpha03/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0-beta01] /root/.gradle/caches/transforms-2/files-2.1/ada3e138195e5fdec1f01ef270811d6d/jetified-appcompat-resources-1.2.0-beta01/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/43eb2d89cf29b07d732d37cc77ab34ac/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/85c9ecd3320b45b19bc31b3fef2d74dd/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -23,11 +25,9 @@ MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /root/.gradle/c
 MERGED from [androidx.transition:transition:1.2.0] /root/.gradle/caches/transforms-2/files-2.1/138129d58601864455c632e8f8305b88/transition-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /root/.gradle/caches/transforms-2/files-2.1/442601411402e369aa2fdf36f568d0f8/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /root/.gradle/caches/transforms-2/files-2.1/0cf480ca87b5d5fdb8cd2d1d1e26e44b/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/b9528969ff37fc714ee0ec9e3e5f44d9/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.2.4] /root/.gradle/caches/transforms-2/files-2.1/665ff12b3472d41715058ff7fc03f94c/fragment-1.2.4/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/f2d6680750d54277aa34b64befa336a4/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/cc2e8dd29eeb558885f28552657fff96/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /root/.gradle/caches/transforms-2/files-2.1/a855f6305dc89e3412537aafc1da5bc4/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.customview:customview:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/b815d6228a828fc52a283615c844a5e6/customview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/4e2c554050704b354b2e7b74f35897cb/loader-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/c51b1be596bf4aec3b01717b8f726cf6/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -52,20 +52,20 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /root/.gradle/caches/tran
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/f779cff22ed05947e469a53c58a7a82f/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/2e7f9bba5ce00d274d0de5121f037b05/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/2f5828d7fd1098237691ffc149e8697c/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:2:1-37:12
-INJECTED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:2:1-37:12
-INJECTED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:2:1-46:12
 	package
 		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:3:5-38
 		INJECTED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml
 		INJECTED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml
-		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:2:1-37:12
+		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:2:1-46:12
 		INJECTED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml
-		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:2:1-37:12
+		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:2:1-46:12
 		INJECTED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:2:11-69
@@ -74,15 +74,15 @@ ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifes
 	android:name
 		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:6:5-79
+ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:6:5-80
 	android:name
 		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:6:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:7:5-80
+ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:7:5-81
 	android:name
 		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:7:22-78
 application
-ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:9:5-35:19
+ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:9:5-44:19
 MERGED from [com.google.android.material:material:1.1.0] /root/.gradle/caches/transforms-2/files-2.1/f600e0f8da0d5e910752566eeb178ed7/material-1.1.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] /root/.gradle/caches/transforms-2/files-2.1/f600e0f8da0d5e910752566eeb178ed7/material-1.1.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /root/.gradle/caches/transforms-2/files-2.1/dea93f12cf60e9f21a2278c910ecbb1a/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
@@ -113,52 +113,56 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /root/.grad
 		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:10:9-35
 	android:theme
 		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:15:9-40
+activity#com.example.marketplace.goodAndService
+ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:16:9-61
+	android:name
+		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:16:19-49
 activity#com.example.marketplace.Homepage
-ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:16:9-100
+ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:17:9-19:69
 	android:theme
-		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:16:45-98
+		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:19:13-66
 	android:name
-		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:16:19-43
+		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:18:13-37
 activity#com.example.marketplace.ForgotPassword
-ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:17:9-95
+ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:20:9-22:59
 	android:theme
-		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:17:50-93
+		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:22:13-56
 	android:name
-		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:17:19-49
+		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:21:13-43
 activity#com.example.marketplace.Register
-ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:18:9-96
+ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:23:9-25:66
 	android:theme
-		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:18:44-94
+		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:25:13-63
 	android:name
-		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:18:19-43
+		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:24:13-37
 activity#com.example.marketplace.SplashScreen
-ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:19:9-27:20
+ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:26:9-34:20
 	android:theme
-		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:21:13-63
+		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:28:13-63
 	android:name
-		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:20:13-41
+		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:27:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:22:13-26:29
-action#android.intent.action.MAIN
-ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:23:17-69
-	android:name
-		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:23:25-66
-category#android.intent.category.LAUNCHER
-ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:25:17-77
-	android:name
-		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:25:27-74
-activity#com.example.marketplace.Login
-ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:28:9-34:20
-	android:theme
-		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:28:42-92
-	android:name
-		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:28:19-40
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.DEFAULT
 ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:29:13-33:29
-category#android.intent.category.DEFAULT
-ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:32:17-76
+action#android.intent.action.MAIN
+ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:30:17-69
 	android:name
-		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:32:27-73
+		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:30:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:32:17-77
+	android:name
+		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:32:27-74
+activity#com.example.marketplace.Login
+ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:35:9-43:20
+	android:theme
+		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:37:13-63
+	android:name
+		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:36:13-34
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.DEFAULT
+ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:38:13-42:29
+category#android.intent.category.DEFAULT
+ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:41:17-76
+	android:name
+		ADDED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:41:27-73
 uses-sdk
 INJECTED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml
@@ -183,6 +187,10 @@ MERGED from [com.android.volley:volley:1.1.0] /root/.gradle/caches/transforms-2/
 MERGED from [com.android.volley:volley:1.1.0] /root/.gradle/caches/transforms-2/files-2.1/c48035c8d9f2c9b43a4be0f3563ac4aa/jetified-volley-1.1.0/AndroidManifest.xml:7:5-43
 MERGED from [com.squareup.picasso:picasso:2.71828] /root/.gradle/caches/transforms-2/files-2.1/a5b73f70a464316a17b160aaee841195/jetified-picasso-2.71828/AndroidManifest.xml:5:5-44
 MERGED from [com.squareup.picasso:picasso:2.71828] /root/.gradle/caches/transforms-2/files-2.1/a5b73f70a464316a17b160aaee841195/jetified-picasso-2.71828/AndroidManifest.xml:5:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/b9528969ff37fc714ee0ec9e3e5f44d9/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/b9528969ff37fc714ee0ec9e3e5f44d9/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.0-alpha03] /root/.gradle/caches/transforms-2/files-2.1/d538073e769e685fc98400f924f6dfbb/recyclerview-1.2.0-alpha03/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.0-alpha03] /root/.gradle/caches/transforms-2/files-2.1/d538073e769e685fc98400f924f6dfbb/recyclerview-1.2.0-alpha03/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0-beta01] /root/.gradle/caches/transforms-2/files-2.1/ada3e138195e5fdec1f01ef270811d6d/jetified-appcompat-resources-1.2.0-beta01/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0-beta01] /root/.gradle/caches/transforms-2/files-2.1/ada3e138195e5fdec1f01ef270811d6d/jetified-appcompat-resources-1.2.0-beta01/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/43eb2d89cf29b07d732d37cc77ab34ac/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
@@ -201,16 +209,12 @@ MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /root/.gradl
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /root/.gradle/caches/transforms-2/files-2.1/442601411402e369aa2fdf36f568d0f8/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /root/.gradle/caches/transforms-2/files-2.1/0cf480ca87b5d5fdb8cd2d1d1e26e44b/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /root/.gradle/caches/transforms-2/files-2.1/0cf480ca87b5d5fdb8cd2d1d1e26e44b/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/b9528969ff37fc714ee0ec9e3e5f44d9/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/b9528969ff37fc714ee0ec9e3e5f44d9/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.2.4] /root/.gradle/caches/transforms-2/files-2.1/665ff12b3472d41715058ff7fc03f94c/fragment-1.2.4/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.2.4] /root/.gradle/caches/transforms-2/files-2.1/665ff12b3472d41715058ff7fc03f94c/fragment-1.2.4/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/f2d6680750d54277aa34b64befa336a4/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/f2d6680750d54277aa34b64befa336a4/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/cc2e8dd29eeb558885f28552657fff96/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/cc2e8dd29eeb558885f28552657fff96/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /root/.gradle/caches/transforms-2/files-2.1/a855f6305dc89e3412537aafc1da5bc4/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /root/.gradle/caches/transforms-2/files-2.1/a855f6305dc89e3412537aafc1da5bc4/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/b815d6228a828fc52a283615c844a5e6/customview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/b815d6228a828fc52a283615c844a5e6/customview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /root/.gradle/caches/transforms-2/files-2.1/4e2c554050704b354b2e7b74f35897cb/loader-1.0.0/AndroidManifest.xml:20:5-44
