@@ -41,7 +41,7 @@ public class ProductsReclerViewAdapter extends RecyclerView.Adapter<ProductsRecl
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.tvProdName.setText(mProducts.get(position).getProductName());
-        holder.tvProdPrice.setText(String.valueOf(mProducts.get(position).getPricePerItem()));
+        holder.tvProdPrice.setText("R"+String.valueOf(mProducts.get(position).getPricePerItem()));
         Picasso.get().load(picUrl.concat(String.valueOf(mProducts.get(position).getProductID())).concat(".jpeg")).placeholder(R.drawable.tech2)
                 .error(R.drawable.tech2)
                 .into(holder.imgProd);
