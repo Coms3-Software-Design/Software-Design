@@ -1,8 +1,10 @@
 package com.example.marketplace;
 
 import android.media.Image;
+import android.os.Parcel;
+import android.os.Parcelable;
 
-public class Product {
+public class Product implements Parcelable {
     private  int productID , userID, currentQuantity, soldQuantity;
     private double pricePerItem;
     private String productName , category, productBrand;
@@ -24,6 +26,32 @@ public class Product {
         this.productPicture = productsURL.concat(String.valueOf(productID)).concat(".jpg").concat("?=" + System.currentTimeMillis());
 
     }
+
+    protected Product(Parcel in) {
+        productID = in.readInt();
+        userID = in.readInt();
+        currentQuantity = in.readInt();
+        soldQuantity = in.readInt();
+        pricePerItem = in.readDouble();
+        productName = in.readString();
+        category = in.readString();
+        productBrand = in.readString();
+        productDescription = in.readString();
+        productPicture = in.readString();
+        productsURL = in.readString();
+    }
+
+    public static final Creator<Product> CREATOR = new Creator<Product>() {
+        @Override
+        public Product createFromParcel(Parcel in) {
+            return new Product(in);
+        }
+
+        @Override
+        public Product[] newArray(int size) {
+            return new Product[size];
+        }
+    };
 
     /*
      * Getters and setters here
@@ -106,6 +134,26 @@ public class Product {
 
     public void setProductPicture(String productPicture) {
         this.productPicture = productPicture;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(productID);
+        dest.writeInt(userID);
+        dest.writeInt(currentQuantity);
+        dest.writeInt(soldQuantity);
+        dest.writeDouble(pricePerItem);
+        dest.writeString(productName);
+        dest.writeString(category);
+        dest.writeString(productBrand);
+        dest.writeString(productDescription);
+        dest.writeString(productPicture);
+        dest.writeString(productsURL);
     }
 }
 

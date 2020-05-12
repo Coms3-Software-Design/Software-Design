@@ -39,17 +39,20 @@ public class ProductsReclerViewAdapter extends RecyclerView.Adapter<ProductsRecl
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull MyViewHolder holder, final int position) {
+        mProducts.get(position).setProductPicture(picUrl.concat(String.valueOf(mProducts.get(position).getProductID())).concat(".jpeg"));
         holder.tvProdName.setText(mProducts.get(position).getProductName());
         holder.tvProdPrice.setText("R"+String.valueOf(mProducts.get(position).getPricePerItem()));
-        Picasso.get().load(picUrl.concat(String.valueOf(mProducts.get(position).getProductID())).concat(".jpeg")).placeholder(R.drawable.tech2)
+        Picasso.get().load(mProducts.get(position).getProductPicture()).placeholder(R.drawable.tech2)
                 .error(R.drawable.tech2)
                 .into(holder.imgProd);
 
         holder.viewProdCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(mContext , BuyProduct.class);
+                intent.putExtra("product",mProducts.get(position));
+                mContext.startActivity(intent);
             }
         });
     }
