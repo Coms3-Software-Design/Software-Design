@@ -8,7 +8,7 @@ public class Product {
     private String productName , category, productBrand;
     private String productDescription;
     private String productPicture;
-    private String productsURL = "https://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/products/";
+    private String productsURL = "https://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/Products/";
 
     Product(int productID , int userID, int currentQuantity, int soldQuantity, double pricePerItem,
             String productName , String category, String productBrand, String productDescription){

@@ -20,6 +20,7 @@ public class ProductsReclerViewAdapter extends RecyclerView.Adapter<ProductsRecl
 
     private Context mContext;
     private List<Product> mProducts;
+    private String picUrl = "https://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/Products/";
 
     public ProductsReclerViewAdapter(Context mContext , List<Product> mProducts){
 
@@ -40,9 +41,8 @@ public class ProductsReclerViewAdapter extends RecyclerView.Adapter<ProductsRecl
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.tvProdName.setText(mProducts.get(position).getProductName());
-        //int price = Integer.toString(mProducts.get(position).getPricePerItem());
         holder.tvProdPrice.setText(String.valueOf(mProducts.get(position).getPricePerItem()));
-        Picasso.get().load(mProducts.get(position).getProductPicture()).placeholder(R.drawable.tech2)
+        Picasso.get().load(picUrl.concat(String.valueOf(mProducts.get(position).getProductID())).concat(".jpeg")).placeholder(R.drawable.tech2)
                 .error(R.drawable.tech2)
                 .into(holder.imgProd);
 
