@@ -37,20 +37,6 @@ public class goodAndService extends AppCompatActivity {
          goodsType = getIntent().getStringExtra("type");
          context = this;
 
-         // Testing here
-        String[] cats = {"Accessories","Cutlery","Electronics","Other","Shoes", "Stationery","Shams"};
-//        for(int i = 0; i < 20 ; i++) {
-//            int randomNum = ThreadLocalRandom.current().nextInt(0, 7);
-//            String Desc = "djkalfj dslkfjdsoif osjaofsiud9 fao ijsoai ufs a98fa oisdohf sdoa oisarew0a uoijsof jsaoifj sof oisaof isa doi ufou0ewaur0 suofusdufauf9ay esiduefisafwea0";
-//            Product p = new Product(1,1,5,2,50.0,"Ball",cats[randomNum],"nike","Desc");
-//            listProds.add(p);
-//        }
-//
-//        RecyclerView recyclerView =  (RecyclerView) findViewById(R.id.viewProdRecyclerView);
-//        ProductsReclerViewAdapter prodAdapter = new ProductsReclerViewAdapter(this, listProds);
-//        recyclerView.setLayoutManager(new GridLayoutManager(this, 3));
-//        recyclerView.setAdapter(prodAdapter);
-
         ContentValues cv = new ContentValues();
         cv.put("category", category);
         cv.put("type",goodsType);

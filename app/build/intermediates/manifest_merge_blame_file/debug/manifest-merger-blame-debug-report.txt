@@ -39,7 +39,7 @@
 24        android:theme="@style/AppTheme" >
 24-->/root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:15:9-40
 25        <activity android:name="com.example.marketplace.goodAndService" />
-25-->/root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:16:9-61
+25-->/root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:16:9-52
 25-->/root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:16:19-49
 26        <activity
 26-->/root/StudioProjects/Proj/Software-Design/app/src/main/AndroidManifest.xml:17:9-19:69

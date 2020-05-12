@@ -1752,6 +1752,7 @@ id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
+id testtv
 id text
 id text2
 id textEnd
@@ -1865,6 +1866,7 @@ layout activity_homepage
 layout activity_login
 layout activity_register
 layout activity_splash_screen
+layout buy_activity
 layout catcardview
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -1935,7 +1937,6 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
-layout temp3
 layout temp4
 layout temp5
 layout temp6
