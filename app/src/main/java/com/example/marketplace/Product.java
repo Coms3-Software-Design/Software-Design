@@ -6,11 +6,12 @@ public class Product {
     private  int productID , userID, currentQuantity, soldQuantity;
     private double pricePerItem;
     private String productName , category, productBrand;
-    private StringBuilder productDescription;
-    private Image productPicture;
+    private String productDescription;
+    private String productPicture;
+    private String productsURL = "https://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/products/";
 
     Product(int productID , int userID, int currentQuantity, int soldQuantity, double pricePerItem,
-            String productName , String category, String productBrand, StringBuilder productDescription, Image productPicture){
+            String productName , String category, String productBrand, String productDescription){
         this.productID = productID;
         this.userID = userID;
         this.currentQuantity = currentQuantity;
@@ -20,7 +21,7 @@ public class Product {
         this.category = category;
         this.productBrand = productBrand;
         this.productDescription = productDescription;
-        this.productPicture = productPicture;
+        this.productPicture = productsURL.concat(String.valueOf(productID)).concat(".jpg").concat("?=" + System.currentTimeMillis());
 
     }
 
@@ -91,19 +92,19 @@ public class Product {
         this.productBrand = productBrand;
     }
 
-    public StringBuilder getProductDescription() {
+    public String getProductDescription() {
         return productDescription;
     }
 
-    public void setProductDescription(StringBuilder productDescription) {
+    public void setProductDescription(String productDescription) {
         this.productDescription = productDescription;
     }
 
-    public Image getProductPicture() {
+    public String getProductPicture() {
         return productPicture;
     }
 
-    public void setProductPicture(Image productPicture) {
+    public void setProductPicture(String productPicture) {
         this.productPicture = productPicture;
     }
 }
