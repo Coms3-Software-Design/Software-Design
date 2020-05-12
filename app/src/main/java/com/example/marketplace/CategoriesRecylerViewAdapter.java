@@ -20,6 +20,7 @@ public class CategoriesRecylerViewAdapter extends RecyclerView.Adapter<Categorie
 
     private Context mContext;
     private List<Category> mCategories;
+    private String imgUrl = "https://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/categories/";
 
 
     public CategoriesRecylerViewAdapter(Context mContext , List<Category> mCategories){
@@ -42,7 +43,7 @@ public class CategoriesRecylerViewAdapter extends RecyclerView.Adapter<Categorie
     public void onBindViewHolder(@NonNull MyViewHolder holder,final int position) {
 
         holder.tvCatName.setText(mCategories.get(position).getTitle());
-        Picasso.get().load(mCategories.get(position).getImage()).placeholder(R.drawable.catdefault)
+        Picasso.get().load(imgUrl.concat(mCategories.get(position).getTitle()).concat(".jpeg")).placeholder(R.drawable.catdefault)
                 .error(R.drawable.catdefault)
                 .into(holder.imgCat);
         holder.cardView.setOnClickListener(new View.OnClickListener() {

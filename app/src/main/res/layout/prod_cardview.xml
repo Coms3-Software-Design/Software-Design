@@ -25,18 +25,21 @@
             android:id="@+id/tvProdName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:gravity="left"
             android:text="ProdName"
+            android:paddingLeft="3dp"
             android:textColor="#2d2d2d"
-            android:textSize="15dp" />
+            android:textSize="13dp" />
         <TextView
             android:id="@+id/tvProdPrice"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="right"
             android:text="R0.00"
+            android:paddingRight="4dp"
             android:textColor="#2d2d2d"
-            android:textSize="15dp" />
+            android:textSize="12dp" />
 
     </LinearLayout>
 
