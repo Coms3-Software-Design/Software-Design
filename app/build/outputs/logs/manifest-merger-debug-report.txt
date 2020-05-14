@@ -1,0 +1,297 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:2:1-47:12
+MERGED from [androidx.navigation:navigation-ui:2.2.2] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\b64df3bfe0cfe57333d58328812b7a9f\navigation-ui-2.2.2\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\f600e0f8da0d5e910752566eeb178ed7\material-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.2.0-beta01] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\d65710ea7e9e885f3c6441c5359b1d23\appcompat-1.2.0-beta01\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\dea93f12cf60e9f21a2278c910ecbb1a\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\37fdabda52c2f07295dd12d90b506ed5\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-fragment:2.2.2] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\a99f14f2a7dfa276e4fa39439961fbda\navigation-fragment-2.2.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\4bfee08e6df61b0777df7d72120040ab\lifecycle-extensions-2.2.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\eddcc33004058c8cadf37070c1eafa18\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\c48035c8d9f2c9b43a4be0f3563ac4aa\jetified-volley-1.1.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\e27c4dc4bf00acddc4ae43486e105a0d\jetified-picasso-2.71828\AndroidManifest.xml:2:1-14:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\b9528969ff37fc714ee0ec9e3e5f44d9\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.2.0-alpha03] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\d538073e769e685fc98400f924f6dfbb\recyclerview-1.2.0-alpha03\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0-beta01] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\ada3e138195e5fdec1f01ef270811d6d\jetified-appcompat-resources-1.2.0-beta01\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\43eb2d89cf29b07d732d37cc77ab34ac\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\85c9ecd3320b45b19bc31b3fef2d74dd\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\1989cf3d3f352061a55fc92e7577c864\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\4816de17dabded71293be5d7b1db2308\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\a34c0194f08714280f2752988e02461b\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\138129d58601864455c632e8f8305b88\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\442601411402e369aa2fdf36f568d0f8\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\0cf480ca87b5d5fdb8cd2d1d1e26e44b\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.2.4] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\665ff12b3472d41715058ff7fc03f94c\fragment-1.2.4\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\f2d6680750d54277aa34b64befa336a4\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\cc2e8dd29eeb558885f28552657fff96\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\b815d6228a828fc52a283615c844a5e6\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\4e2c554050704b354b2e7b74f35897cb\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\c51b1be596bf4aec3b01717b8f726cf6\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\3a65c9b7f3786673601b11eee0324181\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.2.2] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\04bc356b2bbc41e54f02448096efcc9f\navigation-runtime-2.2.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\9f9586ef062434d2f1a183389246f6b3\jetified-activity-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.2.2] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\c9575825d43f6081bff7fb513e34afd9\navigation-common-2.2.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.3.0-beta01] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\e9f336b9de99a43c39a0457114a51aa7\core-1.3.0-beta01\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\bb05b394aa5c93eb8bf9e517a746fca7\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\bf4f013fe5bb364fe25c656e5b7996d1\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:17:1-32:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\f618bf7bba999f0905e45d73893893da\jetified-lifecycle-service-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\6fbb2f3dce3ce04f6149856b405a7e67\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\587c950216c0991f64c6e1d42ef4ec80\lifecycle-livedata-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\b7984d1df50eef624e8fb3537a631e88\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\2689d60a6e101215fc085c1b08eee3b5\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\24c7425c43e2ff38386ae39c09fe1d36\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\c1d736152307237331d514f9b9cc035f\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\ab892cbd77e2491710aed66f05913292\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\3cbcc2200623064c457b47d036cb8263\exifinterface-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\4a4e2a9f3affa90050e760a8c12bef22\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\1f4a1c660468e4366e5d86ae4ccc407b\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\f779cff22ed05947e469a53c58a7a82f\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\2e7f9bba5ce00d274d0de5121f037b05\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\2f5828d7fd1098237691ffc149e8697c\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:2:1-47:12
+	package
+		ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:3:5-38
+		INJECTED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:2:1-47:12
+		INJECTED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:2:1-47:12
+		INJECTED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:6:5-80
+	android:name
+		ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:6:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:7:22-78
+application
+ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:9:5-45:19
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\f600e0f8da0d5e910752566eeb178ed7\material-1.1.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\f600e0f8da0d5e910752566eeb178ed7\material-1.1.0\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\dea93f12cf60e9f21a2278c910ecbb1a\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\dea93f12cf60e9f21a2278c910ecbb1a\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\4bfee08e6df61b0777df7d72120040ab\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\4bfee08e6df61b0777df7d72120040ab\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\c48035c8d9f2c9b43a4be0f3563ac4aa\jetified-volley-1.1.0\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\c48035c8d9f2c9b43a4be0f3563ac4aa\jetified-volley-1.1.0\AndroidManifest.xml:9:5-20
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\e27c4dc4bf00acddc4ae43486e105a0d\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\e27c4dc4bf00acddc4ae43486e105a0d\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
+MERGED from [androidx.core:core:1.3.0-beta01] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\e9f336b9de99a43c39a0457114a51aa7\core-1.3.0-beta01\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.0-beta01] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\e9f336b9de99a43c39a0457114a51aa7\core-1.3.0-beta01\AndroidManifest.xml:24:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\bf4f013fe5bb364fe25c656e5b7996d1\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:24:5-30:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\bf4f013fe5bb364fe25c656e5b7996d1\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:24:5-30:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\4a4e2a9f3affa90050e760a8c12bef22\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\4a4e2a9f3affa90050e760a8c12bef22\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.3.0-beta01] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\e9f336b9de99a43c39a0457114a51aa7\core-1.3.0-beta01\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:12:9-41
+	android:roundIcon
+		ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:13:9-54
+	android:icon
+		ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:11:9-43
+	android:allowBackup
+		ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:10:9-35
+	android:theme
+		ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:15:9-40
+activity#com.example.marketplace.BuyProduct
+ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:16:9-57
+	android:name
+		ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:16:19-45
+activity#com.example.marketplace.goodAndService
+ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:17:9-52
+	android:name
+		ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:17:19-49
+activity#com.example.marketplace.Homepage
+ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:18:9-20:69
+	android:theme
+		ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:20:13-66
+	android:name
+		ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:19:13-37
+activity#com.example.marketplace.ForgotPassword
+ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:21:9-23:59
+	android:theme
+		ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:23:13-56
+	android:name
+		ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:22:13-43
+activity#com.example.marketplace.Register
+ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:24:9-26:66
+	android:theme
+		ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:26:13-63
+	android:name
+		ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:25:13-37
+activity#com.example.marketplace.SplashScreen
+ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:27:9-35:20
+	android:theme
+		ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:29:13-63
+	android:name
+		ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:28:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:30:13-34:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:31:17-69
+	android:name
+		ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:31:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:33:17-77
+	android:name
+		ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:33:27-74
+activity#com.example.marketplace.Login
+ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:36:9-44:20
+	android:theme
+		ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:38:13-63
+	android:name
+		ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:37:13-34
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.DEFAULT
+ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:39:13-43:29
+category#android.intent.category.DEFAULT
+ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:42:17-76
+	android:name
+		ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:42:27-73
+uses-sdk
+INJECTED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml
+MERGED from [androidx.navigation:navigation-ui:2.2.2] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\b64df3bfe0cfe57333d58328812b7a9f\navigation-ui-2.2.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.2.2] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\b64df3bfe0cfe57333d58328812b7a9f\navigation-ui-2.2.2\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\f600e0f8da0d5e910752566eeb178ed7\material-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\f600e0f8da0d5e910752566eeb178ed7\material-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.2.0-beta01] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\d65710ea7e9e885f3c6441c5359b1d23\appcompat-1.2.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0-beta01] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\d65710ea7e9e885f3c6441c5359b1d23\appcompat-1.2.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\dea93f12cf60e9f21a2278c910ecbb1a\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\dea93f12cf60e9f21a2278c910ecbb1a\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\37fdabda52c2f07295dd12d90b506ed5\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\37fdabda52c2f07295dd12d90b506ed5\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-fragment:2.2.2] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\a99f14f2a7dfa276e4fa39439961fbda\navigation-fragment-2.2.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.2.2] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\a99f14f2a7dfa276e4fa39439961fbda\navigation-fragment-2.2.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\4bfee08e6df61b0777df7d72120040ab\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\4bfee08e6df61b0777df7d72120040ab\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\eddcc33004058c8cadf37070c1eafa18\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\eddcc33004058c8cadf37070c1eafa18\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\c48035c8d9f2c9b43a4be0f3563ac4aa\jetified-volley-1.1.0\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\c48035c8d9f2c9b43a4be0f3563ac4aa\jetified-volley-1.1.0\AndroidManifest.xml:7:5-43
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\e27c4dc4bf00acddc4ae43486e105a0d\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\e27c4dc4bf00acddc4ae43486e105a0d\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\b9528969ff37fc714ee0ec9e3e5f44d9\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\b9528969ff37fc714ee0ec9e3e5f44d9\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.0-alpha03] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\d538073e769e685fc98400f924f6dfbb\recyclerview-1.2.0-alpha03\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.0-alpha03] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\d538073e769e685fc98400f924f6dfbb\recyclerview-1.2.0-alpha03\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0-beta01] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\ada3e138195e5fdec1f01ef270811d6d\jetified-appcompat-resources-1.2.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0-beta01] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\ada3e138195e5fdec1f01ef270811d6d\jetified-appcompat-resources-1.2.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\43eb2d89cf29b07d732d37cc77ab34ac\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\43eb2d89cf29b07d732d37cc77ab34ac\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\85c9ecd3320b45b19bc31b3fef2d74dd\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\85c9ecd3320b45b19bc31b3fef2d74dd\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\1989cf3d3f352061a55fc92e7577c864\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\1989cf3d3f352061a55fc92e7577c864\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\4816de17dabded71293be5d7b1db2308\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\4816de17dabded71293be5d7b1db2308\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\a34c0194f08714280f2752988e02461b\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\a34c0194f08714280f2752988e02461b\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\138129d58601864455c632e8f8305b88\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\138129d58601864455c632e8f8305b88\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\442601411402e369aa2fdf36f568d0f8\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\442601411402e369aa2fdf36f568d0f8\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\0cf480ca87b5d5fdb8cd2d1d1e26e44b\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\0cf480ca87b5d5fdb8cd2d1d1e26e44b\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.4] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\665ff12b3472d41715058ff7fc03f94c\fragment-1.2.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.4] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\665ff12b3472d41715058ff7fc03f94c\fragment-1.2.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\f2d6680750d54277aa34b64befa336a4\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\f2d6680750d54277aa34b64befa336a4\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\cc2e8dd29eeb558885f28552657fff96\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\cc2e8dd29eeb558885f28552657fff96\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\b815d6228a828fc52a283615c844a5e6\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\b815d6228a828fc52a283615c844a5e6\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\4e2c554050704b354b2e7b74f35897cb\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\4e2c554050704b354b2e7b74f35897cb\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\c51b1be596bf4aec3b01717b8f726cf6\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\c51b1be596bf4aec3b01717b8f726cf6\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\3a65c9b7f3786673601b11eee0324181\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\3a65c9b7f3786673601b11eee0324181\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.2.2] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\04bc356b2bbc41e54f02448096efcc9f\navigation-runtime-2.2.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.2.2] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\04bc356b2bbc41e54f02448096efcc9f\navigation-runtime-2.2.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\9f9586ef062434d2f1a183389246f6b3\jetified-activity-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\9f9586ef062434d2f1a183389246f6b3\jetified-activity-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.2.2] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\c9575825d43f6081bff7fb513e34afd9\navigation-common-2.2.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.2.2] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\c9575825d43f6081bff7fb513e34afd9\navigation-common-2.2.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.0-beta01] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\e9f336b9de99a43c39a0457114a51aa7\core-1.3.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.0-beta01] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\e9f336b9de99a43c39a0457114a51aa7\core-1.3.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\bb05b394aa5c93eb8bf9e517a746fca7\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\bb05b394aa5c93eb8bf9e517a746fca7\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\bf4f013fe5bb364fe25c656e5b7996d1\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\bf4f013fe5bb364fe25c656e5b7996d1\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\f618bf7bba999f0905e45d73893893da\jetified-lifecycle-service-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\f618bf7bba999f0905e45d73893893da\jetified-lifecycle-service-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\6fbb2f3dce3ce04f6149856b405a7e67\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\6fbb2f3dce3ce04f6149856b405a7e67\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\587c950216c0991f64c6e1d42ef4ec80\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\587c950216c0991f64c6e1d42ef4ec80\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\b7984d1df50eef624e8fb3537a631e88\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\b7984d1df50eef624e8fb3537a631e88\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\2689d60a6e101215fc085c1b08eee3b5\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\2689d60a6e101215fc085c1b08eee3b5\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\24c7425c43e2ff38386ae39c09fe1d36\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\24c7425c43e2ff38386ae39c09fe1d36\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\c1d736152307237331d514f9b9cc035f\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\c1d736152307237331d514f9b9cc035f\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\ab892cbd77e2491710aed66f05913292\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\ab892cbd77e2491710aed66f05913292\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\3cbcc2200623064c457b47d036cb8263\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\3cbcc2200623064c457b47d036cb8263\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\4a4e2a9f3affa90050e760a8c12bef22\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\4a4e2a9f3affa90050e760a8c12bef22\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\1f4a1c660468e4366e5d86ae4ccc407b\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\1f4a1c660468e4366e5d86ae4ccc407b\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\f779cff22ed05947e469a53c58a7a82f\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\f779cff22ed05947e469a53c58a7a82f\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\2e7f9bba5ce00d274d0de5121f037b05\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\2e7f9bba5ce00d274d0de5121f037b05\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\2f5828d7fd1098237691ffc149e8697c\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\2f5828d7fd1098237691ffc149e8697c\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml
+provider#com.squareup.picasso.PicassoProvider
+ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\e27c4dc4bf00acddc4ae43486e105a0d\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+	android:authorities
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\e27c4dc4bf00acddc4ae43486e105a0d\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\e27c4dc4bf00acddc4ae43486e105a0d\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\e27c4dc4bf00acddc4ae43486e105a0d\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\bf4f013fe5bb364fe25c656e5b7996d1\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+	android:authorities
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\bf4f013fe5bb364fe25c656e5b7996d1\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+	android:multiprocess
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\bf4f013fe5bb364fe25c656e5b7996d1\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+	android:exported
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\bf4f013fe5bb364fe25c656e5b7996d1\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\bf4f013fe5bb364fe25c656e5b7996d1\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79

@@ -1,0 +1,120 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.marketplace"
+4    android:versionCode="1"
+5    android:versionName="1.0-debug" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:6:5-80
+12-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:6:22-77
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:7:5-81
+13-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:7:22-78
+14
+15    <application
+15-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:9:5-45:19
+16        android:allowBackup="true"
+16-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:10:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.3.0-beta01] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\e9f336b9de99a43c39a0457114a51aa7\core-1.3.0-beta01\AndroidManifest.xml:24:18-86
+18        android:debuggable="true"
+19        android:icon="@mipmap/ic_launcher"
+19-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:11:9-43
+20        android:label="@string/app_name"
+20-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:12:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:13:9-54
+22        android:supportsRtl="true"
+22-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:14:9-35
+23        android:testOnly="true"
+24        android:theme="@style/AppTheme" >
+24-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:15:9-40
+25        <activity android:name="com.example.marketplace.BuyProduct" />
+25-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:16:9-57
+25-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:16:19-45
+26        <activity android:name="com.example.marketplace.goodAndService" />
+26-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:17:9-52
+26-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:17:19-49
+27        <activity
+27-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:18:9-20:69
+28            android:name="com.example.marketplace.Homepage"
+28-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:19:13-37
+29            android:theme="@style/Theme.Design.Light.NoActionBar" />
+29-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:20:13-66
+30        <activity
+30-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:21:9-23:59
+31            android:name="com.example.marketplace.ForgotPassword"
+31-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:22:13-43
+32            android:theme="@style/AppTheme.NoActionBar" />
+32-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:23:13-56
+33        <activity
+33-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:24:9-26:66
+34            android:name="com.example.marketplace.Register"
+34-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:25:13-37
+35            android:theme="@style/Theme.AppCompat.NoActionBar" />
+35-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:26:13-63
+36        <activity
+36-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:27:9-35:20
+37            android:name="com.example.marketplace.SplashScreen"
+37-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:28:13-41
+38            android:theme="@style/Theme.AppCompat.NoActionBar" >
+38-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:29:13-63
+39            <intent-filter>
+39-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:30:13-34:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:31:17-69
+40-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:31:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:33:17-77
+42-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:33:27-74
+43            </intent-filter>
+44        </activity>
+45        <activity
+45-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:36:9-44:20
+46            android:name="com.example.marketplace.Login"
+46-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:37:13-34
+47            android:theme="@style/Theme.AppCompat.NoActionBar" >
+47-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:38:13-63
+48            <intent-filter>
+48-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:39:13-43:29
+49                <action android:name="android.intent.action.MAIN" />
+49-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:31:17-69
+49-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:31:25-66
+50
+51                <category android:name="android.intent.category.DEFAULT" />
+51-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:42:17-76
+51-->C:\Users\FORRTY\StudioProjects\Software-Design\app\src\main\AndroidManifest.xml:42:27-73
+52            </intent-filter>
+53        </activity>
+54
+55        <provider
+55-->[com.squareup.picasso:picasso:2.71828] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\e27c4dc4bf00acddc4ae43486e105a0d\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+56            android:name="com.squareup.picasso.PicassoProvider"
+56-->[com.squareup.picasso:picasso:2.71828] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\e27c4dc4bf00acddc4ae43486e105a0d\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+57            android:authorities="com.example.marketplace.com.squareup.picasso"
+57-->[com.squareup.picasso:picasso:2.71828] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\e27c4dc4bf00acddc4ae43486e105a0d\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+58            android:exported="false" />
+58-->[com.squareup.picasso:picasso:2.71828] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\e27c4dc4bf00acddc4ae43486e105a0d\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+59        <provider
+59-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\bf4f013fe5bb364fe25c656e5b7996d1\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+60            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+60-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\bf4f013fe5bb364fe25c656e5b7996d1\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+61            android:authorities="com.example.marketplace.lifecycle-process"
+61-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\bf4f013fe5bb364fe25c656e5b7996d1\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+62            android:exported="false"
+62-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\bf4f013fe5bb364fe25c656e5b7996d1\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+63            android:multiprocess="true" />
+63-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\FORRTY\.gradle\caches\transforms-2\files-2.1\bf4f013fe5bb364fe25c656e5b7996d1\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+64    </application>
+65
+66</manifest>
