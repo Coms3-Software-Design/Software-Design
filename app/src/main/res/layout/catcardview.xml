@@ -2,12 +2,12 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/viewCatCard"
-    android:layout_width="130dp"
+    android:layout_width="135dp"
     android:layout_height="180dp"
     android:layout_margin="5dp"
     android:clickable="true"
     android:foreground="?android:attr/selectableItemBackground"
-    app:cardCornerRadius="5dp">
+    app:cardCornerRadius="10dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,13 +21,21 @@
             android:background="#2d2d2d"
             android:scaleType="centerCrop" />
 
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:layout_constraintTop_toTopOf="@+id/im_Background"
+            app:srcCompat="@drawable/black_gradient_edit" />
+
+
         <TextView
             android:id="@+id/tvCategoryName"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="Category"
-            android:textColor="#2d2d2d"
+            android:textColor="@color/colourLayout"
             android:textSize="15dp" />
 
     </LinearLayout>

@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorPrimary">#4c84ff</color>
+    <color name="colorPrimaryDark">#18a3fe</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="colourLayout">#D8DFDE</color>
     <color name="colourLayoutDark">#A4A8A8</color>
+    <color name="overlayBackground">#7f333639</color>
+    <color name="overlayActionBar">#0e0d0e</color>
+
+
+    <color name="gradient_start_color">#4c84ff</color>
+    <color name="gradient_end_color">#18a3fe</color>
+
+    <color name="gradient_background_start">#273942</color>
+    <color name="gradient_background_start_2">#2B3E47</color>
+    <color name="gradient_backround_end">#1D4560</color>
+
 </resources>

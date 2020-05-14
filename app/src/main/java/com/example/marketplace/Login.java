@@ -29,8 +29,8 @@ import static android.graphics.Color.rgb;
 
 public class Login extends AppCompatActivity {
     private EditText userName,Password;
-    private Button signIn , signUP;
-    private TextView tvForgotPass;
+    private Button signIn ;
+    private TextView tvForgotPass, signUP;
     private String password;
 
     int loginAttempts = 3; // made it a global variable for ease of access
@@ -43,7 +43,7 @@ public class Login extends AppCompatActivity {
         Password = (EditText)findViewById(R.id.etPassword_Login);
         tvForgotPass = (TextView) findViewById(R.id.tvForgotPass);
         signIn = (Button) findViewById(R.id.btnSignIn);
-        signUP = (Button) findViewById(R.id.btnSignUp);
+        signUP = (TextView) findViewById(R.id.tvSignUp);
 
         // TODO : Use shared preferences to give the user the ability to login in next session without typing in their credentials
         // TODO : Create The forgot password so that a user can reset their password
@@ -52,9 +52,11 @@ public class Login extends AppCompatActivity {
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                //startActivity(new Intent(Login.this, Homepage.class));
+
                 String usrname = userName.getText().toString();
                 password = Password.getText().toString();
-
 
                 // The 2 below if statements independant of each other only check for errors from input
 
@@ -67,6 +69,7 @@ public class Login extends AppCompatActivity {
                     Password.setError("Please Enter Your Password");
                     return;
                 }
+
 
                 ContentValues cv = new ContentValues();
                 cv.put("username",usrname);
@@ -142,7 +145,6 @@ public class Login extends AppCompatActivity {
 
                     }catch (JSONException e){
                         e.printStackTrace();
-
                     }
 
 
@@ -150,10 +152,6 @@ public class Login extends AppCompatActivity {
 
             }
         };
-
         asyncHTTPPost.execute();
     }
-
-
-
 }
