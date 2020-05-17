@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Mondai</string>
+    <string name="app_name">Market Place</string>
     <string name="title_activity_homepage">Homepage</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

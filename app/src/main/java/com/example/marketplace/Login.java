@@ -29,8 +29,8 @@ import static android.graphics.Color.rgb;
 
 public class Login extends AppCompatActivity {
     private EditText userName,Password;
-    private Button signIn , signUP;
-    private TextView tvForgotPass;
+    private Button signIn ;
+    private TextView tvForgotPass, signUP;
     private String password;
 
     int loginAttempts = 3; // made it a global variable for ease of access
@@ -43,7 +43,7 @@ public class Login extends AppCompatActivity {
         Password = (EditText)findViewById(R.id.etPassword_Login);
         tvForgotPass = (TextView) findViewById(R.id.tvForgotPass);
         signIn = (Button) findViewById(R.id.btnSignIn);
-        signUP = (Button) findViewById(R.id.btnSignUp);
+        signUP =  findViewById(R.id.tvSignUp);
 
         // TODO : Use shared preferences to give the user the ability to login in next session without typing in their credentials
         // TODO : Create The forgot password so that a user can reset their password

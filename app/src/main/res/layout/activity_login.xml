@@ -8,18 +8,29 @@
     android:orientation="vertical"
     tools:context=".Login"
     android:theme="@style/Theme.AppCompat.NoActionBar"
-    android:background="@drawable/stonesandwater">
+    android:background="#fcfcfc">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello There!"
+        android:textSize="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_180sdp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#4B545C"
+        android:fontFamily="sans-serif-black"
+        />
 
     <EditText
         android:id="@+id/etStudentNo_Login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center|center_vertical"
-
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="100sp"
+        android:layout_marginTop="@dimen/_5sdp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text"
         android:ems="10"
         android:hint="Username"
         android:inputType="textPersonName"
@@ -30,42 +41,54 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center|center_vertical"
+        android:background="@drawable/edit_text"
         android:layout_margin="10dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
         android:padding="15dp" />
 
-    <TextView
-        android:id="@+id/tvForgotPass"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center|center_vertical"
-
-        android:layout_margin="10dp"
-        android:clickable="true"
-        android:padding="15dp"
-        android:text="forgot password!"
-        android:textColor="#2ef5ff" />
-
     <Button
         android:id="@+id/btnSignIn"
-        android:layout_width="269dp"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center|center_vertical"
         android:layout_margin="10dp"
-        android:background="#66CDAA"
+        android:layout_marginTop="-500dp"
+        android:background="@drawable/buy_button"
         android:text="Sign In" />
 
-    <Button
-        android:id="@+id/btnSignUp"
-        android:layout_width="269dp"
+    <TextView
+        android:id="@+id/tvForgotPass"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center|center_vertical"
+        android:text="Forgot Password?"
+        android:textColor="@color/maincolor"
+        android:paddingRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_190sdp"
+        android:layout_marginTop="@dimen/_minus50sdp"
 
-        android:layout_margin="10dp"
-        android:background="#66CDAA"
-        android:text="Sign up" />
+        />
+
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:textColor="@color/ourRed"
+        android:text="Register."
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/_155sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_marginTop="@dimen/_minus15sdp"
+        android:textColor="#4B545C"
+        android:text="You not a member?"
+        android:layout_marginLeft="@dimen/_55sdp"/>
 
 
 
