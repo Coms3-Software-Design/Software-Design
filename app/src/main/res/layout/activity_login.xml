@@ -75,11 +75,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
-        android:layout_marginTop="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_115sdp"
         android:textColor="@color/ourRed"
         android:text="Register."
         android:textStyle="bold"
-        android:layout_marginLeft="@dimen/_155sdp"/>
+        android:layout_marginLeft="@dimen/_185sdp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -88,7 +88,7 @@
         android:layout_marginTop="@dimen/_minus15sdp"
         android:textColor="#4B545C"
         android:text="You not a member?"
-        android:layout_marginLeft="@dimen/_55sdp"/>
+        android:layout_marginLeft="@dimen/_85sdp"/>
 
 
 
