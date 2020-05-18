@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:background="#049DC2"
+    android:gravity="bottom"
+    android:padding="16dp"
+    android:id="@+id/lk"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:layout_marginTop="10dp">
+
+    <ImageView
+        android:id="@+id/ivpic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end"
+        android:layout_marginStart="122dp"
+        android:layout_marginLeft="122dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="39dp"
+        android:layout_toEndOf="@id/tvUse"
+        android:layout_toRightOf="@id/tvUse"
+        android:clickable="true"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvUse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="52dp"
+        android:padding="2dp"
+        android:text="UserName Here"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvBal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvUse"
+        android:layout_marginTop="14dp"
+        android:padding="2dp"
+        android:text="Anything else we might need here"
+        android:textSize="15dp" />
+
+</RelativeLayout>

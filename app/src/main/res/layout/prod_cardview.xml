@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/viewProdCard"
+    android:layout_width="100dp"
+    android:layout_height="160dp"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivProdImage"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#2d2d2d"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tvProdName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:text="ProdName"
+            android:paddingLeft="3dp"
+            android:textColor="#2d2d2d"
+            android:textSize="13dp" />
+        <TextView
+            android:id="@+id/tvProdPrice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:text="R0.00"
+            android:paddingRight="4dp"
+            android:textColor="#2d2d2d"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
