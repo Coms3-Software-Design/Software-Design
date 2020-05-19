@@ -7,13 +7,13 @@ import android.os.Parcelable;
 public class Product implements Parcelable {
     private  int productID , userID, currentQuantity, soldQuantity;
     private double pricePerItem;
-    private String productName , category, productBrand;
+    private String productName , category, productBrand,prodType;
     private String productDescription;
     private String productPicture;
     private String productsURL = "https://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/Products/";
 
     Product(int productID , int userID, int currentQuantity, int soldQuantity, double pricePerItem,
-            String productName , String category, String productBrand, String productDescription){
+            String productName , String category, String productBrand, String productDescription,String prodType){
         this.productID = productID;
         this.userID = userID;
         this.currentQuantity = currentQuantity;
@@ -24,6 +24,7 @@ public class Product implements Parcelable {
         this.productBrand = productBrand;
         this.productDescription = productDescription;
         this.productPicture = productsURL.concat(String.valueOf(productID)).concat(".jpg").concat("?=" + System.currentTimeMillis());
+        this.prodType = prodType;
 
     }
 
@@ -39,6 +40,7 @@ public class Product implements Parcelable {
         productDescription = in.readString();
         productPicture = in.readString();
         productsURL = in.readString();
+        prodType = in.readString();
     }
 
     public static final Creator<Product> CREATOR = new Creator<Product>() {
@@ -56,6 +58,15 @@ public class Product implements Parcelable {
     /*
      * Getters and setters here
      */
+
+    public String getProdType() {
+        return prodType;
+    }
+
+    public void setProdType(String prodType) {
+        this.prodType = prodType;
+    }
+
     public int getProductID() {
         return productID;
     }
@@ -154,6 +165,7 @@ public class Product implements Parcelable {
         dest.writeString(productDescription);
         dest.writeString(productPicture);
         dest.writeString(productsURL);
+        dest.writeString(prodType);
     }
 }
 

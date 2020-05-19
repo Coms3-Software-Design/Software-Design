@@ -1,5 +1,6 @@
 package com.example.marketplace.fragments;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,7 +19,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.marketplace.CategoriesRecylerViewAdapter;
+import com.example.marketplace.adapters.GoodsCategoriesRecylerViewAdapter;
 import com.example.marketplace.Category;
 import com.example.marketplace.R;
 
@@ -49,8 +50,8 @@ public class GoodsFragment extends Fragment {
                         listCategories.add(category);
                         System.out.println(listCategories.get(i).getTitle());
                     }
-                    RecyclerView recyclerView = v.findViewById(R.id.vRecyclerView);
-                    CategoriesRecylerViewAdapter myAdapter = new CategoriesRecylerViewAdapter(v.getContext(),listCategories);
+                    RecyclerView recyclerView = v.findViewById(R.id.GoodsRecyclerView);
+                    GoodsCategoriesRecylerViewAdapter myAdapter = new GoodsCategoriesRecylerViewAdapter(v.getContext(),listCategories);
                     recyclerView.setLayoutManager(new GridLayoutManager(v.getContext(), 2));
                     recyclerView.setAdapter(myAdapter);
                 } catch (JSONException e) {

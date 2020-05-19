@@ -7,11 +7,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
+import com.example.marketplace.adapters.ProductsReclerViewAdapter;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -19,7 +20,9 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ThreadLocalRandom;
+
+import static com.example.marketplace.R.drawable.goods;
+import static com.example.marketplace.R.drawable.services;
 
 public class goodAndService extends AppCompatActivity {
 
@@ -27,6 +30,7 @@ public class goodAndService extends AppCompatActivity {
     private final List<Product> listProds = new ArrayList<>();
     private String productsURL = "https://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/Products/products.php";
     private String category, goodsType;
+    private LinearLayout l;
     private Context context;
 
     @Override
@@ -36,6 +40,12 @@ public class goodAndService extends AppCompatActivity {
          category = getIntent().getStringExtra("Category");
          goodsType = getIntent().getStringExtra("type");
          context = this;
+
+         if(goodsType.equals("Services")){
+             getSupportActionBar().setTitle("Services");
+         }else{
+             getSupportActionBar().setTitle("Goods");
+         }
 
         ContentValues cv = new ContentValues();
         cv.put("category", category);
@@ -66,7 +76,7 @@ public class goodAndService extends AppCompatActivity {
                                 String P_Brand = obj.getString("Product_Brand");
                                 String P_Desc = obj.getString("Product_Description");
 
-                                Product product = new Product(P_ID,U_ID,C_quant,S_quant,price,P_Name,P_category,P_Brand,P_Desc);
+                                Product product = new Product(P_ID,U_ID,C_quant,S_quant,price,P_Name,P_category,P_Brand,P_Desc,goodsType);
                                 listProds.add(product);
 
 
