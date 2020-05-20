@@ -16,7 +16,7 @@
         android:outlineAmbientShadowColor="@color/ourRed"
         android:outlineSpotShadowColor="@color/ourRed"
         android:numStars="5"
-        android:stepSize=".2"
+        android:stepSize=".5"
         android:layout_width="wrap_content"
         android:rating="1"
         android:layout_height="wrap_content"

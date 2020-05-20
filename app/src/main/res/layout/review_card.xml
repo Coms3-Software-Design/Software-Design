@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5sdp">
+    <TextView
+        android:id="@+id/tvReviewer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reviews Name"
+        android:textStyle="bold"
+        android:textSize="@dimen/_11sdp"
+        />
+    <RatingBar
+        android:id="@+id/rbRevieRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?attr/ratingBarStyleSmall"
+        android:stepSize=".5"
+        />
+    <TextView
+        android:id="@+id/tvViewReviewReview"
+        android:padding="@dimen/_3sdp"
+        android:text="The Integrove team had a blast at the Microsoft Ignite The Tour conference that took place on January 30-31 at the Sandton Convention Centre. The team attended informative speaker sessions, hands-on experiences and technical works"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

@@ -19,7 +19,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-public class GoodsCategoriesRecylerViewAdapter extends RecyclerView.Adapter<GoodsCategoriesRecylerViewAdapter.MyViewHolder>{
+public class    GoodsCategoriesRecylerViewAdapter extends RecyclerView.Adapter<GoodsCategoriesRecylerViewAdapter.MyViewHolder>{
 
     private Context mContext;
     private List<Category> mCategories;

@@ -6,6 +6,14 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -13,8 +21,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.BuyProduct"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".activities.ViewReviews"></activity>
+        <activity
+            android:name=".activities.BuyProduct"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activities.goodAndService" />
         <activity
             android:name=".activities.Homepage"
