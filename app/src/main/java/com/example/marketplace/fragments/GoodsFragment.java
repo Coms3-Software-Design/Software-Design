@@ -1,6 +1,5 @@
 package com.example.marketplace.fragments;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,7 +19,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.marketplace.adapters.GoodsCategoriesRecylerViewAdapter;
-import com.example.marketplace.Category;
+import com.example.marketplace.classes.Category;
 import com.example.marketplace.R;
 
 import org.json.JSONArray;

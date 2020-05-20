@@ -3,7 +3,6 @@ package com.example.marketplace.fragments;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -15,31 +14,25 @@ import android.provider.MediaStore;
 import android.util.Base64;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatDialogFragment;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.example.marketplace.AsyncHTTPPost;
-import com.example.marketplace.Homepage;
-import com.example.marketplace.Login;
-import com.example.marketplace.MySingleton;
+import com.example.marketplace.helperclasses.AsyncHTTPPost;
+import com.example.marketplace.activities.Homepage;
+import com.example.marketplace.helperclasses.MySingleton;
 import com.example.marketplace.R;
-import com.example.marketplace.User;
+import com.example.marketplace.classes.User;
 import com.squareup.picasso.Picasso;
 
 import org.json.JSONException;
@@ -49,7 +42,6 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.jar.Attributes;
 
 import static android.app.Activity.RESULT_OK;
 
@@ -57,14 +49,13 @@ public class ProfileUpdateFragment extends AppCompatDialogFragment {
 
 
     private EditText Bio, fName, lName, nPass, oPass, pNumber;
-    private RadioGroup genderGroup;
     private final int IMG_REQUEST = 1;
     private Bitmap bitmap;
     private ImageView imgView;
     private String uploadUrl = "http://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/uploads/upload.php";
     private String imgURLPrefix = "http://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/uploads/";
     private Context context;
-    private Button changePass, changeGender;
+    private Button changePass;
     private User user;
     private Boolean editpass = false;
 
@@ -87,26 +78,12 @@ public class ProfileUpdateFragment extends AppCompatDialogFragment {
         oPass = v.findViewById(R.id.etoldPassword);
         pNumber = v.findViewById(R.id.etPhone);
         changePass = v.findViewById(R.id.btnChangePass);
-        changeGender = v.findViewById(R.id.btnChangeGender);
-        genderGroup = v.findViewById(R.id.radioGroup);
 
 
 
 
 
         Toast.makeText(context, "Click on the image to change your profile pic", Toast.LENGTH_LONG).show();
-
-
-        changeGender.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-//                genderGroup.setVisibility(View.VISIBLE);
-//                int radioButtonID = genderGroup.getCheckedRadioButtonId();
-//                RadioButton R = (RadioButton) v.findViewById(radioButtonID);
-//                R.setChecked(false);
-                Toast.makeText(context,"This feature still needs implementation",Toast.LENGTH_SHORT).show();
-            }
-        });
 
         changePass.setOnClickListener(new View.OnClickListener() {
             @Override

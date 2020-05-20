@@ -12,9 +12,9 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.marketplace.Category;
+import com.example.marketplace.classes.Category;
 import com.example.marketplace.R;
-import com.example.marketplace.goodAndService;
+import com.example.marketplace.activities.goodAndService;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;

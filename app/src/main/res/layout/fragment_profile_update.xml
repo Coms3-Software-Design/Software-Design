@@ -180,58 +180,8 @@
             android:visibility="gone"
             android:padding="5dp" />
 
-        <Button
-            android:id="@+id/btnChangeGender"
-            android:layout_width="269dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="center"
-            android:layout_margin="20dp"
-            android:background="#eb4034"
-            android:clickable="true"
-            android:padding="5dp"
-            android:textAllCaps="false"
-            android:text="Change Gender" />
 
-        <RadioGroup
-            android:id="@+id/radioGroup"
-            android:layout_width="match_parent"
-            android:visibility="gone"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:ems="10"
-            android:padding="5dp">
 
-            <RadioButton
-                android:id="@+id/rMale"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:checked="true"
-                android:ems="10"
-                android:padding="5dp"
-                android:text="Male" />
-
-            <RadioButton
-                android:id="@+id/rFemale"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:ems="10"
-                android:padding="5dp"
-                android:text="Female" />
-        </RadioGroup>
 
 
     </LinearLayout>

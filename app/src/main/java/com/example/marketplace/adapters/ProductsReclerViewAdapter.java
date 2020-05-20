@@ -12,8 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.marketplace.BuyProduct;
-import com.example.marketplace.Product;
+import com.example.marketplace.activities.BuyProduct;
+import com.example.marketplace.classes.Product;
 import com.example.marketplace.R;
 import com.squareup.picasso.Picasso;
 

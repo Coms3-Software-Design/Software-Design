@@ -18,9 +18,8 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.marketplace.Category;
+import com.example.marketplace.classes.Category;
 import com.example.marketplace.R;
-import com.example.marketplace.adapters.GoodsCategoriesRecylerViewAdapter;
 import com.example.marketplace.adapters.ServiceCategoriesRecylerViewAdapter;
 
 import org.json.JSONArray;
