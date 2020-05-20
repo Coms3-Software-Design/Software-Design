@@ -1,5 +1,6 @@
 package com.example.marketplace.activities;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -28,7 +29,6 @@ import java.util.List;
 
 public class goodAndService extends AppCompatActivity {
 
-    private RequestQueue rq;
     private final List<Product> listProds = new ArrayList<>();
     private String productsURL = "https://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/Products/products.php";
     private String category, goodsType;
@@ -101,5 +101,6 @@ public class goodAndService extends AppCompatActivity {
         };
         asyncHTTPPost.execute();
     }
+
 
 }

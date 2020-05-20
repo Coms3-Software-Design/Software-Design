@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.android.volley.RequestQueue;
 import com.example.marketplace.R;
 import com.example.marketplace.adapters.ReviewsRecyclerViewAdapter;
+import com.example.marketplace.classes.Product;
 import com.example.marketplace.classes.Review;
 import com.example.marketplace.helperclasses.AsyncHTTPPost;
 
@@ -30,6 +31,7 @@ public class ViewReviews extends AppCompatActivity {
     private String reviewURL = "https://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/MPReviews.php";
     private Context context;
     private int productID;
+    private Product product;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +39,7 @@ public class ViewReviews extends AppCompatActivity {
         setContentView(R.layout.activity_view_reviews);
         context = this;
         productID = getIntent().getIntExtra("productID",-1);
+        product = getIntent().getParcelableExtra("product");
 
         if(productID != -1){
         getSetReviews();}
@@ -45,12 +48,8 @@ public class ViewReviews extends AppCompatActivity {
             Toast.makeText(this, "Couldn't get Product ID",Toast.LENGTH_SHORT).show();
         }
 
-//
-//        RecyclerView recyclerView = findViewById(R.id.GoodsRecyclerView);
-//        ReviewsRecyclerViewAdapter myAdapter = new ReviewsRecyclerViewAdapter(context, ReviewList);
-//      //  recyclerView.setLayoutManager(new GridLayoutManager(context, 1));
-//        recyclerView.setAdapter(myAdapter);
-
+        getSupportActionBar().setTitle("Review");
+        getSupportActionBar().setSubtitle("Reviews for " + product.getProductName());
 
     }
 
@@ -80,11 +79,14 @@ public class ViewReviews extends AppCompatActivity {
                          System.out.println(review);
                          ReviewList.add(review);
                     }
-
+                    if(ReviewList.isEmpty()){
+                        Toast.makeText(context,"No Reviews on this item, Be the first to add a review",Toast.LENGTH_LONG).show();
+                    }
                     RecyclerView recyclerView =(RecyclerView) findViewById(R.id.reviewsRecyclerView);
                     ReviewsRecyclerViewAdapter myAdapter = new ReviewsRecyclerViewAdapter(context, ReviewList);
                      recyclerView.setLayoutManager(new LinearLayoutManager(context));
                     recyclerView.setAdapter(myAdapter);
+
                 }catch (JSONException e){
                     e.printStackTrace();
                 }

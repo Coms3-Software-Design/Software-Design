@@ -3,20 +3,32 @@ package com.example.marketplace.activities;
 import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
+import android.content.ContentValues;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.marketplace.R;
+import com.example.marketplace.adapters.ReviewsRecyclerViewAdapter;
 import com.example.marketplace.classes.Product;
+import com.example.marketplace.classes.Review;
 import com.example.marketplace.classes.User;
 import com.example.marketplace.fragments.addReviewFragment;
+import com.example.marketplace.helperclasses.AsyncHTTPPost;
 import com.squareup.picasso.Picasso;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class BuyProduct extends AppCompatActivity {
     private Product product;
@@ -25,7 +37,8 @@ public class BuyProduct extends AppCompatActivity {
     private ImageView buyProductImage;
     private TextView productName, productPrice, productDescription, viewAllReviews;
     private addReviewFragment review;
-
+    private RatingBar productRating;
+    private String reviewURL = "https://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/MPReviews.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +54,8 @@ public class BuyProduct extends AppCompatActivity {
         viewAllReviews = findViewById(R.id.tvBuyProdViewAllReviews);
         btnBuyProd = findViewById(R.id.btnBuyProd);
         btnWriteReview = findViewById(R.id.btnWriteReview);
-
+        productRating = findViewById(R.id.rbProdRating);
+        setProducRating();
 
         // This here sets the texts of the buy or sell button
         if(product.getProdType().equals("Goods")){
@@ -55,6 +69,7 @@ public class BuyProduct extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(BuyProduct.this,ViewReviews.class);
                 intent.putExtra("productID",product.getProductID());
+                intent.putExtra("product",product);
                 startActivity(intent);
             }
         });
@@ -78,6 +93,41 @@ public class BuyProduct extends AppCompatActivity {
         setStringAttr();
 
     }
+
+    private void setProducRating() {
+        ContentValues cv = new ContentValues();
+        cv.put("ProductID",product.getProductID());
+
+
+        @SuppressLint("StaticFieldLeak")
+        AsyncHTTPPost asyncHTTPPost = new AsyncHTTPPost(reviewURL, cv) {
+
+            @Override
+            protected void onPostExecute(String output) {
+
+                float rating = 0;
+
+                try {
+                    JSONArray array = new JSONArray(output);
+                    for(int i = 0; i <array.length();i++){
+                        JSONObject object = array.getJSONObject(i);
+                        rating += (float) object.getDouble("Review_Rating");
+                    }
+                 if(array.length() != 0) {
+                     rating = rating / array.length();
+                 }
+
+                 productRating.setRating(rating);
+                }catch (JSONException e){
+                    e.printStackTrace();
+                }
+
+            }
+        };
+
+        asyncHTTPPost.execute();
+    }
+
 
     private void writeReview() {
         review = new addReviewFragment();
@@ -105,14 +155,8 @@ public class BuyProduct extends AppCompatActivity {
     }
 
     @Override
-    public void onBackPressed() {
-        Intent intent = new Intent(this, goodAndService.class);
-        intent.putExtra("Category",product.getCategory());
-        intent.putExtra("type",product.getProdType());
-        intent.putExtra("user", user);
-        startActivity(intent);
-        finish();
-        //super.onBackPressed();
-
+    protected void onPostResume() {
+        setProducRating();
+        super.onPostResume();
     }
 }
