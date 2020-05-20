@@ -72,6 +72,8 @@ public class BuyProduct extends AppCompatActivity {
 
     private void writeReview() {
         review = new addReviewFragment();
+        review.setProduct(product);
+        review.show(getSupportFragmentManager(),"Write a review");
 
     }
 

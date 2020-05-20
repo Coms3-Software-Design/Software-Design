@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_30sdp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_20sdp"
+        android:text="Please Rate The Item"
+        />
+    <RatingBar
+        android:id="@+id/rbRateProd"
+        android:outlineAmbientShadowColor="@color/ourRed"
+        android:outlineSpotShadowColor="@color/ourRed"
+        android:numStars="5"
+        android:stepSize=".2"
+        android:layout_width="wrap_content"
+        android:rating="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/_1sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        />
+    
+    <EditText
+        android:id="@+id/etWriteReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="@dimen/_3sdp"
+        android:hint="Write a Review"
+        android:ems="10"
+        android:layout_gravity="center"
+        />
 
 </LinearLayout>
