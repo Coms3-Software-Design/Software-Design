@@ -132,7 +132,7 @@ public class Login extends AppCompatActivity {
 
                         Toast.makeText(Login.this , "Sign as "+ userJO.getString("Name"), Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(c , Homepage.class);
-                       intent.putExtra("user",user);
+                        intent.putExtra("user",user);
                         startActivity(intent);
                         finish();
 

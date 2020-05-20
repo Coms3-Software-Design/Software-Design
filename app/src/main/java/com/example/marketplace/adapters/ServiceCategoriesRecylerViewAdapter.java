@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.marketplace.classes.Category;
 import com.example.marketplace.R;
 import com.example.marketplace.activities.goodAndService;
+import com.example.marketplace.classes.User;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -25,12 +26,14 @@ public class ServiceCategoriesRecylerViewAdapter extends RecyclerView.Adapter<Se
 
     private Context mContext;
     private List<Category> mCategories;
+    private User user;
     private String imgUrl = "https://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/categories/";
 
 
-    public ServiceCategoriesRecylerViewAdapter(Context mContext , List<Category> mCategories){
+    public ServiceCategoriesRecylerViewAdapter(Context mContext, List<Category> mCategories, User user){
         this.mContext = mContext;
         this.mCategories = mCategories;
+        this.user = user;
     }
 
     @NonNull
@@ -58,6 +61,7 @@ public class ServiceCategoriesRecylerViewAdapter extends RecyclerView.Adapter<Se
                 Intent intent = new Intent(mContext , goodAndService.class);
                 intent.putExtra("Category",mCategories.get(position).getTitle());
                 intent.putExtra("type","Services");
+                intent.putExtra("user",user);
                 mContext.startActivity(intent);
             }
         });

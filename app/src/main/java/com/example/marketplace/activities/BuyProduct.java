@@ -1,20 +1,26 @@
 package com.example.marketplace.activities;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.marketplace.R;
 import com.example.marketplace.classes.Product;
+import com.example.marketplace.classes.User;
 import com.example.marketplace.fragments.addReviewFragment;
 import com.squareup.picasso.Picasso;
 
 public class BuyProduct extends AppCompatActivity {
     private Product product;
+    private User user;
     private Button btnWriteReview , btnBuyProd;
     private ImageView buyProductImage;
     private TextView productName, productPrice, productDescription, viewAllReviews;
@@ -26,7 +32,8 @@ public class BuyProduct extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_buy_product);
         product = getIntent().getParcelableExtra("product");
-
+        user = getIntent().getParcelableExtra("user");
+        Toast.makeText(this, user.getName(),Toast.LENGTH_SHORT).show();
         buyProductImage = findViewById(R.id.imgBuyProduct);
         productName = findViewById(R.id.tvBuyProdProdName);
         productPrice = findViewById(R.id.tvBuyProdProdPrice);
@@ -46,7 +53,9 @@ public class BuyProduct extends AppCompatActivity {
         viewAllReviews.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(BuyProduct.this,ViewReviews.class);
+                intent.putExtra("productID",product.getProductID());
+                startActivity(intent);
             }
         });
 
@@ -72,8 +81,10 @@ public class BuyProduct extends AppCompatActivity {
 
     private void writeReview() {
         review = new addReviewFragment();
+        review.setUser(user);
         review.setProduct(product);
-        review.show(getSupportFragmentManager(),"Write a review");
+        review.show(getSupportFragmentManager(),"");
+
 
     }
 
@@ -91,5 +102,17 @@ public class BuyProduct extends AppCompatActivity {
     private void setImage() {
         Picasso.get().load(product.getProductPicture()).placeholder(R.drawable.ic_edit_profile)
                 .error(R.drawable.ic_edit_profile).into(buyProductImage);
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(this, goodAndService.class);
+        intent.putExtra("Category",product.getCategory());
+        intent.putExtra("type",product.getProdType());
+        intent.putExtra("user", user);
+        startActivity(intent);
+        finish();
+        //super.onBackPressed();
+
     }
 }

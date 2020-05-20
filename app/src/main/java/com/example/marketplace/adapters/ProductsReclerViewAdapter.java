@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.marketplace.activities.BuyProduct;
 import com.example.marketplace.classes.Product;
 import com.example.marketplace.R;
+import com.example.marketplace.classes.User;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -24,11 +25,13 @@ public class ProductsReclerViewAdapter extends RecyclerView.Adapter<ProductsRecl
     private Context mContext;
     private List<Product> mProducts;
     private String picUrl = "https://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/Products/";
+    private User user;
 
-    public ProductsReclerViewAdapter(Context mContext , List<Product> mProducts){
+    public ProductsReclerViewAdapter(Context mContext, List<Product> mProducts, User user){
 
         this.mContext = mContext;
         this.mProducts = mProducts;
+        this.user = user;
     }
 
     @NonNull
@@ -55,6 +58,7 @@ public class ProductsReclerViewAdapter extends RecyclerView.Adapter<ProductsRecl
             public void onClick(View v) {
                 Intent intent = new Intent(mContext , BuyProduct.class);
                 intent.putExtra("product",mProducts.get(position));
+                intent.putExtra("user",user);
                 mContext.startActivity(intent);
             }
         });

@@ -34,11 +34,13 @@ import org.json.JSONObject;
 public class Homepage extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     public DrawerLayout drawer;
+
     private User user;
     private TextView tvUserName , tvBalance;
     private ImageView prPic;
     private NavigationView navigationView;
     private ProfileUpdateFragment profile;
+
     private Toolbar toolbar;
     private String imgURLPrefix = "http://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/uploads/";
 
@@ -50,8 +52,12 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
         setContentView(R.layout.activity_homepage);
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 
+
         user = getIntent().getParcelableExtra("user");
         Initialise(user);
+
+
+
 
         /*
          * we changed the action bar to a toolbar which is easier to work with
@@ -76,7 +82,15 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
          * We also start the activity with the Goods selected from navigation drawer
          */
         if(savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new GoodsFragment()).commit();
+            Bundle args = new Bundle();
+            args.putParcelable("user",user);
+            GoodsFragment goodsFragment;
+            // ServicesFragment servicesFragment;
+            goodsFragment = new GoodsFragment();
+
+
+            goodsFragment.setArguments(args);
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, goodsFragment).commit();
             navigationView.setCheckedItem(R.id.nav_goods);
         }
 
@@ -97,14 +111,24 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
      */
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        Bundle args = new Bundle();
+        args.putParcelable("user",user);
+        GoodsFragment goodsFragment;
+        goodsFragment = new GoodsFragment();
+        goodsFragment.setArguments(args);
 
+        ServicesFragment servicesFragment = new ServicesFragment();
+        servicesFragment.setArguments(args);
         switch (item.getItemId())
         {
             case R.id.nav_goods:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new GoodsFragment()).commit();
+
+
+
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,goodsFragment).commit();
                 break;
             case R.id.nav_services:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new ServicesFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,servicesFragment).commit();
                 break;
             case R.id.nav_editProfile:
                 editProfile(user);
@@ -133,9 +157,11 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
         tvUserName = findViewById(R.id.tvUse);
         tvBalance = findViewById(R.id.tvBal);
         prPic = findViewById(R.id.ivpic);
-        tvUserName.setText(s.getUserName());
+
+        tvUserName.setText(user.getUserName());
         tvBalance.setText("Balance: R"+s.getBalance());
         setIMG(imgURLPrefix.concat(user.getUserID()).concat(".jpg").concat("?=" + System.currentTimeMillis()));
+
 
     }
 
@@ -188,9 +214,9 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
         };
 
         asyncHTTPPost.execute();
-
-
     }
+
+
 
     @Override
     public void onBackPressed() {

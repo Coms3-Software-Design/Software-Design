@@ -21,6 +21,7 @@ import com.android.volley.toolbox.Volley;
 import com.example.marketplace.classes.Category;
 import com.example.marketplace.R;
 import com.example.marketplace.adapters.ServiceCategoriesRecylerViewAdapter;
+import com.example.marketplace.classes.User;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -31,6 +32,7 @@ import java.util.List;
 public class ServicesFragment extends Fragment {
 
     private RequestQueue rq;
+    private User  user;
     private final List<Category> listCategories = new ArrayList<>();
     private String categoriesURL = "https://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/categories/categories.php";
 
@@ -39,7 +41,9 @@ public class ServicesFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
       //  return inflater.inflate(R.layout.frament_services,container,false);
         final View v = inflater.inflate(R.layout.frament_services, container, false);
-
+        if(getArguments() != null){
+            user = getArguments().getParcelable("user");
+        }
 
         // initializeList();
         rq = Volley.newRequestQueue(v.getContext());
@@ -53,7 +57,7 @@ public class ServicesFragment extends Fragment {
                         System.out.println(listCategories.get(i).getTitle());
                     }
                     RecyclerView recyclerView = v.findViewById(R.id.ServicesRecyclerView);
-                    ServiceCategoriesRecylerViewAdapter myAdapter = new ServiceCategoriesRecylerViewAdapter(v.getContext(),listCategories);
+                    ServiceCategoriesRecylerViewAdapter myAdapter = new ServiceCategoriesRecylerViewAdapter(v.getContext(),listCategories,user);
                     recyclerView.setLayoutManager(new GridLayoutManager(v.getContext(), 2));
                     recyclerView.setAdapter(myAdapter);
                 } catch (JSONException e) {

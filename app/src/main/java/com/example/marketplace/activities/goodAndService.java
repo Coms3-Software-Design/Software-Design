@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -15,6 +16,7 @@ import com.android.volley.RequestQueue;
 import com.example.marketplace.R;
 import com.example.marketplace.adapters.ProductsReclerViewAdapter;
 import com.example.marketplace.classes.Product;
+import com.example.marketplace.classes.User;
 import com.example.marketplace.helperclasses.AsyncHTTPPost;
 
 import org.json.JSONArray;
@@ -30,7 +32,7 @@ public class goodAndService extends AppCompatActivity {
     private final List<Product> listProds = new ArrayList<>();
     private String productsURL = "https://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/Products/products.php";
     private String category, goodsType;
-    private LinearLayout l;
+    private User user;
     private Context context;
 
     @Override
@@ -39,6 +41,7 @@ public class goodAndService extends AppCompatActivity {
         setContentView(R.layout.goodsandservice);
          category = getIntent().getStringExtra("Category");
          goodsType = getIntent().getStringExtra("type");
+         user = getIntent().getParcelableExtra("user");
          context = this;
 
          if(goodsType.equals("Services")){
@@ -85,7 +88,7 @@ public class goodAndService extends AppCompatActivity {
                             }
                         }
                     RecyclerView recyclerView =  (RecyclerView) findViewById(R.id.viewProdRecyclerView);
-                    ProductsReclerViewAdapter prodAdapter = new ProductsReclerViewAdapter(context, listProds);
+                    ProductsReclerViewAdapter prodAdapter = new ProductsReclerViewAdapter(context, listProds,user);
                     recyclerView.setLayoutManager(new GridLayoutManager(context, 3));
                     recyclerView.setAdapter(prodAdapter);
 
@@ -98,4 +101,5 @@ public class goodAndService extends AppCompatActivity {
         };
         asyncHTTPPost.execute();
     }
+
 }

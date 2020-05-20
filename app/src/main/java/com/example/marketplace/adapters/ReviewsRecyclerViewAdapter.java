@@ -20,7 +20,7 @@ public class ReviewsRecyclerViewAdapter extends RecyclerView.Adapter<ReviewsRecy
     Context context;
     List<Review> reviewList;
 
-    ReviewsRecyclerViewAdapter(Context context , List<Review> reviewList){
+    public ReviewsRecyclerViewAdapter(Context context, List<Review> reviewList){
         this.context = context;
         this.reviewList = reviewList;
     }
@@ -38,7 +38,8 @@ public class ReviewsRecyclerViewAdapter extends RecyclerView.Adapter<ReviewsRecy
     @Override
     public void onBindViewHolder(@NonNull myViewHolder holder, int position) {
         holder.name.setText(reviewList.get(position).getReviewer());
-
+        holder.review.setText(reviewList.get(position).getReview());
+        holder.ratingBar.setRating(reviewList.get(position).getRatings());
 
     }
 

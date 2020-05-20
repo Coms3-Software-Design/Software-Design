@@ -21,6 +21,7 @@ import com.android.volley.toolbox.Volley;
 import com.example.marketplace.adapters.GoodsCategoriesRecylerViewAdapter;
 import com.example.marketplace.classes.Category;
 import com.example.marketplace.R;
+import com.example.marketplace.classes.User;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -28,16 +29,23 @@ import org.json.JSONException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GoodsFragment extends Fragment {
+public class GoodsFragment extends Fragment{
+
     private RequestQueue rq;
     private final List<Category> listCategories = new ArrayList<>();
     private String categoriesURL = "https://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/categories/categories.php";
+    private User user;
+
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
        final View v = inflater.inflate(R.layout.fragment_goods, container, false);
 
+        if(getArguments() != null){
+           user = getArguments().getParcelable("user");
+        }
+        else Toast.makeText(v.getContext(),"Something is wrong, Can't set User",Toast.LENGTH_SHORT).show();
       // initializeList();
         rq = Volley.newRequestQueue(v.getContext());
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, categoriesURL, null, new Response.Listener<JSONArray>() {
@@ -47,12 +55,13 @@ public class GoodsFragment extends Fragment {
                     for(int i = 0; i < response.length() ; i++){
                         Category category = new Category(response.getJSONObject(i).getString("Category"));
                         listCategories.add(category);
-                        System.out.println(listCategories.get(i).getTitle());
                     }
+
                     RecyclerView recyclerView = v.findViewById(R.id.GoodsRecyclerView);
-                    GoodsCategoriesRecylerViewAdapter myAdapter = new GoodsCategoriesRecylerViewAdapter(v.getContext(),listCategories);
+                    GoodsCategoriesRecylerViewAdapter myAdapter = new GoodsCategoriesRecylerViewAdapter(v.getContext(),listCategories,user);
                     recyclerView.setLayoutManager(new GridLayoutManager(v.getContext(), 2));
                     recyclerView.setAdapter(myAdapter);
+
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }

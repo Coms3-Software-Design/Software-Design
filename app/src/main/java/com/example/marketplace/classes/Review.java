@@ -6,13 +6,15 @@ public class Review {
 
     private String Reviewer;
     private String review;
-    private RatingBar ratingBar;
+    private float rating;
 
-    Review(String Reviewer , String review ,RatingBar ratingBar){
+    public Review(String Reviewer, String review, float rate){
         this.Reviewer = Reviewer;
         this.review = review;
-        this.ratingBar = ratingBar;
+//        this.ratingBar.setNumStars(5);
+        this.rating = rate;
     }
+
 
     public String getReviewer() {
         return Reviewer;
@@ -30,11 +32,11 @@ public class Review {
         this.review = review;
     }
 
-    public RatingBar getRatingBar() {
-        return ratingBar;
+
+
+    public float getRatings(){
+        return rating;
     }
 
-    public void setRatingBar(RatingBar ratingBar) {
-        this.ratingBar = ratingBar;
-    }
+
 }
