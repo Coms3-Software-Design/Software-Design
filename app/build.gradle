@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
-
+apply plugin: 'jacoco'
 apply plugin: 'jacoco-android'
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
 
     // useLibrary 'org.apache.http.legacy'
-
+    testOptions.unitTests.includeAndroidResources = true
     defaultConfig {
         applicationId "com.example.marketplace"
         minSdkVersion 21
@@ -17,9 +17,13 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+    lintOptions {
+        abortOnError false
+    }
 
     buildTypes {
         release {
+            testCoverageEnabled false
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
@@ -30,12 +34,24 @@ android {
         }
         // debug is new
     }
+    testOptions {
+
+        unitTests.all {
+
+            jacoco {
+                includeNoLocationClasses = true
+
+            }
+
+        }
+
+    }
 
 
 }
 
 jacoco {
-    toolVersion = "0.8.4"
+    toolVersion = "0.8.5"
 }
 
 tasks.withType(Test) {
@@ -68,6 +84,7 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.2.0-alpha03'
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
 
 
 
