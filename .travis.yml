@@ -88,6 +88,7 @@ licenses:
 - 'android-sdk-license-.+'
 - 'google-gdk-license-.+'
 script:
+- ./gradlew build jacocoTestReport assembleAndroidTest
 - echo no | android create avd --force -n test -t $ANDROID_TARGET --abi $ANDROID_ABI --device 'Nexus 4' --sdcard 128M
 - emulator -avd test -no-window -skin 768x1280 &
 - android-wait-for-emulator
