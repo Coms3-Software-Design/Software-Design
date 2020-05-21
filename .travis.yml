@@ -60,7 +60,7 @@
 sudo: false
 language: android
 
-# before_cache:
+before_cache:
 # - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
 # - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
 
@@ -92,7 +92,7 @@ script:
 - emulator -avd test -no-window -skin 768x1280 &
 - android-wait-for-emulator
 - adb shell setprop dalvik.vm.dexopt-flags v=n,o=v
-# - ./gradlew clean createDebugCoverageReport jacocoTestReport
+- ./gradlew clean createDebugCoverageReport jacocoTestReport
 
 branches:
   only:
