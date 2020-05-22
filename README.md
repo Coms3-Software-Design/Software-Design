@@ -24,6 +24,9 @@
   2.The Orange box classes. These are our activities, moving from the splash screen to the login page then depending on what the user wants to do, they can move to the homepage, registration activity or forgot password activity
   3.The Pink box classes; these are our main classes, We have a user which can have 0 or many products, and each product can be bought by 0 or 1 other user
   ![](Images/class.png)
+  
+  ##### The sequence diagram
+![Secuence diagram](https://user-images.githubusercontent.com/61118694/82603542-2460db00-9bb3-11ea-8e6f-f1fa028f3b80.jpg)
 
 ### Physica View:
 ##### The Deployment Diagram
