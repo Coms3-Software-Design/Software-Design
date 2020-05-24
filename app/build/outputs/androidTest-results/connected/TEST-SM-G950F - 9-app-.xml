@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.example.marketplace.ExampleInstrumentedTest" tests="33" failures="0" errors="0" skipped="0" time="239.0" timestamp="2020-05-24T16:26:24" hostname="localhost">
+  <properties>
+    <property name="device" value="SM-G950F - 9" />
+    <property name="flavor" value="" />
+    <property name="project" value="app" />
+  </properties>
+  <testcase name="useAppContext" classname="com.example.marketplace.ExampleInstrumentedTest" time="0.0" />
+  <testcase name="Review" classname="com.example.marketplace.classes.ReviewTest" time="0.025" />
+  <testcase name="setReview" classname="com.example.marketplace.classes.ReviewTest" time="0.0" />
+  <testcase name="getReview" classname="com.example.marketplace.classes.ReviewTest" time="0.0" />
+  <testcase name="setReviewer" classname="com.example.marketplace.classes.ReviewTest" time="0.025" />
+  <testcase name="getReviewer" classname="com.example.marketplace.classes.ReviewTest" time="0.0" />
+  <testcase name="getRatings" classname="com.example.marketplace.classes.ReviewTest" time="0.0" />
+  <testcase name="setBalance" classname="com.example.marketplace.classes.UserTest" time="0.026" />
+  <testcase name="getProPicURL" classname="com.example.marketplace.classes.UserTest" time="0.0" />
+  <testcase name="describeContents" classname="com.example.marketplace.classes.UserTest" time="0.0" />
+  <testcase name="getBio" classname="com.example.marketplace.classes.UserTest" time="0.0" />
+  <testcase name="setPassword" classname="com.example.marketplace.classes.UserTest" time="0.0" />
+  <testcase name="getDateOfBirth" classname="com.example.marketplace.classes.UserTest" time="0.0" />
+  <testcase name="getPassword" classname="com.example.marketplace.classes.UserTest" time="0.0" />
+  <testcase name="setBio" classname="com.example.marketplace.classes.UserTest" time="0.0" />
+  <testcase name="getSurname" classname="com.example.marketplace.classes.UserTest" time="0.0" />
+  <testcase name="setContactDetails" classname="com.example.marketplace.classes.UserTest" time="0.0" />
+  <testcase name="setProPicURL" classname="com.example.marketplace.classes.UserTest" time="0.0" />
+  <testcase name="getName" classname="com.example.marketplace.classes.UserTest" time="0.0" />
+  <testcase name="User" classname="com.example.marketplace.classes.UserTest" time="0.026" />
+  <testcase name="setGender" classname="com.example.marketplace.classes.UserTest" time="0.0" />
+  <testcase name="getGender" classname="com.example.marketplace.classes.UserTest" time="0.0" />
+  <testcase name="writeToParcel" classname="com.example.marketplace.classes.UserTest" time="0.0" />
+  <testcase name="setUserID" classname="com.example.marketplace.classes.UserTest" time="0.026" />
+  <testcase name="getBalance" classname="com.example.marketplace.classes.UserTest" time="0.0" />
+  <testcase name="getContactDetails" classname="com.example.marketplace.classes.UserTest" time="0.0" />
+  <testcase name="getUserID" classname="com.example.marketplace.classes.UserTest" time="0.0" />
+  <testcase name="setSurname" classname="com.example.marketplace.classes.UserTest" time="0.025" />
+  <testcase name="setDateOfBirth" classname="com.example.marketplace.classes.UserTest" time="0.0" />
+  <testcase name="getDateCreated" classname="com.example.marketplace.classes.UserTest" time="0.0" />
+  <testcase name="setUserName" classname="com.example.marketplace.classes.UserTest" time="0.0" />
+  <testcase name="getUserName" classname="com.example.marketplace.classes.UserTest" time="0.0" />
+  <testcase name="setName" classname="com.example.marketplace.classes.UserTest" time="0.0" />
+</testsuite>
