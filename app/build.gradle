@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 
 apply plugin: 'jacoco'
+
 //apply plugin: 'jacoco-android'
 android {
     compileSdkVersion 29
@@ -111,3 +112,4 @@ dependencies {
     androidTestImplementation 'com.android.support.test:rules:1.0.2'
     androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.3.0-beta01'
 }
+
