@@ -93,8 +93,8 @@ script:
 - android-wait-for-emulator
 - adb shell setprop dalvik.vm.dexopt-flags v=n,o=v
  - ./gradlew clean createDebugCoverageReport jacocoTestReport
- - ./gradlew build jacocoTestReport assembleAndroidTest
- - ./gradlew connectedCheck
+#  - ./gradlew build jacocoTestReport assembleAndroidTest
+#  - ./gradlew connectedCheck
 
 branches:
   only:
