@@ -1,0 +1,4 @@
+#Sun May 24 01:10:00 CAT 2020
+base.0=C\:\\Users\\Mahlatse Charlie\\AndroidStudioProjects\\Software-Design\\app\\build\\intermediates\\dex\\release\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
