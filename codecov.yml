@@ -3,10 +3,11 @@ codecov:
   require_ci_to_pass: yes
 
 # coverage:
-#   precision: 2
-#   round: down
-#   range: "0...100"
+
 coverage:
+  precision: 2
+  round: down
+  range: "0...100"
   status:
     project:
       default:
@@ -19,8 +20,8 @@ coverage:
         paths: 
           - "src"
        # advanced
-        branches: 
-          - master
+#         branches: 
+#           - master
         if_not_found: success
         if_ci_failed: error
         informational: false
