@@ -49,14 +49,14 @@ android {
 
 }
 
-//jacoco {
-//    toolVersion = "0.8.3"
-//    reportsDir = file("$buildDir/customJacocoReportDir")
-//}
-//
-//tasks.withType(Test) {
-//    jacoco.includeNoLocationClasses = true
-//}
+jacoco {
+    toolVersion = "0.8.3"
+    reportsDir = file("$buildDir/customJacocoReportDir")
+}
+
+tasks.withType(Test) {
+    jacoco.includeNoLocationClasses = true
+}
 
 
 dependencies {
@@ -84,11 +84,6 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.2.0-alpha03'
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
-
-
-
-
-
 
 
     //noinspection GradleDependency
@@ -129,3 +124,4 @@ task jacocoTestReport(type: JacocoReport, dependsOn: ['testDebugUnitTest', 'crea
             'jacoco/testDebugUnitTest.exec', 'outputs/code_coverage/debugAndroidTest/connected/**/*.ec'
     ])
 }
+check.dependsOn jacocoTestReport
