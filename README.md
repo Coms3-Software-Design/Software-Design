@@ -31,7 +31,7 @@
 * The end user uses the system as an android device. which communicates to the server through HTTP, Using PHP as a component of the the database management system, the server communicates to the an SQL database.
 * Therefore every user needs to be connected to the internet one way or the other to be able to use the application
 
-![](Images/Deploy.jpeg)
+![](Images/deploy.jpeg)
 ![](Images/Deployment.jpeg)
 
 
