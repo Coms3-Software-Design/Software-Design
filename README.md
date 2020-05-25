@@ -9,7 +9,7 @@
 ##### Component Diagram:
 * This Digram show how the components of the system a linked to each other
 * The customer needs to be authenticated who in turn also interacts with his account. The Custumor can again interact with the Ordering system which interacts with 2 other components, the cart component and the Payment Component of the system 
-![](Images/component.png)
+![](Images/component.jpeg)
 
 ### Logical View:
 ##### The State diagram: 
