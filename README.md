@@ -32,7 +32,6 @@
 * Therefore every user needs to be connected to the internet one way or the other to be able to use the application
 
 ![](Images/deploy.jpeg)
-![](Images/Deployment.jpeg)
 
 
 ### Process View:
