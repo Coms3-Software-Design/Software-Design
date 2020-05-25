@@ -23,8 +23,6 @@
   3.The Pink box classes; these are our main classes, We have a user which can have 0 or many products, and each product can be bought by 0 or 1 other user
   ![](Images/class.png)
   
-  ##### The sequence diagram
-![Secuence diagram](https://user-images.githubusercontent.com/61118694/82603542-2460db00-9bb3-11ea-8e6f-f1fa028f3b80.jpg)
 
 ### Physica View:
 ##### The Deployment Diagram
@@ -43,6 +41,10 @@
 * We also go through how each user can and update their profile, change credentials and even upload a profile picture.
 
 ![](Images/flow.jpeg)
+
+  ##### The sequence diagram
+  * This diagram shows how the system works sequentially 
+![Secuence diagram](https://user-images.githubusercontent.com/61118694/82603542-2460db00-9bb3-11ea-8e6f-f1fa028f3b80.jpg)
 
 ### Scenarios:
 
