@@ -50,7 +50,7 @@ public class CategoryTest {
         final Field field = category.getClass().getDeclaredField("image");
         field.setAccessible(true);
         field.set(category,image);
-        final String results = category.getTitle();
+        final String results = category.getImage();
         assertEquals(image,results);
     }
 
