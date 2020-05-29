@@ -9,7 +9,7 @@
 ##### Component Diagram:
 * This Digram show how the components of the system a linked to each other
 * The customer needs to be authenticated who in turn also interacts with his account. The Custumor can again interact with the Ordering system which interacts with 2 other components, the cart component and the Payment Component of the system 
-![](Images/component.png)
+![](Images/component.jpeg)
 
 ### Logical View:
 ##### The State diagram: 
@@ -23,8 +23,6 @@
   3.The Pink box classes; these are our main classes, We have a user which can have 0 or many products, and each product can be bought by 0 or 1 other user
   ![](Images/class.png)
   
-  ##### The sequence diagram
-![Secuence diagram](https://user-images.githubusercontent.com/61118694/82603542-2460db00-9bb3-11ea-8e6f-f1fa028f3b80.jpg)
 
 ### Physica View:
 ##### The Deployment Diagram
@@ -33,8 +31,7 @@
 * The end user uses the system as an android device. which communicates to the server through HTTP, Using PHP as a component of the the database management system, the server communicates to the an SQL database.
 * Therefore every user needs to be connected to the internet one way or the other to be able to use the application
 
-![](Images/Deploy.jpeg)
-![](Images/Deployment.jpeg)
+![](Images/deploy.jpeg)
 
 
 ### Process View:
@@ -43,6 +40,10 @@
 * We also go through how each user can and update their profile, change credentials and even upload a profile picture.
 
 ![](Images/flow.jpeg)
+
+  ##### The sequence diagram
+  * This diagram shows how the system works sequentially 
+![Secuence diagram](https://user-images.githubusercontent.com/61118694/82603542-2460db00-9bb3-11ea-8e6f-f1fa028f3b80.jpg)
 
 ### Scenarios:
 
