@@ -84,7 +84,7 @@ dependencies {
     testImplementation  'org.mockito:mockito-android:2.27.0'
     androidTestImplementation 'com.linkedin.testbutler:test-butler-library:2.0.0'
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-//    testImplementation 'org.robolectric:robolectric:4.2.1'
+    testImplementation 'org.robolectric:robolectric:4.2.1'
 //    testImplementation 'org.robolectric:shadows-support-v4:3.0'
     androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.3.0-beta02'
 }

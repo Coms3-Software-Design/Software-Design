@@ -67,7 +67,7 @@ public class TransactionTest {
     @Test
     public void setProductID() throws NoSuchFieldException, IllegalAccessException {
 
-        transaction.setTransactionID(productID);
+        transaction.setProductID(productID);
         final Field field10 = transaction.getClass().getDeclaredField("productID");
         field10.setAccessible(true);
         assertEquals(productID,field10.get(transaction));
@@ -84,7 +84,7 @@ public class TransactionTest {
 
     @Test
     public void setBoughtByID() throws NoSuchFieldException, IllegalAccessException {
-        transaction.setTransactionID(boughtByID);
+        transaction.setBoughtByID(boughtByID);
         final Field field10 = transaction.getClass().getDeclaredField("boughtByID");
         field10.setAccessible(true);
         assertEquals(boughtByID,field10.get(transaction));
