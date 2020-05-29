@@ -20,7 +20,7 @@ public abstract class AsyncHTTPPost extends AsyncTask<String, String,String> {
 
     String address;
     ContentValues parameters;
-    public  AsyncHTTPPost(String address, ContentValues parameters)
+    public AsyncHTTPPost(String address, ContentValues parameters)
     {
         this.address = address;
         this.parameters = parameters;
