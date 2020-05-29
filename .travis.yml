@@ -39,10 +39,11 @@ script:
 #  - ./gradlew clean createDebugCoverageReport jacocoTestReport
 # #  - ./gradlew build jacocoTestReport assembleAndroidTest
 # #  - ./gradlew connectedCheck
-  - ./gradlew build jacocoTestReport assembleAndroidTest
+  
   - echo no | android create avd --force -n test -t $ANDROID_TARGET --abi $ANDROID_ABI
   - emulator -avd test -no-skin -no-audio -no-window &
   - android-wait-for-emulator
+  - ./gradlew build jacocoTestReport assembleAndroidTest
   - adb shell setprop dalvik.vm.dexopt-flags v=n,o=v
   - ./gradlew connectedCheck
 branches:
