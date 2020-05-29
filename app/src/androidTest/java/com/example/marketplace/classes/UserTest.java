@@ -1,5 +1,7 @@
 package com.example.marketplace.classes;
 
+import android.os.Parcel;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -21,6 +23,7 @@ public class UserTest {
     private String contactDetails, userID;
     private String dateCreated;
     private String proPicURL;
+
     @Before
     public void setUp() throws Exception {
          name = "shameel";
