@@ -114,10 +114,6 @@ public class addReviewFragment extends AppCompatDialogFragment {
         AsyncHTTPPost asyncHTTPPost = new AsyncHTTPPost(addReviewURL , cv) {
             @Override
             protected void onPostExecute(String output) {
-                //                    Intent intent = new Intent(context , BuyProduct.class);
-                //                    intent.putExtra("product",product);
-                //                    intent.putExtra("user",user);
-                //                    startActivity(intent);
                 if(output.equals("1")){
                     l.dismiss();
                 }

@@ -33,6 +33,7 @@ public class goodAndService extends AppCompatActivity {
     private String productsURL = "https://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/Products/products.php";
     private String category, goodsType;
     private User user;
+    private String resetUserURL = "https://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/MPReturnUser.php";
     private Context context;
 
     @Override
@@ -87,7 +88,7 @@ public class goodAndService extends AppCompatActivity {
                                 e.printStackTrace();
                             }
                         }
-                    RecyclerView recyclerView =  (RecyclerView) findViewById(R.id.viewProdRecyclerView);
+                    RecyclerView recyclerView = findViewById(R.id.viewProdRecyclerView);
                     ProductsReclerViewAdapter prodAdapter = new ProductsReclerViewAdapter(context, listProds,user);
                     recyclerView.setLayoutManager(new GridLayoutManager(context, 3));
                     recyclerView.setAdapter(prodAdapter);
@@ -103,4 +104,64 @@ public class goodAndService extends AppCompatActivity {
     }
 
 
+    private void resetUser() {
+        ContentValues cv = new ContentValues();
+        cv.put("username", user.getUserName());
+
+        @SuppressLint("StaticFieldLeak")
+        AsyncHTTPPost asyncHTTPPost = new AsyncHTTPPost(resetUserURL, cv) {
+
+            @Override
+            public void onPostExecute(String output) {
+
+                if (output.equals("!exists")) {
+                    Toast.makeText(context, "Something went wrong", Toast.LENGTH_SHORT).show();
+
+                } else {
+
+
+                    // [{"UserID":"1596357","Name":"shameel nkosi","Surname":"nkosi","UserName":"G","ContactNum":"2255889966","Balance":"0","Bio":null,"D_O_B":"06 Apr 2020","Date_Created":"06 Apr 2020","Gender":"Male","Profile_pic":null}]
+                    try {
+                        // Only userID and balance is an integer
+
+
+                        final JSONObject userJO = new JSONArray(output).getJSONObject(0); // JO in userJO for JSONObject
+                        String userID = Integer.toString(userJO.getInt("UserID"));
+                        int Balance = userJO.getInt("Balance");
+                        String Name = userJO.getString("Name");
+                        String Surname = userJO.getString("Surname");
+                        String UserName = userJO.getString("UserName");
+                        //String Password = userJO.getString("Password");
+                        String Password = user.getPassword();
+                        String ContactNum = userJO.getString("ContactNum");
+                        String Bio = userJO.getString("Bio");
+                        String D_O_B = userJO.getString("D_O_B");
+                        String Date_Created = userJO.getString("Date_Created");
+                        String Gender = userJO.getString("Gender");
+                        String Profile_Pic = userJO.getString("Profile_pic");
+
+
+                        user = new User(userID, Name, Surname, UserName, Password, ContactNum, D_O_B, Date_Created, Gender, Bio, Balance, Profile_Pic);
+
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+
+                    }
+
+
+                }
+            }
+        };
+        asyncHTTPPost.execute();
+    }
+
+    @Override
+    public void onBackPressed() {
+        resetUser();
+        Intent intent = new Intent(context,Homepage.class);
+        intent.putExtra("user",user);
+        startActivity(intent);
+        finish();
+    }
 }

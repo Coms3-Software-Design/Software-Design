@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.ContentValues;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -40,9 +41,10 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
     private ImageView prPic;
     private NavigationView navigationView;
     private ProfileUpdateFragment profile;
-
+    private Context context;
     private Toolbar toolbar;
     private String imgURLPrefix = "http://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/uploads/";
+    private String resetUserURL = "https://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/MPReturnUser.php";
 
 
 
@@ -50,7 +52,8 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
-        drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer = findViewById(R.id.drawer_layout);
+        context = this;
 
 
         user = getIntent().getParcelableExtra("user");
@@ -237,6 +240,64 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
         }
     }
 
+    @Override
+    protected void onPostResume() {
+        resetUser();
+        super.onPostResume();
+    }
+
+    private void resetUser() {
+        ContentValues cv = new ContentValues();
+        cv.put("username", user.getUserName());
+
+        @SuppressLint("StaticFieldLeak")
+        AsyncHTTPPost asyncHTTPPost = new AsyncHTTPPost(resetUserURL, cv) {
+
+            @Override
+            public void onPostExecute(String output) {
+
+                if (output.equals("!exists")) {
+                    Toast.makeText(context, "Something went wrong", Toast.LENGTH_SHORT).show();
+
+                } else {
+
+
+                    // [{"UserID":"1596357","Name":"shameel nkosi","Surname":"nkosi","UserName":"G","ContactNum":"2255889966","Balance":"0","Bio":null,"D_O_B":"06 Apr 2020","Date_Created":"06 Apr 2020","Gender":"Male","Profile_pic":null}]
+                    try {
+                        // Only userID and balance is an integer
+
+
+                        final JSONObject userJO = new JSONArray(output).getJSONObject(0); // JO in userJO for JSONObject
+                        String userID = Integer.toString(userJO.getInt("UserID"));
+                        int Balance = userJO.getInt("Balance");
+                        String Name = userJO.getString("Name");
+                        String Surname = userJO.getString("Surname");
+                        String UserName = userJO.getString("UserName");
+                        //String Password = userJO.getString("Password");
+                        String Password = user.getPassword();
+                        String ContactNum = userJO.getString("ContactNum");
+                        String Bio = userJO.getString("Bio");
+                        String D_O_B = userJO.getString("D_O_B");
+                        String Date_Created = userJO.getString("Date_Created");
+                        String Gender = userJO.getString("Gender");
+                        String Profile_Pic = userJO.getString("Profile_pic");
+
+
+                        User user1 = new User(userID, Name, Surname, UserName, Password, ContactNum, D_O_B, Date_Created, Gender, Bio, Balance, Profile_Pic);
+
+                        setUser(user1);
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+
+                    }
+
+
+                }
+            }
+        };
+        asyncHTTPPost.execute();
+    }
 
 
 }

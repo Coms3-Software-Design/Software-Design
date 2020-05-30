@@ -94,7 +94,7 @@
                             android:layout_marginStart="35dp"
                             android:layout_marginTop="5dp"
                             android:layout_marginBottom="19dp"
-                            android:text="On Credit: R20 / month" />
+                            android:text="Available in shock" />
 
 
                     </LinearLayout>
