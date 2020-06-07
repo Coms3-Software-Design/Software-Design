@@ -17,6 +17,7 @@ import android.widget.Toast;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.FragmentManager;
 
 import com.example.marketplace.R;
 import com.example.marketplace.classes.User;
@@ -90,8 +91,6 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
             GoodsFragment goodsFragment;
             // ServicesFragment servicesFragment;
             goodsFragment = new GoodsFragment();
-
-
             goodsFragment.setArguments(args);
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, goodsFragment).commit();
             navigationView.setCheckedItem(R.id.nav_goods);
