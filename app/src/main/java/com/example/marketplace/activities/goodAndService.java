@@ -40,10 +40,11 @@ public class goodAndService extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.goodsandservice);
+        context = this;
          category = getIntent().getStringExtra("Category");
          goodsType = getIntent().getStringExtra("type");
          user = getIntent().getParcelableExtra("user");
-         context = this;
+
 
          if(goodsType.equals("Services")){
              getSupportActionBar().setTitle("Services");

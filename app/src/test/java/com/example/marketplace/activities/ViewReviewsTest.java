@@ -47,7 +47,7 @@ public class ViewReviewsTest {
 
     ViewReviews reviews;
     BuyProduct buyProd;
-    goodAndService goodNService;
+
 
     Product product = new Product(1,1814732,5,3,20,"Spoon","Cutlery","stainless steel","This spoon doesnt get dirty","goods");
     User user = new User("1814732","sam","Nkosi","Bee","12345","123","now","today","male","we",50,"");

@@ -9,9 +9,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.VisibleForTesting;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.marketplace.activities.BuyProduct;
 import com.example.marketplace.classes.Product;
 import com.example.marketplace.R;
@@ -19,6 +21,8 @@ import com.example.marketplace.classes.User;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
+
+import static com.squareup.picasso.Picasso.*;
 
 public class ProductsReclerViewAdapter extends RecyclerView.Adapter<ProductsReclerViewAdapter.MyViewHolder> {
 
@@ -48,10 +52,15 @@ public class ProductsReclerViewAdapter extends RecyclerView.Adapter<ProductsRecl
     public void onBindViewHolder(@NonNull MyViewHolder holder, final int position) {
         mProducts.get(position).setProductPicture(picUrl.concat(String.valueOf(mProducts.get(position).getProductID())).concat(".jpeg"));
         holder.tvProdName.setText(mProducts.get(position).getProductName());
-        holder.tvProdPrice.setText("R"+String.valueOf(mProducts.get(position).getPricePerItem()));
+        holder.tvProdPrice.setText("R"+ mProducts.get(position).getPricePerItem());
+
+
+
         Picasso.get().load(mProducts.get(position).getProductPicture()).placeholder(R.drawable.tech2)
                 .error(R.drawable.tech2)
                 .into(holder.imgProd);
+
+//        Glide.with(mContext).load(mProducts.get(position).getProductPicture()).into(holder.imgProd);
 
         holder.viewProdCard.setOnClickListener(new View.OnClickListener() {
             @Override
