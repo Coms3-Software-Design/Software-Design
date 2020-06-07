@@ -53,11 +53,10 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
-        drawer = findViewById(R.id.drawer_layout);
-        context = this;
-
 
         user = getIntent().getParcelableExtra("user");
+        drawer = findViewById(R.id.drawer_layout);
+        context = this;
         Initialise(user);
 
 
@@ -160,9 +159,9 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
         tvBalance = findViewById(R.id.tvBal);
         prPic = findViewById(R.id.ivpic);
 
-        tvUserName.setText(user.getUserName());
+        tvUserName.setText(s.getUserName());
         tvBalance.setText("Balance: R"+s.getBalance());
-        setIMG(imgURLPrefix.concat(user.getUserID()).concat(".jpg").concat("?=" + System.currentTimeMillis()));
+        setIMG(imgURLPrefix.concat(s.getUserID()).concat(".jpg").concat("?=" + System.currentTimeMillis()));
 
 
     }
