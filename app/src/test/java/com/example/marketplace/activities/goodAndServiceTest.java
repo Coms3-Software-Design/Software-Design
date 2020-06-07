@@ -48,7 +48,7 @@ public class goodAndServiceTest {
        // goodNService = Robolectric.buildActivity(goodAndService.class,intent).setup().get();
         goodNService = Robolectric.buildActivity(goodAndService.class , intent).setup().get();
         buyProduct = Robolectric.buildActivity(BuyProduct.class , intent1).setup().get();
-        home = Robolectric.buildActivity(Homepage.class , intent2).setup().get();
+        //home = Robolectric.buildActivity(Homepage.class , intent2).setup() .get();
     }
 
     @After
