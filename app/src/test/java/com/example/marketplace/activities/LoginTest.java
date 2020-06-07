@@ -12,6 +12,7 @@ import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 
 import static org.junit.Assert.*;
+import static org.robolectric.Robolectric.buildFragment;
 
 @RunWith(RobolectricTestRunner.class)
 public class LoginTest {
@@ -19,8 +20,22 @@ public class LoginTest {
     private Login login;
     private EditText userName , Password;
 
+    private ForgotPassword forgotPassword;
+    private SplashScreen screen;
+
     @Before
     public void setUp() throws Exception {
+
+        forgotPassword = Robolectric.buildActivity(ForgotPassword.class)
+                .create()
+                .resume()
+                .get();
+
+        screen = Robolectric.buildActivity(SplashScreen.class)
+                .create()
+                .resume()
+                .get();
+
         login = Robolectric.buildActivity(Login.class)
                 .create()
                 .resume()
@@ -43,6 +58,10 @@ public class LoginTest {
     public void checkUser(){
         userName.setText("Bee");
         login.findViewById(R.id.btnSignIn).performClick();
+
+        screen.findViewById(R.id.btnSplashLogin).performClick();
+        login.findViewById(R.id.tvSignUp).performClick();
+        login.findViewById(R.id.tvForgotPass).performClick();
     }
 
     @Test

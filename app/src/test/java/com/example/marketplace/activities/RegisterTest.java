@@ -48,6 +48,7 @@ public class RegisterTest {
         DOBtext = register.findViewById(R.id.tvDOB);
         btnRegister = register.findViewById(R.id.btnRegister);
         radioGroup = register.findViewById(R.id.radioGroup);
+        PhoneNumber = register.findViewById(R.id.etPhone);
         dateCreated = dateOB.getTime(); // this sets the current date before we change it to the date of birth
         dateOfBirth = dateOB.getTime();
     }
@@ -86,9 +87,61 @@ public class RegisterTest {
         Last_Name.setText("Phiri");
         Password.setText("12345");
         userName.setText("Beast");
+        PhoneNumber.setText("1234567892");
         radioGroup.getCheckedRadioButtonId();
         DOBtext.performClick();
         btnRegister.performClick();
+
+
+    }
+
+    @Test
+    public void Checkusers(){
+
+
+        UserID.setText("Bee");
+        Name.setText("Shams");
+        Last_Name.setText("Phiri");
+        Password.setText("12345");
+        userName.setText("Beast");
+        PhoneNumber.setText("1234567892");
+        btnRegister.performClick();
+
+        userName.setText("Bee");
+        btnRegister.performClick();
+
+        userName.setText("Bee");
+        Name.setText("sam");
+        btnRegister.performClick();
+
+        userName.setText("Bee");
+        Name.setText("sam");
+        Last_Name.setText("Doe");
+        btnRegister.performClick();
+
+        userName.setText("Bee");
+        Name.setText("sam");
+        Last_Name.setText("Doe");
+        PhoneNumber.setText("1234567890");
+        btnRegister.performClick();
+
+        userName.setText("Bee");
+        Name.setText("sam");
+        Last_Name.setText("Doe");
+        PhoneNumber.setText("1234567890");
+        UserID.setText("1234512");
+        btnRegister.performClick();
+
+        userName.setText("Bee");
+        Name.setText("sam");
+        Last_Name.setText("Doe");
+        PhoneNumber.setText("1234567890");
+        UserID.setText("1234512");
+        Password.setText("12345");
+        register.checkSelectedRadioButton();
+        btnRegister.performClick();
+
+
 
 
     }
