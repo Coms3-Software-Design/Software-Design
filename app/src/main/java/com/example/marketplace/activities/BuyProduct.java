@@ -116,8 +116,6 @@ public class BuyProduct extends AppCompatActivity {
     private void setProductRating() {
         ContentValues cv = new ContentValues();
         cv.put("ProductID", product.getProductID());
-
-
         @SuppressLint("StaticFieldLeak")
         AsyncHTTPPost asyncHTTPPost = new AsyncHTTPPost(reviewURL, cv) {
 
