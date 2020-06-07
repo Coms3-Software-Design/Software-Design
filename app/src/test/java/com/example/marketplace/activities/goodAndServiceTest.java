@@ -22,9 +22,16 @@ import static org.junit.Assert.*;
 public class goodAndServiceTest {
 
     goodAndService goodNService;
+    BuyProduct buyProduct;
+    Homepage home;
+
+    Intent intent = new Intent(RuntimeEnvironment.application , goodAndService.class);
+    Intent intent1 = new Intent(RuntimeEnvironment.application , BuyProduct.class);
+    Intent intent2 = new Intent(RuntimeEnvironment.application , Homepage.class);
+
     @Before
     public void setUp() throws Exception {
-        Intent intent = new Intent(RuntimeEnvironment.application , goodAndService.class);
+
         User user = new User("1814732","sam","Nkosi","Beast","12345","12345","today","LastNight","Male","Names",250,"1814732.jpeg");
         Product product = new Product(1,1814732,3,2,20,"Spoon","Cutlery","Stainless Steel","Good","goods");
 
@@ -32,8 +39,16 @@ public class goodAndServiceTest {
         intent.putExtra("user",user);
         intent.putExtra("type","goods");
 
+        intent1.putExtra("product",product);
+        intent1.putExtra("user",user);
+
+        intent2.putExtra("user",user);
+
+
        // goodNService = Robolectric.buildActivity(goodAndService.class,intent).setup().get();
-        goodNService = Robolectric.buildActivity(goodAndService.class , intent).get();
+        goodNService = Robolectric.buildActivity(goodAndService.class , intent).setup().get();
+        buyProduct = Robolectric.buildActivity(BuyProduct.class , intent1).setup().get();
+        home = Robolectric.buildActivity(Homepage.class , intent2).setup().get();
     }
 
     @After
@@ -45,4 +60,17 @@ public class goodAndServiceTest {
     public void check(){
         assertNotNull(goodNService);
     }
+
+    @Test
+    public void checkb(){
+        assertNotNull(buyProduct);
+    }
+
+    @Test
+    public void checkh(){
+        assertNotNull(home);
+    }
+
+
+
 }
