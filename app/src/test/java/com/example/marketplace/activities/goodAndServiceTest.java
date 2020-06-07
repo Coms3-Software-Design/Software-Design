@@ -66,10 +66,6 @@ public class goodAndServiceTest {
         assertNotNull(buyProduct);
     }
 
-    @Test
-    public void checkh(){
-        assertNotNull(home);
-    }
 
 
 

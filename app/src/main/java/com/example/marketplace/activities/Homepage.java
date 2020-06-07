@@ -54,10 +54,10 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
 
-        user = getIntent().getParcelableExtra("user");
-        drawer = findViewById(R.id.drawer_layout);
-        context = this;
-        Initialise(user);
+         user = getIntent().getParcelableExtra("user");
+         drawer = findViewById(R.id.drawer_layout);
+         context = this;
+         Initialise(user);
 
 
 

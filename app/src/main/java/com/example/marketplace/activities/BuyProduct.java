@@ -185,8 +185,8 @@ public class BuyProduct extends AppCompatActivity {
      * The function below sets views image to the image of the product
      */
     private void setImage() {
-        Picasso.get().load(product.getProductPicture()).placeholder(R.drawable.ic_edit_profile)
-                .error(R.drawable.ic_edit_profile).into(buyProductImage);
+//        Picasso.get().load(product.getProductPicture()).placeholder(R.drawable.ic_edit_profile)
+//                .error(R.drawable.ic_edit_profile).into(buyProductImage);
     }
 
     @SuppressLint("ResourceAsColor")
