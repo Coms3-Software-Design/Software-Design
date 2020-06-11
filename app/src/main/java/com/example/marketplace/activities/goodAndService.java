@@ -105,7 +105,7 @@ public class goodAndService extends AppCompatActivity {
     }
 
 
-    private void resetUser() {
+    public void resetUser() {
         ContentValues cv = new ContentValues();
         cv.put("username", user.getUserName());
 

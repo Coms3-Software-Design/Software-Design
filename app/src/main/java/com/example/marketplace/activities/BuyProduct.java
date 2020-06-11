@@ -15,6 +15,7 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.example.marketplace.R;
 import com.example.marketplace.classes.Product;
 import com.example.marketplace.classes.User;
@@ -189,8 +190,9 @@ public class BuyProduct extends AppCompatActivity {
      * The function below sets views image to the image of the product
      */
     private void setImage() {
-        Picasso.get().load(product.getProductPicture()).placeholder(R.drawable.ic_edit_profile)
-                .error(R.drawable.ic_edit_profile).into(buyProductImage);
+//        Picasso.get().load(product.getProductPicture()).placeholder(R.drawable.ic_edit_profile)
+//                .error(R.drawable.ic_edit_profile).into(buyProductImage);
+        Glide.with(context).load(product.getProductPicture()).into(buyProductImage);
     }
 
     @SuppressLint("ResourceAsColor")

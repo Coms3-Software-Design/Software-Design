@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.marketplace.classes.Category;
 import com.example.marketplace.R;
 import com.example.marketplace.activities.goodAndService;
@@ -52,9 +53,10 @@ public class ServiceCategoriesRecylerViewAdapter extends RecyclerView.Adapter<Se
     public void onBindViewHolder(@NonNull ServiceCategoriesRecylerViewAdapter.MyViewHolder holder, final int position) {
 
         holder.tvCatName.setText(mCategories.get(position).getTitle());
-        Picasso.get().load(imgUrl.concat(mCategories.get(position).getTitle()).concat(".jpeg")).placeholder(R.drawable.catdefault)
-                .error(R.drawable.catdefault)
-                .into(holder.imgCat);
+//        Picasso.get().load(imgUrl.concat(mCategories.get(position).getTitle()).concat(".jpeg")).placeholder(R.drawable.catdefault)
+//                .error(R.drawable.catdefault)
+//                .into(holder.imgCat);
+        Glide.with(mContext).load(imgUrl.concat(mCategories.get(position).getTitle()).concat(".jpeg")).into(holder.imgCat);
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -80,9 +82,9 @@ public class ServiceCategoriesRecylerViewAdapter extends RecyclerView.Adapter<Se
         public MyViewHolder(View itemView){
             super(itemView);
 
-            tvCatName = (TextView) itemView.findViewById(R.id.tvCategoryName );
-            imgCat = (ImageView) itemView.findViewById(R.id.ivCategoryImage);
-            cardView = (CardView) itemView.findViewById(R.id.viewCatCard);
+            tvCatName = itemView.findViewById(R.id.tvCategoryName );
+            imgCat = itemView.findViewById(R.id.ivCategoryImage);
+            cardView = itemView.findViewById(R.id.viewCatCard);
 
         }
     }

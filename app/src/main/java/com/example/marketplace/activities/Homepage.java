@@ -19,6 +19,7 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
 
+import com.bumptech.glide.Glide;
 import com.example.marketplace.R;
 import com.example.marketplace.classes.User;
 import com.example.marketplace.fragments.GoodsFragment;
@@ -100,8 +101,9 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
 
     private void setIMG(String uri) {
 
-        Picasso.get().load(uri).placeholder(R.drawable.ic_edit_profile)
-                .error(R.drawable.ic_edit_profile).into(prPic);
+//        Picasso.get().load(uri).placeholder(R.drawable.ic_edit_profile)
+//                .error(R.drawable.ic_edit_profile).into(prPic);
+        Glide.with(context).load(uri).into(prPic);
 
     }
 

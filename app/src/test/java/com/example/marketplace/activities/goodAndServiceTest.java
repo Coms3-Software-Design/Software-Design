@@ -2,7 +2,7 @@ package com.example.marketplace.activities;
 
 import android.content.Intent;
 
-import com.example.marketplace.BuildConfig;
+
 import com.example.marketplace.classes.Product;
 import com.example.marketplace.classes.User;
 
@@ -22,18 +22,20 @@ import static org.junit.Assert.*;
 public class goodAndServiceTest {
 
     goodAndService goodNService;
-    BuyProduct buyProduct;
+    BuyProduct buyProduct , buyProduct2;
     Homepage home;
 
     Intent intent = new Intent(RuntimeEnvironment.application , goodAndService.class);
     Intent intent1 = new Intent(RuntimeEnvironment.application , BuyProduct.class);
+    Intent intent3 = new Intent(RuntimeEnvironment.application , BuyProduct.class);
     Intent intent2 = new Intent(RuntimeEnvironment.application , Homepage.class);
 
     @Before
     public void setUp() throws Exception {
 
         User user = new User("1814732","sam","Nkosi","Beast","12345","12345","today","LastNight","Male","Names",250,"1814732.jpeg");
-        Product product = new Product(1,1814732,3,2,20,"Spoon","Cutlery","Stainless Steel","Good","goods");
+        Product product = new Product(1,1814732,3,2,20,"Spoon","Cutlery","Stainless Steel","Good","Goods");
+        Product product2 = new Product(1,1814732,3,2,20,"Spoon","Cutlery","Stainless Steel","Good","Services");
 
         intent.putExtra("Category","Cutlery");
         intent.putExtra("user",user);
@@ -41,14 +43,17 @@ public class goodAndServiceTest {
 
         intent1.putExtra("product",product);
         intent1.putExtra("user",user);
+        intent3.putExtra("product",product2);
+        intent3.putExtra("user",user);
 
         intent2.putExtra("user",user);
 
 
-       // goodNService = Robolectric.buildActivity(goodAndService.class,intent).setup().get();
-        goodNService = Robolectric.buildActivity(goodAndService.class , intent).setup().get();
-        buyProduct = Robolectric.buildActivity(BuyProduct.class , intent1).setup().get();
-        //home = Robolectric.buildActivity(Homepage.class , intent2).setup() .get();
+        goodNService = Robolectric.buildActivity(goodAndService.class , intent).create().resume().get();
+
+        buyProduct = Robolectric.buildActivity(BuyProduct.class , intent1).create().resume().get();
+        buyProduct2 = Robolectric.buildActivity(BuyProduct.class , intent3).create().resume().get();
+
     }
 
     @After
@@ -58,13 +63,17 @@ public class goodAndServiceTest {
 
     @Test
     public void check(){
+        goodNService.resetUser();
         assertNotNull(goodNService);
     }
 
     @Test
     public void checkb(){
         assertNotNull(buyProduct);
+
+        assertNotNull(buyProduct2);
     }
+
 
 
 
