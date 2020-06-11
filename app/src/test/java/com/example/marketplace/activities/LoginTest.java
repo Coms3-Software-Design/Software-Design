@@ -80,6 +80,7 @@ public class LoginTest {
 
     @Test
     public void checkUser4(){
+        screen.Register.performClick();
         userName.setText("");
         Password.setText("");
         login.findViewById(R.id.btnSignIn).performClick();

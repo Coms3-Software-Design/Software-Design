@@ -96,6 +96,57 @@ public class RegisterTest {
     }
 
     @Test
+    public void fix(){
+
+        userName.setText("85274963");
+        Name.setText("John");
+        Last_Name.setText("Phiri");
+        PhoneNumber.setText("1234567890");
+        UserID.setText("1478529");
+        Password.setText("");
+        btnRegister.performClick();
+
+        userName.setText("85274963");
+        Name.setText("");
+        Last_Name.setText("Phiri");
+        PhoneNumber.setText("1234567890");
+        UserID.setText("1478529");
+        Password.setText("12345");
+        btnRegister.performClick();
+
+        userName.setText("85274963");
+        Name.setText("John");
+        Last_Name.setText("");
+        PhoneNumber.setText("1234567890");
+        UserID.setText("1478529");
+        Password.setText("45612");
+        btnRegister.performClick();
+
+        userName.setText("85274963");
+        Name.setText("John");
+        Last_Name.setText("Phiri");
+        PhoneNumber.setText("");
+        UserID.setText("1478529");
+        Password.setText("12345");
+        btnRegister.performClick();
+
+        userName.setText("85274963");
+        Name.setText("John");
+        Last_Name.setText("Phiri");
+        PhoneNumber.setText("1234567890");
+        UserID.setText("");
+        Password.setText("12345");
+        btnRegister.performClick();
+
+        userName.setText("874963");
+        Name.setText("John");
+        Last_Name.setText("Phiri");
+        PhoneNumber.setText("6789067890");
+        UserID.setText("1478589");
+        Password.setText("12345");
+        btnRegister.performClick();
+    }
+    @Test
     public void Checkusers(){
 
 

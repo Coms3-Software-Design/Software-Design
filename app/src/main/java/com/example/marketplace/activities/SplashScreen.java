@@ -10,7 +10,7 @@ import android.widget.TextView;
 import com.example.marketplace.R;
 
 public class SplashScreen extends AppCompatActivity {
-    TextView Register;
+    public TextView Register;
     Button Login;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
