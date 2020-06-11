@@ -34,8 +34,8 @@ public class goodAndServiceTest {
     public void setUp() throws Exception {
 
         User user = new User("1814732","sam","Nkosi","Beast","12345","12345","today","LastNight","Male","Names",250,"1814732.jpeg");
-        Product product = new Product(1,1814732,3,2,20,"Spoon","Cutlery","Stainless Steel","Good","Goods");
-        Product product2 = new Product(1,1814732,3,2,20,"Spoon","Cutlery","Stainless Steel","Good","Services");
+        Product product = new Product(1,1814732,3,2,20,"Spoon","Services","Stainless Steel","Good","Goods");
+        Product product2 = new Product(1,1814732,0,2,20,"Spoon","Services","Stainless Steel","Good","Services");
 
         intent.putExtra("Category","Cutlery");
         intent.putExtra("user",user);
@@ -70,8 +70,16 @@ public class goodAndServiceTest {
     @Test
     public void checkb(){
         assertNotNull(buyProduct);
-
+        buyProduct.onBackPressed();
+        buyProduct.btnBuyProd.performClick();
+        buyProduct.btnWriteReview.performClick();
+        buyProduct.viewAllReviews.performClick();
+        buyProduct.onPostResume();
         assertNotNull(buyProduct2);
+        buyProduct2.btnBuyProd.performClick();
+        buyProduct2.btnWriteReview.performClick();
+        buyProduct2.viewAllReviews.performClick();
+        buyProduct2.onPostResume();
     }
 
 

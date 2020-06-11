@@ -33,9 +33,9 @@ public class BuyProduct extends AppCompatActivity {
     private User user;
     private addReviewFragment review;
     private buyProductDFragment buyProd;
-    private Button btnWriteReview, btnBuyProd;
+    public Button btnWriteReview, btnBuyProd;
     private ImageView buyProductImage;
-    private TextView productName, productPrice, productDescription, viewAllReviews, availability,dilivery;
+    public TextView productName, productPrice, productDescription, viewAllReviews, availability,dilivery;
     private Context context;
     private RatingBar productRating;
 
