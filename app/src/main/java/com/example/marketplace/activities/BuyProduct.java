@@ -34,7 +34,7 @@ public class BuyProduct extends AppCompatActivity {
     private buyProductDFragment buyProd;
     private Button btnWriteReview, btnBuyProd;
     private ImageView buyProductImage;
-    private TextView productName, productPrice, productDescription, viewAllReviews, availability;
+    private TextView productName, productPrice, productDescription, viewAllReviews, availability,dilivery;
     private Context context;
     private RatingBar productRating;
 
@@ -57,6 +57,7 @@ public class BuyProduct extends AppCompatActivity {
         btnWriteReview = findViewById(R.id.btnWriteReview);
         productRating = findViewById(R.id.rbProdRating);
         availability = findViewById(R.id.pm);
+        dilivery = findViewById(R.id.tvDilivery);
         context = this;
 
         // Set the Rating bar to correspond to the rating of the product
@@ -175,6 +176,9 @@ public class BuyProduct extends AppCompatActivity {
      * The function below gives the views the product's information for it to view
      */
     private void setStringAttr() {
+        if (!product.getProdType().equals("Goods")) {
+            dilivery.setText("CONTACT US!");
+        }
         productName.setText(product.getProductName());
         productPrice.setText("R" + product.getPricePerItem());
         productDescription.setText(product.getProductDescription());
@@ -185,8 +189,8 @@ public class BuyProduct extends AppCompatActivity {
      * The function below sets views image to the image of the product
      */
     private void setImage() {
-//        Picasso.get().load(product.getProductPicture()).placeholder(R.drawable.ic_edit_profile)
-//                .error(R.drawable.ic_edit_profile).into(buyProductImage);
+        Picasso.get().load(product.getProductPicture()).placeholder(R.drawable.ic_edit_profile)
+                .error(R.drawable.ic_edit_profile).into(buyProductImage);
     }
 
     @SuppressLint("ResourceAsColor")

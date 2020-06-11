@@ -60,7 +60,7 @@ public class ProductsReclerViewAdapter extends RecyclerView.Adapter<ProductsRecl
 //                .error(R.drawable.tech2)
 //                .into(holder.imgProd);
 
-//        Glide.with(mContext).load(mProducts.get(position).getProductPicture()).into(holder.imgProd);
+        Glide.with(mContext).load(mProducts.get(position).getProductPicture()).into(holder.imgProd);
 
         holder.viewProdCard.setOnClickListener(new View.OnClickListener() {
             @Override

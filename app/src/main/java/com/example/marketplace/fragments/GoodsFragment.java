@@ -63,6 +63,7 @@ public class GoodsFragment extends Fragment{
                 try {
                     for(int i = 0; i < response.length() ; i++){
                         Category category = new Category(response.getJSONObject(i).getString("Category"));
+                        if(category.getTitle().equals("Services")) continue;
                         listCategories.add(category);
                     }
 
