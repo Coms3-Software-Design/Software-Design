@@ -64,6 +64,7 @@ public class goodAndServiceTest {
     @Test
     public void check(){
         goodNService.resetUser();
+        goodNService.onBackPressed();
         assertNotNull(goodNService);
     }
 

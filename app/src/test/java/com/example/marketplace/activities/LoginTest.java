@@ -76,6 +76,8 @@ public class LoginTest {
         userName.setText("Bee");
         Password.setText("12345");
         login.findViewById(R.id.btnSignIn).performClick();
+
+        screen.Register.performClick();
     }
 
     @Test
