@@ -10,6 +10,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -58,7 +59,7 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
          user = getIntent().getParcelableExtra("user");
          drawer = findViewById(R.id.drawer_layout);
          context = this;
-         Initialise(user);
+         //Initialise(user);
 
 
 
@@ -72,6 +73,15 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
 
         navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        View headerView = navigationView.getHeaderView(0);
+
+        prPic = headerView.findViewById(R.id.ivpic);
+        tvUserName = headerView.findViewById(R.id.tvUse);
+        tvBalance = headerView.findViewById(R.id.tvBal);
+
+        tvUserName.setText(user.getUserName());
+        tvBalance.setText("Balance: R"+user.getBalance());
+        setIMG(imgURLPrefix.concat(user.getUserID()).concat(".jpg").concat("?=" + System.currentTimeMillis()));
 
 
         // Below is the action bar toggle... i.e the 3 lines on the top left of the screen
@@ -122,50 +132,38 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
 
         ServicesFragment servicesFragment = new ServicesFragment();
         servicesFragment.setArguments(args);
+
         switch (item.getItemId())
         {
             case R.id.nav_goods:
-
-
-
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,goodsFragment).commit();
                 break;
+
             case R.id.nav_services:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,servicesFragment).commit();
                 break;
+
             case R.id.nav_editProfile:
                 editProfile(user);
-                Initialise(user);
-                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new ProfileUpdateFragment()).commit();
                 break;
+
             case R.id.nav_transactionHistory:
                 Toast.makeText(this, "Transaction History still need implementation",Toast.LENGTH_SHORT).show();
                 break;
+
             case R.id.nav_creatItem:
                 Toast.makeText(this , "Create Item popup still need implementation",Toast.LENGTH_LONG).show();
                 break;
+
             case R.id.nav_signOut:
                 startActivity(new Intent(this, Login.class));
                 finish();
                 break;
 
-
         }
 
         drawer.closeDrawer(GravityCompat.START);
         return true;
-    }
-
-    public void setUser(final User s){
-        tvUserName = findViewById(R.id.tvUse);
-        tvBalance = findViewById(R.id.tvBal);
-        prPic = findViewById(R.id.ivpic);
-
-        tvUserName.setText(s.getUserName());
-        tvBalance.setText("Balance: R"+s.getBalance());
-        setIMG(imgURLPrefix.concat(s.getUserID()).concat(".jpg").concat("?=" + System.currentTimeMillis()));
-
-
     }
 
     public void editProfile(User u){
@@ -174,52 +172,6 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
         profile.setUser(u);
         profile.show(getSupportFragmentManager(),"Profile Edit");
     }
-
-
-    public void Initialise( final User user){
-
-        ContentValues cv = new ContentValues();
-        cv.put("username",user.getUserName());
-        @SuppressLint("StaticFieldLeak") AsyncHTTPPost asyncHTTPPost = new AsyncHTTPPost("https://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/MPUser.php" , cv) {
-
-            @Override
-            public void onPostExecute(String output) {
-                    // [{"UserID":"1596357","Name":"shameel nkosi","Surname":"nkosi","UserName":"G","ContactNum":"2255889966","Balance":"0","Bio":null,"D_O_B":"06 Apr 2020","Date_Created":"06 Apr 2020","Gender":"Male","Profile_pic":null}]
-                try {
-                    // Only userID and balance is an integer
-
-
-                    final JSONObject userJO = new JSONArray(output).getJSONObject(0); // JO in userJO for JSONObject
-                    String userID =Integer.toString( userJO.getInt("UserID"));
-                    int Balance = userJO.getInt("Balance");
-                    String Name = userJO.getString("Name");
-                    String Surname = userJO.getString("Surname");
-                    String UserName = userJO.getString("UserName");
-                    String Password = userJO.getString("Password");
-                    String ContactNum = userJO.getString("ContactNum");
-                    String Bio =  userJO.getString("Bio");
-                    String D_O_B = userJO.getString("D_O_B");
-                    String Date_Created = userJO.getString("Date_Created");
-                    String Gender = userJO.getString("Gender");
-                    String Profile_Pic =  userJO.getString("Profile_pic");
-
-
-
-                    setUser(new User(userID,Name,Surname,UserName,Password,ContactNum, D_O_B,Date_Created,Gender,Bio,Balance,Profile_Pic));
-
-                }catch (JSONException e){
-                    e.printStackTrace();
-
-                }
-
-
-            }
-        };
-
-        asyncHTTPPost.execute();
-    }
-
-
 
     @Override
     public void onBackPressed() {
@@ -238,65 +190,6 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
             finish();
             super.onBackPressed();
         }
-    }
-
-    @Override
-    protected void onPostResume() {
-        resetUser();
-        super.onPostResume();
-    }
-
-    private void resetUser() {
-        ContentValues cv = new ContentValues();
-        cv.put("username", user.getUserName());
-
-        @SuppressLint("StaticFieldLeak")
-        AsyncHTTPPost asyncHTTPPost = new AsyncHTTPPost(resetUserURL, cv) {
-
-            @Override
-            public void onPostExecute(String output) {
-
-                if (output.equals("!exists")) {
-                    Toast.makeText(context, "Something went wrong", Toast.LENGTH_SHORT).show();
-
-                } else {
-
-
-                    // [{"UserID":"1596357","Name":"shameel nkosi","Surname":"nkosi","UserName":"G","ContactNum":"2255889966","Balance":"0","Bio":null,"D_O_B":"06 Apr 2020","Date_Created":"06 Apr 2020","Gender":"Male","Profile_pic":null}]
-                    try {
-                        // Only userID and balance is an integer
-
-
-                        final JSONObject userJO = new JSONArray(output).getJSONObject(0); // JO in userJO for JSONObject
-                        String userID = Integer.toString(userJO.getInt("UserID"));
-                        int Balance = userJO.getInt("Balance");
-                        String Name = userJO.getString("Name");
-                        String Surname = userJO.getString("Surname");
-                        String UserName = userJO.getString("UserName");
-                        //String Password = userJO.getString("Password");
-                        String Password = user.getPassword();
-                        String ContactNum = userJO.getString("ContactNum");
-                        String Bio = userJO.getString("Bio");
-                        String D_O_B = userJO.getString("D_O_B");
-                        String Date_Created = userJO.getString("Date_Created");
-                        String Gender = userJO.getString("Gender");
-                        String Profile_Pic = userJO.getString("Profile_pic");
-
-
-                        User user1 = new User(userID, Name, Surname, UserName, Password, ContactNum, D_O_B, Date_Created, Gender, Bio, Balance, Profile_Pic);
-
-                        setUser(user1);
-
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-
-                    }
-
-
-                }
-            }
-        };
-        asyncHTTPPost.execute();
     }
 
 

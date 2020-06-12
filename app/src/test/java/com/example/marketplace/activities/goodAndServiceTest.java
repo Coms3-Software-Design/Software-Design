@@ -54,6 +54,8 @@ public class goodAndServiceTest {
         buyProduct = Robolectric.buildActivity(BuyProduct.class , intent1).create().resume().get();
         buyProduct2 = Robolectric.buildActivity(BuyProduct.class , intent3).create().resume().get();
 
+        home = Robolectric.buildActivity(Homepage.class , intent2).create().resume().get();
+
     }
 
     @After
@@ -83,6 +85,10 @@ public class goodAndServiceTest {
         buyProduct2.onPostResume();
     }
 
+    @Test
+    public void testHomepage(){
+        assertNotNull(home);
+    }
 
 
 

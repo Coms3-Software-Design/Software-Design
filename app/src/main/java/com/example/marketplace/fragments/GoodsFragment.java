@@ -22,8 +22,10 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.marketplace.adapters.GoodsCategoriesRecylerViewAdapter;
+import com.example.marketplace.adapters.ProductsReclerViewAdapter;
 import com.example.marketplace.classes.Category;
 import com.example.marketplace.R;
+import com.example.marketplace.classes.Product;
 import com.example.marketplace.classes.User;
 import com.example.marketplace.helperclasses.AsyncHTTPPost;
 
@@ -55,34 +57,50 @@ public class GoodsFragment extends Fragment{
            user = getArguments().getParcelable("user");
         }
         else Toast.makeText(v.getContext(),"Something is wrong, Can't set User",Toast.LENGTH_SHORT).show();
-      // initializeList();
-        rq = Volley.newRequestQueue(v.getContext());
-        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, categoriesURL, null, new Response.Listener<JSONArray>() {
-            @Override
-            public void onResponse(JSONArray response) {
-                try {
-                    for(int i = 0; i < response.length() ; i++){
-                        Category category = new Category(response.getJSONObject(i).getString("Category"));
-                        if(category.getTitle().equals("Services")) continue;
-                        listCategories.add(category);
-                    }
 
+
+
+        ContentValues cv = new ContentValues();
+
+
+
+        @SuppressLint("StaticFieldLeak") AsyncHTTPPost asyncHTTPPost = new AsyncHTTPPost(categoriesURL, cv) {
+            @Override
+            protected void onPostExecute(String output) {
+                if(!output.equals("failed")){
+
+                    JSONArray array = null;
+                    try {
+                        array = new JSONArray(output);
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                    for(int i = 0; i < array.length() ; i++) {
+                        try {
+
+                                Category category = new Category(array.getJSONObject(i).getString("Category"));
+                                if(category.getTitle().equals("Services")) continue;
+                                listCategories.add(category);
+
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
                     RecyclerView recyclerView = v.findViewById(R.id.GoodsRecyclerView);
                     GoodsCategoriesRecylerViewAdapter myAdapter = new GoodsCategoriesRecylerViewAdapter(v.getContext(),listCategories,user);
                     recyclerView.setLayoutManager(new GridLayoutManager(v.getContext(), 2));
                     recyclerView.setAdapter(myAdapter);
 
-                } catch (JSONException e) {
-                    e.printStackTrace();
+
+                }
+                else{
+                    Toast.makeText(context , "Something went wrong",Toast.LENGTH_SHORT).show();
                 }
             }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Toast.makeText(v.getContext(),"Error occured",Toast.LENGTH_SHORT).show();
-            }
-        });
-        rq.add(jsonArrayRequest);
+        };
+        asyncHTTPPost.execute();
+
 
         return v;
     }
