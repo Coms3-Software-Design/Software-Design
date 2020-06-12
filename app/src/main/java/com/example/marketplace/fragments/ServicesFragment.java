@@ -24,7 +24,6 @@ import com.android.volley.toolbox.Volley;
 import com.example.marketplace.adapters.ProductsReclerViewAdapter;
 import com.example.marketplace.classes.Category;
 import com.example.marketplace.R;
-import com.example.marketplace.adapters.ServiceCategoriesRecylerViewAdapter;
 import com.example.marketplace.classes.Product;
 import com.example.marketplace.classes.User;
 import com.example.marketplace.helperclasses.AsyncHTTPPost;
