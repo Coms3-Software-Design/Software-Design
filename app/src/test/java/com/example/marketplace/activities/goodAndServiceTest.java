@@ -1,6 +1,7 @@
 package com.example.marketplace.activities;
 
 import android.content.Intent;
+import android.view.MenuItem;
 
 
 import com.example.marketplace.classes.Product;
@@ -24,6 +25,7 @@ public class goodAndServiceTest {
     goodAndService goodNService;
     BuyProduct buyProduct , buyProduct2;
     Homepage home;
+    User user;
 
     Intent intent = new Intent(RuntimeEnvironment.application , goodAndService.class);
     Intent intent1 = new Intent(RuntimeEnvironment.application , BuyProduct.class);
@@ -33,7 +35,7 @@ public class goodAndServiceTest {
     @Before
     public void setUp() throws Exception {
 
-        User user = new User("1814732","sam","Nkosi","Beast","12345","12345","today","LastNight","Male","Names",250,"1814732.jpeg");
+        user = new User("1814732","sam","Nkosi","Beast","12345","12345","today","LastNight","Male","Names",250,"1814732.jpeg");
         Product product = new Product(1,1814732,3,2,20,"Spoon","Services","Stainless Steel","Good","Goods");
         Product product2 = new Product(1,1814732,0,2,20,"Spoon","Services","Stainless Steel","Good","Services");
 
@@ -88,6 +90,16 @@ public class goodAndServiceTest {
     @Test
     public void testHomepage(){
         assertNotNull(home);
+
+        MenuItem item1 = home.menu.getItem(1);
+        home.onNavigationItemSelected(item1);
+
+        MenuItem item2 = home.menu.getItem(2);
+        home.onNavigationItemSelected(item2);
+
+        home.editProfile(user);
+
+
     }
 
 

@@ -27,6 +27,7 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.bumptech.glide.Glide;
 import com.example.marketplace.helperclasses.AsyncHTTPPost;
 import com.example.marketplace.activities.Homepage;
 import com.example.marketplace.helperclasses.MySingleton;
@@ -226,9 +227,11 @@ public class ProfileUpdateFragment extends AppCompatDialogFragment {
 
     private void setIMG(String uri) {
 
-        Picasso.get().load(uri).placeholder(R.drawable.ic_edit_profile)
-                .error(R.drawable.ic_edit_profile)
-                .into(imgView);
+//        Picasso.get().load(uri).placeholder(R.drawable.ic_edit_profile)
+//                .error(R.drawable.ic_edit_profile)
+//                .into(imgView);
+
+        Glide.with(context).load(uri).into(imgView);
     }
 
 

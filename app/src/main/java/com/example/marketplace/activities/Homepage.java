@@ -9,6 +9,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
@@ -46,6 +47,8 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
     private ProfileUpdateFragment profile;
     private Context context;
     private Toolbar toolbar;
+    public  Menu menu;
+    public View headerView;
     private String imgURLPrefix = "http://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/uploads/";
     private String resetUserURL = "https://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/MPReturnUser.php";
 
@@ -73,7 +76,9 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
 
         navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        View headerView = navigationView.getHeaderView(0);
+        headerView = navigationView.getHeaderView(0);
+        menu = navigationView.getMenu();
+
 
         prPic = headerView.findViewById(R.id.ivpic);
         tvUserName = headerView.findViewById(R.id.tvUse);
