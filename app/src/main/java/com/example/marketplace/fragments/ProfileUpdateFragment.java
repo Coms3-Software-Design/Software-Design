@@ -48,16 +48,17 @@ import static android.app.Activity.RESULT_OK;
 public class ProfileUpdateFragment extends AppCompatDialogFragment {
 
 
-    private EditText Bio, fName, lName, nPass, oPass, pNumber;
+    public EditText Bio, fName, lName, nPass, oPass, pNumber;
     private final int IMG_REQUEST = 1;
     private Bitmap bitmap;
     private ImageView imgView;
-    private String uploadUrl = "http://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/uploads/upload.php";
-    private String imgURLPrefix = "http://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/uploads/";
+    private String uploadUrl = "https://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/uploads/upload.php";
+    private String imgURLPrefix = "https://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/uploads/";
     private Context context;
-    private Button changePass;
+    public Button changePass;
     private User user;
     private Boolean editpass = false;
+    boolean changedIMG = false;
 
     public void setUser(User user) {
         this.user = user;
@@ -131,8 +132,9 @@ public class ProfileUpdateFragment extends AppCompatDialogFragment {
                     @Override
                     public void onClick(View view) {
                         // TODO Do something
-                        uploadImage();
                         updateDetails();
+
+                        if(changedIMG) uploadImage();
 
                     }
                 });
@@ -143,7 +145,7 @@ public class ProfileUpdateFragment extends AppCompatDialogFragment {
 
     }
 
-    private void updateDetails() {
+    public void updateDetails() {
         String bio = Bio.getText().toString().trim();
         String name = fName.getText().toString().trim();
         String sName = lName.getText().toString().trim();
@@ -206,7 +208,7 @@ public class ProfileUpdateFragment extends AppCompatDialogFragment {
         cv.put("bio",bio);
         cv.put("password",passwrd);
 
-        @SuppressLint("StaticFieldLeak")AsyncHTTPPost asyncHTTPPost = new AsyncHTTPPost("http://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/MPUpdateProfile.php" , cv) {
+        @SuppressLint("StaticFieldLeak")AsyncHTTPPost asyncHTTPPost = new AsyncHTTPPost("https://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/MPUpdateProfile.php" , cv) {
 
             @Override
             protected void onPostExecute(String output) {
@@ -253,8 +255,9 @@ public class ProfileUpdateFragment extends AppCompatDialogFragment {
             try {
                 // bitmap = MediaStore.Images.Media.getBitmap(getContentResolver() , path);
                 bitmap = MediaStore.Images.Media.getBitmap(context.getContentResolver(), path);
-
                 imgView.setImageBitmap(bitmap);
+                changedIMG = true;
+
                 // setIMG(imgURLPrefix.concat(user.getProPicURL()));
             } catch (IOException e) {
                 e.printStackTrace();
@@ -271,7 +274,7 @@ public class ProfileUpdateFragment extends AppCompatDialogFragment {
                 try {
                     JSONObject jsonObject = new JSONObject(response);
                     String Responce = jsonObject.getString("response");
-                    //Toast.makeText(context, Responce, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, Responce, Toast.LENGTH_SHORT).show();
                     imgView.setImageResource(0);
 
                 } catch (JSONException e) {
@@ -283,6 +286,8 @@ public class ProfileUpdateFragment extends AppCompatDialogFragment {
             @Override
             public void onErrorResponse(VolleyError error) {
                 System.out.println(error);
+                Toast.makeText(context,"" + error, Toast.LENGTH_SHORT).show();
+
             }
         }
         ) {
