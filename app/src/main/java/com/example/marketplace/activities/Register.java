@@ -42,15 +42,15 @@ public class Register extends AppCompatActivity implements DatePickerDialog.OnDa
         setContentView(R.layout.activity_register);
 
 
-        UserID = (EditText)findViewById(R.id.etUserID);
-        Name = (EditText)findViewById(R.id.etFname);
-        Last_Name = (EditText)findViewById(R.id.etLname);
-        Password = (EditText)findViewById(R.id.etPassword);
-        PhoneNumber = (EditText)findViewById(R.id.etPhone);
-        userName = (EditText) findViewById(R.id.etUserName);
-        DOBtext = (TextView) findViewById(R.id.tvDOB);
-        btnRegister = (Button) findViewById(R.id.btnRegister);
-        radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
+        UserID = findViewById(R.id.etUserID);
+        Name = findViewById(R.id.etFname);
+        Last_Name = findViewById(R.id.etLname);
+        Password = findViewById(R.id.etPassword);
+        PhoneNumber = findViewById(R.id.etPhone);
+        userName = findViewById(R.id.etUserName);
+        DOBtext = findViewById(R.id.tvDOB);
+        btnRegister = findViewById(R.id.btnRegister);
+        radioGroup = findViewById(R.id.radioGroup);
         dateCreated = dateOB.getTime(); // this sets the current date before we change it to the date of birth
         dateOfBirth = dateOB.getTime(); // The current date will be the default DOB if the user doesn't enter their date of birth
 
@@ -147,7 +147,7 @@ public class Register extends AppCompatActivity implements DatePickerDialog.OnDa
 
     public void checkSelectedRadioButton(){
         int radioButtonID = radioGroup.getCheckedRadioButtonId();
-        checkedRadioButton = (RadioButton) findViewById(radioButtonID);
+        checkedRadioButton = findViewById(radioButtonID);
         if(checkedRadioButton.getText() == "Female") gender = "FeMale";
         else gender = "Male";
 
@@ -162,12 +162,12 @@ public class Register extends AppCompatActivity implements DatePickerDialog.OnDa
         cv.put("username" , newUser.getUserName());
         cv.put("password" , newUser.getPassword());
         cv.put("contactnum" , newUser.getContactDetails());
-        cv.put("dob",newUser.getDateOfBirth().toString().trim());
-        cv.put("datecreated" , newUser.getDateCreated().toString().trim());
+        cv.put("dob", newUser.getDateOfBirth().trim());
+        cv.put("datecreated" , newUser.getDateCreated().trim());
         cv.put("gender",newUser.getGender());
 
 
-        @SuppressLint("StaticFieldLeak") AsyncHTTPPost asyncHTTPPost = new AsyncHTTPPost("http://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/MPRegister.php", cv) {
+        @SuppressLint("StaticFieldLeak") AsyncHTTPPost asyncHTTPPost = new AsyncHTTPPost("https://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/MPRegister.php", cv) {
 
             @Override
             protected void onPostExecute(String output) {
