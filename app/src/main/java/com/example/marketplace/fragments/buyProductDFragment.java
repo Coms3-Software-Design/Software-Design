@@ -100,6 +100,7 @@ public class buyProductDFragment extends DialogFragment {
         String date = DateFormat.getDateInstance().format(Calendar.getInstance().getTime());
         ContentValues cv = new ContentValues();
         cv.put("ProductID",product.getProductID());
+        cv.put("ProductName",product.getProductName());
         cv.put("Buyer",user.getUserID());
         cv.put("TransDate",date);
         cv.put("Balance",user.getBalance());

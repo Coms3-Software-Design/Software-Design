@@ -3,18 +3,24 @@ package com.example.marketplace.classes;
 import java.util.Date;
 
 public class Transaction {
-    private int transactionID , productID, boughtByID;
-    private Date transactionDate;
+    private int transactionID , productID, boughtByID,ownerID, productPrice;
+    private String productName, productOwnerName;
+    private String transactionDate;
 
-    Transaction(int transactionID ,int productID , int boughtByID,Date transactionDate)
+    public Transaction(int transactionID, int productID, String productName, int ownerID, String productOwner, int boughtByID, String transactionDate,int productPrice)
     {
+        this.productName = productName;
+        this.ownerID = ownerID;
+        this.productOwnerName = productOwner;
         this.transactionID = transactionID;
         this.productID = productID;
         this.boughtByID = boughtByID;
         this.transactionID = transactionID;
+        this.productPrice = productPrice;
+        this.transactionDate = transactionDate;
     }
 
-    public Date getTransactionDate() {
+    public String getTransactionDate() {
         return transactionDate;
     }
 
@@ -40,5 +46,41 @@ public class Transaction {
 
     public void setBoughtByID(int boughtByID) {
         this.boughtByID = boughtByID;
+    }
+
+    public int getOwnerID() {
+        return ownerID;
+    }
+
+    public void setOwnerID(int ownerID) {
+        this.ownerID = ownerID;
+    }
+
+    public String getProductName() {
+        return productName;
+    }
+
+    public void setProductName(String productName) {
+        this.productName = productName;
+    }
+
+    public String getProductOwnerName() {
+        return productOwnerName;
+    }
+
+    public void setProductOwnerName(String productOwnerName) {
+        this.productOwnerName = productOwnerName;
+    }
+
+    public int getProductPrice() {
+        return productPrice;
+    }
+
+    public void setProductPrice(int productPrice) {
+        this.productPrice = productPrice;
+    }
+
+    public void setTransactionDate(String transactionDate) {
+        this.transactionDate = transactionDate;
     }
 }

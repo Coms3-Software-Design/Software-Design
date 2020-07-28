@@ -27,6 +27,7 @@ import com.example.marketplace.classes.User;
 import com.example.marketplace.fragments.GoodsFragment;
 import com.example.marketplace.fragments.ProfileUpdateFragment;
 import com.example.marketplace.fragments.ServicesFragment;
+import com.example.marketplace.fragments.TrasnactionsFragment;
 import com.example.marketplace.helperclasses.AsyncHTTPPost;
 import com.google.android.material.navigation.NavigationView;
 import com.squareup.picasso.Picasso;
@@ -45,11 +46,12 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
     private ImageView prPic;
     private NavigationView navigationView;
     private ProfileUpdateFragment profile;
+    private TrasnactionsFragment transaction;
     private Context context;
     private Toolbar toolbar;
     public  Menu menu;
     public View headerView;
-    private String imgURLPrefix = "http://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/uploads/";
+    private String imgURLPrefix = "https://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/uploads/";
     private String resetUserURL = "https://lamp.ms.wits.ac.za/~s1814731/MPphpfiles/MPReturnUser.php";
 
 
@@ -62,10 +64,6 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
          user = getIntent().getParcelableExtra("user");
          drawer = findViewById(R.id.drawer_layout);
          context = this;
-         //Initialise(user);
-
-
-
 
         /*
          * we changed the action bar to a toolbar which is easier to work with
@@ -116,8 +114,6 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
 
     private void setIMG(String uri) {
 
-//        Picasso.get().load(uri).placeholder(R.drawable.ic_edit_profile)
-//                .error(R.drawable.ic_edit_profile).into(prPic);
         Glide.with(context).load(uri).into(prPic);
 
     }
@@ -153,7 +149,7 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
                 break;
 
             case R.id.nav_transactionHistory:
-                Toast.makeText(this, "Transaction History still need implementation",Toast.LENGTH_SHORT).show();
+                viewTrasHis(user);
                 break;
 
             case R.id.nav_creatItem:
@@ -169,6 +165,13 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
 
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void viewTrasHis(User user) {
+        transaction = new TrasnactionsFragment();
+        transaction.setUser(user);
+        transaction.show(getSupportFragmentManager(),"Your Transaction History");
+
     }
 
     public void editProfile(User u){

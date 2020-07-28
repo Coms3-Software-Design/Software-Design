@@ -53,12 +53,6 @@ public class ProductsReclerViewAdapter extends RecyclerView.Adapter<ProductsRecl
         mProducts.get(position).setProductPicture(picUrl.concat(String.valueOf(mProducts.get(position).getProductID())).concat(".jpeg"));
         holder.tvProdName.setText(mProducts.get(position).getProductName());
         holder.tvProdPrice.setText("R"+ mProducts.get(position).getPricePerItem());
-//
-//
-//
-//        Picasso.get().load(mProducts.get(position).getProductPicture()).placeholder(R.drawable.tech2)
-//                .error(R.drawable.tech2)
-//                .into(holder.imgProd);
 
         Glide.with(mContext).load(mProducts.get(position).getProductPicture()).into(holder.imgProd);
 

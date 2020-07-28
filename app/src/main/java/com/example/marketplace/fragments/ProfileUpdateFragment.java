@@ -80,10 +80,6 @@ public class ProfileUpdateFragment extends AppCompatDialogFragment {
         pNumber = v.findViewById(R.id.etPhone);
         changePass = v.findViewById(R.id.btnChangePass);
 
-
-
-
-
         Toast.makeText(context, "Click on the image to change your profile pic", Toast.LENGTH_LONG).show();
 
         changePass.setOnClickListener(new View.OnClickListener() {
@@ -229,10 +225,6 @@ public class ProfileUpdateFragment extends AppCompatDialogFragment {
 
     private void setIMG(String uri) {
 
-//        Picasso.get().load(uri).placeholder(R.drawable.ic_edit_profile)
-//                .error(R.drawable.ic_edit_profile)
-//                .into(imgView);
-
         Glide.with(context).load(uri).into(imgView);
     }
 
@@ -253,15 +245,13 @@ public class ProfileUpdateFragment extends AppCompatDialogFragment {
 
 
             try {
-                // bitmap = MediaStore.Images.Media.getBitmap(getContentResolver() , path);
                 bitmap = MediaStore.Images.Media.getBitmap(context.getContentResolver(), path);
                 imgView.setImageBitmap(bitmap);
                 changedIMG = true;
 
-                // setIMG(imgURLPrefix.concat(user.getProPicURL()));
             } catch (IOException e) {
                 e.printStackTrace();
-                System.out.println("fialed");
+                System.out.println("failed");
             }
 
         }

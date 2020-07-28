@@ -45,13 +45,11 @@ public class ServicesFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-      //  return inflater.inflate(R.layout.frament_services,container,false);
         final View v = inflater.inflate(R.layout.frament_services, container, false);
         if(getArguments() != null){
             user = getArguments().getParcelable("user");
         }
         context = v.getContext();
-
 
         category = "Services";
         goodsType = "Services";
@@ -88,7 +86,6 @@ public class ServicesFragment extends Fragment {
                             Product product = new Product(P_ID,U_ID,C_quant,S_quant,price,P_Name,P_category,P_Brand,P_Desc,goodsType);
                             listProds.add(product);
 
-
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
@@ -97,7 +94,6 @@ public class ServicesFragment extends Fragment {
                     ProductsReclerViewAdapter prodAdapter = new ProductsReclerViewAdapter(context, listProds,user);
                     recyclerView.setLayoutManager(new GridLayoutManager(context, 2));
                     recyclerView.setAdapter(prodAdapter);
-
 
                 }
                 else{
