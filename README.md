@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.com/Coms3-Software-Design/Software-Design.svg?branch=master)](https://travis-ci.com/Coms3-Software-Design/Software-Design)
 [![codecov](https://codecov.io/gh/Coms3-Software-Design/Software-Design/branch/master/graph/badge.svg)](https://codecov.io/gh/Coms3-Software-Design/Software-Design)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/Coms3-Software-Design/Software-Design#the-state-diagram)
 
 
 
@@ -9,7 +10,7 @@
 ##### Component Diagram:
 * This Digram show how the components of the system a linked to each other
 * The customer needs to be authenticated who in turn also interacts with his account. The Custumor can again interact with the Ordering system which interacts with 2 other components, the cart component and the Payment Component of the system 
-![](Images/component.jpeg)
+![](Images/componentD.jpeg)
 
 ### Logical View:
 ##### The State diagram: 
