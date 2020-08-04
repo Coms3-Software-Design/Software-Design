@@ -111,7 +111,12 @@ public class buyProductDFragment extends DialogFragment {
             @Override
             protected void onPostExecute(String output) {
                 if(output.equals("1")){
+
                     dialog.dismiss();
+                    // We need a confirmation of purchase
+                    PurchaseConfirmation confirmation = new PurchaseConfirmation();
+                    confirmation.show(getParentFragmentManager(),"confirm");
+
                 }
                 else{
                     Toast.makeText(context,output,Toast.LENGTH_SHORT).show();

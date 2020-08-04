@@ -14,8 +14,6 @@ import com.example.marketplace.R;
 import com.example.marketplace.classes.Transaction;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.zip.Inflater;
 
 public class TransactionAdapter extends ArrayAdapter<Transaction> {
 
@@ -24,7 +22,6 @@ public class TransactionAdapter extends ArrayAdapter<Transaction> {
 
     public TransactionAdapter(@NonNull Context context, int resource, @NonNull ArrayList<Transaction> objects) {
         super(context, resource, objects);
-
         this.mContext = context;
         this.resource = resource;
     }
