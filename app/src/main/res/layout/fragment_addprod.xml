@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        >
+
+<!--
+
+            product_name
+            product_brand
+            product_Description
+            Product_price
+            Quantity
+            Category
+            Product_picture
+            Product_type
+-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="WELCOME!"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="sans-serif-black"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Wish to add a product? Simply do that here!"
+            android:layout_marginBottom="@dimen/_35sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="sans-serif-black"
+            />
+
+
+        <EditText
+            android:id="@+id/etProdName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter product name"
+            android:layout_marginBottom="@dimen/_10sdp"
+            />
+
+        <EditText
+            android:id="@+id/etProdbrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the brand name"
+            android:layout_marginBottom="@dimen/_10sdp"
+            />
+
+        <EditText
+            android:id="@+id/etProdDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the product Description"
+            android:layout_marginBottom="@dimen/_10sdp"
+            />
+
+        <EditText
+            android:id="@+id/etProdPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter product Price"
+            android:inputType="number"
+            android:layout_marginBottom="@dimen/_10sdp"
+            />
+
+        <EditText
+            android:id="@+id/etProdQuant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="How many products do you wanna add"
+            android:inputType="number"
+            android:layout_marginBottom="@dimen/_10sdp"
+            />
+
+        <Spinner
+            android:id="@+id/snProdType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            />
+
+        <Spinner
+            android:id="@+id/snCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tooltipText="Category"
+            android:layout_marginBottom="@dimen/_10sdp"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/_270sdp"
+            android:layout_height="@dimen/_270sdp"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

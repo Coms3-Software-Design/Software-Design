@@ -24,6 +24,7 @@ import androidx.fragment.app.FragmentManager;
 import com.bumptech.glide.Glide;
 import com.example.marketplace.R;
 import com.example.marketplace.classes.User;
+import com.example.marketplace.fragments.AddProductFragment;
 import com.example.marketplace.fragments.GoodsFragment;
 import com.example.marketplace.fragments.ProfileUpdateFragment;
 import com.example.marketplace.fragments.ServicesFragment;
@@ -47,6 +48,7 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
     private NavigationView navigationView;
     private ProfileUpdateFragment profile;
     private TrasnactionsFragment transaction;
+    private AddProductFragment addProd;
     private Context context;
     private Toolbar toolbar;
     public  Menu menu;
@@ -179,6 +181,13 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
         profile = new ProfileUpdateFragment();
         profile.setUser(u);
         profile.show(getSupportFragmentManager(),"Profile Edit");
+    }
+
+    public void addProduct(User u){
+        addProd = new AddProductFragment();
+        addProd.setUser(u);
+        addProd.show(getSupportFragmentManager() , "Add Prodcut");
+
     }
 
     @Override
