@@ -155,7 +155,8 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
                 break;
 
             case R.id.nav_creatItem:
-                Toast.makeText(this , "Create Item popup still need implementation",Toast.LENGTH_LONG).show();
+              //  Toast.makeText(this , "Create Item popup still need implementation",Toast.LENGTH_LONG).show();
+                addProduct(user);
                 break;
 
             case R.id.nav_signOut:

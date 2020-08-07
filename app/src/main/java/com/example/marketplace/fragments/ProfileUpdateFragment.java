@@ -129,16 +129,12 @@ public class ProfileUpdateFragment extends AppCompatDialogFragment {
                     public void onClick(View view) {
                         // TODO Do something
                         updateDetails();
-
                         if(changedIMG) uploadImage();
-
                     }
                 });
             }
         });
         return  mAlertDialog;
-
-
     }
 
     public void updateDetails() {
@@ -147,7 +143,6 @@ public class ProfileUpdateFragment extends AppCompatDialogFragment {
         String sName = lName.getText().toString().trim();
         String pNum = pNumber.getText().toString().trim();
         String passwrd = user.getPassword();
-
 
         // Below we check if the customer has errors from any input
 
@@ -224,7 +219,6 @@ public class ProfileUpdateFragment extends AppCompatDialogFragment {
     }
 
     private void setIMG(String uri) {
-
         Glide.with(context).load(uri).into(imgView);
     }
 

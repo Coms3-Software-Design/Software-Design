@@ -103,9 +103,12 @@
             />
 
         <ImageView
+            android:id="@+id/imgNewProd"
             android:layout_width="@dimen/_270sdp"
             android:layout_height="@dimen/_270sdp"
             android:layout_gravity="center"
+            android:src="@drawable/ic_edit_profile"
+            android:clickable="true"
             />
     </LinearLayout>
 
