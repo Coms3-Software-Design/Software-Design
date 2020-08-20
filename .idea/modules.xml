@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FORRTY-StudioProjects-Software-Design-Market Place.iml" filepath="$PROJECT_DIR$/FORRTY-StudioProjects-Software-Design-Market Place.iml" group="Market Place" />
       <module fileurl="file://$PROJECT_DIR$/Market Place.iml" filepath="$PROJECT_DIR$/Market Place.iml" group="Market Place" />
-      <module fileurl="file://$PROJECT_DIR$/Proj-Software-Design-Market Place.iml" filepath="$PROJECT_DIR$/Proj-Software-Design-Market Place.iml" group="Market Place" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Market_Place.iml" filepath="$PROJECT_DIR$/.idea/modules/Market_Place.iml" group="Market_Place" />
       <module fileurl="file://$PROJECT_DIR$/Software-Design-Market Place.iml" filepath="$PROJECT_DIR$/Software-Design-Market Place.iml" group="Market Place" />
       <module fileurl="file://$PROJECT_DIR$/app/Software-Design-app.iml" filepath="$PROJECT_DIR$/app/Software-Design-app.iml" group="Market Place/app" />
       <module fileurl="file://$PROJECT_DIR$/StudioProjects-Software-Design-Market Place.iml" filepath="$PROJECT_DIR$/StudioProjects-Software-Design-Market Place.iml" group="Market Place" />

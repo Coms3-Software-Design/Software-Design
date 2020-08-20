@@ -87,12 +87,12 @@
             android:layout_marginBottom="@dimen/_10sdp"
             />
 
-        <Spinner
-            android:id="@+id/snProdType"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_10sdp"
-            />
+<!--        <Spinner-->
+<!--            android:id="@+id/snProdType"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="@dimen/_10sdp"-->
+<!--            />-->
 
         <Spinner
             android:id="@+id/snCategory"

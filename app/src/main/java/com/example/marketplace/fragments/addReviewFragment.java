@@ -95,10 +95,10 @@ public class addReviewFragment extends AppCompatDialogFragment {
 
     private void rateAndReview(final AlertDialog l) {
 
-        if(review.getText().toString().trim().isEmpty()){
-            review.setError("Please write your review.");
-            return;
-        }
+//        if(review.getText().toString().trim().isEmpty()){
+//            review.setError("Please write your review.");
+//            return;
+//        }
 
         double rating = ratingBar.getRating();
         String Review = review.getText().toString().trim();
