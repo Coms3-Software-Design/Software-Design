@@ -50,6 +50,7 @@ public class goodAndService extends AppCompatActivity {
              getSupportActionBar().setTitle("Services");
          }else{
              getSupportActionBar().setTitle("Goods");
+             getSupportActionBar().setSubtitle("Balance: R"+user.getBalance());
          }
 
         ContentValues cv = new ContentValues();

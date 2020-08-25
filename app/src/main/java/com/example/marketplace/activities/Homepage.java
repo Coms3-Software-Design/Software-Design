@@ -73,6 +73,7 @@ public class Homepage extends AppCompatActivity implements NavigationView.OnNavi
          */
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setSubtitle("Balance: R"+user.getBalance());
 
         navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
