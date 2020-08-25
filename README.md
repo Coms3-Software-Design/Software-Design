@@ -25,7 +25,7 @@
   ![](Images/class.png)
   
 
-### Physica View:
+### Physical View:
 ##### The Deployment Diagram
 * This speaks to how the system works in the top level view. Speaks to how the System is deployed.
 * In this instance We deploy it as a mobile app. Which we later might also deploy as a website.
