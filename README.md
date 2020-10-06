@@ -1,7 +1,6 @@
 [![Build Status](https://travis-ci.com/Coms3-Software-Design/Software-Design.svg?branch=master)](https://travis-ci.com/Coms3-Software-Design/Software-Design)
 [![codecov](https://codecov.io/gh/Coms3-Software-Design/Software-Design/branch/master/graph/badge.svg)](https://codecov.io/gh/Coms3-Software-Design/Software-Design)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/Coms3-Software-Design/Software-Design#the-state-diagram)](https://github.com/Coms3-Software-Design/Software-Design/releases/tag/v1.2)
-[![Build Status](https://travis-ci.com/Coms3-Software-Design/Software-Design.svg?branch=master)](https://travis-ci.com/Coms3-Software-Design/Software-Design)
 
 
 
